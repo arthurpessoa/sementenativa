@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.0.0.58833 -->
     <meta charset="utf-8">
-    <title>Contacts</title>
+    <title>Semente Nativa - Contato</title>
     <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
 
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -33,9 +33,9 @@
 
     <div class="art-shapes">
 <h1 class="art-headline" data-left="2.6%">
-    <a href="#">Nutrition</a>
+        <a href=<?php echo base_url();?>>Semente</a>
 </h1>
-<h2 class="art-slogan" data-left="2.45%">Consultants</h2>
+<h2 class="art-slogan" data-left="2.45%">Nativa</h2>
 
 <div class="art-object0" data-left="100%"></div>
 
@@ -49,7 +49,7 @@
                 <div class="art-content-layout">
                     <div class="art-content-layout-row">
                         <div class="art-layout-cell art-content clearfix"><article class="art-post art-article">
-                                <h2 class="art-postheader">Contacts</h2>
+                                <h2 class="art-postheader">Contatos</h2>
                                                 
                 <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout">
     <div class="art-content-layout-row">
