@@ -1189,8 +1189,18 @@ button.art-button
    float: left;
 }
 
+label{
+    float: left;
+    clear: left;
+    width: 60px;
+    text-align: right;
+    margin-right: 4px;
+}
+
 input, select, textarea
 {
+
+   padding-right: 10px;
    font-size: 11px;
    font-family: Verdana, Geneva, Arial, Helvetica, Sans-Serif;
    font-weight: normal;

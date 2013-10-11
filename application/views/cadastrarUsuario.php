@@ -13,6 +13,44 @@
     <script src=<?php echo base_url()."assets/script.js"?>></script>
     <script src=<?php echo base_url()."assets/script.responsive.js"?>></script>
 
+    <script type="text/javascript" >
+
+    $(document).ready(function(){
+                //Preenche os campos na a&#231;&#227;o "Blur" (mudar de campo)
+                $("#cep").blur(function(){
+                $("#rua").val("...")
+                $("#bairro").val("...")
+                $("#cidade").val("...")
+                $("#uf").val("...")
+        
+            // seta a variavel requisitada no campo cep
+        consulta = $("#cep").val()
+                
+                //Realiza a consulta
+                /*Realiza a consulta atrav&#233;s do toolsweb passando o cep como parametro
+                  e informando que vamos consultar no tipo javascript
+                */
+                $.getScript("http://www.toolsweb.com.br/webservice/clienteWebService.php?cep="+consulta+"&formato=javascript", function(){
+                        
+                        //unescape - Decodifica uma string codificada com o m&#233;todo escape.
+                        rua=unescape(resultadoCEP.logradouro)
+                        bairro=unescape(resultadoCEP.bairro)
+                        cidade=unescape(resultadoCEP.cidade)
+                        uf=unescape(resultadoCEP.estado)
+                        
+                        // preenche os campos
+                        $("#rua").val(rua)
+                        $("#bairro").val(bairro)
+                        $("#cidade").val(cidade)
+                        $("#uf").val(uf)
+        
+                        });
+                });
+        });
+
+</script>
+
+
 
 <style>.art-content .art-postcontent-0 .layout-item-0 { padding-right: 10px;padding-left: 10px;  }
 .ie7 .post .layout-cell {border:none !important; padding:0 !important; }
@@ -39,8 +77,18 @@
     <div class="art-layout-cell layout-item-0" style="width: 100%" >
         <p><span style="font-weight: bold;">
         
+        <br><br><br><br>
         <form>
-            <p>Nome: <input type="text" name="firstname"></p>
+            <p><label>Nome:</label><input style="padding-left: 10%;" type="text" name="nome" size="40"></p>
+            <p><label>Email:</label><input type="text" name="email" size="40"></p>
+
+            <p><label>Sexo:</label><input type="radio" name="sexo" value="masculino">Masculino<input type="radio" name="sex" value="feminino">Feminino</p>
+
+            <p><label>CEP:</label><input name="cep" type="text" id="cep" value="" size="15" maxlength="8" /> (*Sem traço)</p>
+            <p><label>Endereço:</label><input name="rua" type="text" id="rua" size="60" /></p>
+            <p><label>Bairro:</label><input name="bairro" type="text" id="bairro" size="60" /></p>
+            <p><label>Cidade:</label><input name="cidade" type="text" id="cidade" size="40" />Estado:<input name="uf" type="text" id="uf" size="2" /></p>
+
         </form>        
         
     </div>
