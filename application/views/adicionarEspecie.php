@@ -9,6 +9,8 @@
 	<!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
 	<link rel="stylesheet" href=<?php echo base_url()."assets/style.responsive.css"?> media="all">
 
+	<link rel="stylesheet" type="text/css" href=<?php echo base_url()."assets/ja3.css"?>>
+
 	<script src=<?php echo base_url()."assets/jquery.js";?>></script>
 	<script src=<?php echo base_url()."assets/script.js"?>></script>
 	<script src=<?php echo base_url()."assets/script.responsive.js"?>></script>
@@ -24,8 +26,9 @@
 <nav class="art-nav clearfix">
 	<ul class="art-hmenu">
 		<li><a href=<?php echo base_url()."home";?> class="active" >Home</a></li>
-		<li><a href=<?php echo base_url()."sobre"?>			   >Sobre</a></li>
-		<li><a href=<?php echo base_url()."contato"?>			  >Contato</a></li>
+		<!--li><a href=<?php echo base_url()."sobre"?> >Sobre</a></li-->
+		<!--li><a href=<?php echo base_url()."contato"?> >Contato</a></li-->
+		<li><a href=<?php echo base_url()."contato"?> >Buscar</a></li>
 </nav>
 <div class="art-sheet clearfix">
 	<div class="art-layout-wrapper clearfix">
@@ -38,30 +41,44 @@
 							<div class="art-content-layout">
 								<div class="art-content-layout-row">
 									<div class="art-layout-cell layout-item-0" style="width: 100%" >
-										<p><span style="font-weight: bold;">
-											<form>
-												<p>Nome Científico* <input id="cient" type="text" name="cientifico"><span id="erroCient" class="erroinsert"></span></p>
-												<p>Família* <input id='familia' type="text" name="familia"><span id="erroCient" class="erroinsert"></span></p>
-												<p>Nomes populares <input type="text" name="popular"> (Separados por vírgulas)</p>
-												<p><input type="submit" value="Adicionar"></p>
-											</form>
-										</div>
+										<form>
+											<p>
+												<label for="boxcient"> Nome Científico* </label>
+												<input id="boxcient" type="text" name="cientifico"/>
+												<span id="erroCient" class="erroinsert"></span>
+											</p>
+											<p>
+												<label for="boxfamilia">Família* </label>
+												<input id="boxfamilia" type="text" name="familia"/>
+												<span id="erroFami" class="erroinsert"></span>
+											</p>
+											<p>
+												<label for="boxpopul">Nomes populares</label>
+												<input id="boxpopul" type="text" name="popular"/> (Separados por vírgulas)
+											</p>
+											<p>
+												<input class="btnenviar" type="submit" value="Adicionar">
+											</p>
+										</form>
 									</div>
 								</div>
 							</div>
 						</div>
+					</article>
+					<div class="powerMenu">
+						<p><h3>Olá, Você</h3></p>
+						<p><a>Sair</a></p>
 					</div>
-				</article>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 </div>
 <?php include 'modules/footer.php'; ?>
 </div>
 <script>
 $(document).ready(function() {
-	$('#cient').focusout(function(){
+	$('#boxcient').focusout(function(){
 		if($(this).val() == ''){
 			$('#erroCient').html('Insira um nome científico!');
 		}else{
@@ -70,7 +87,7 @@ $(document).ready(function() {
             });
 		}
 	});
-	$('#familia').focusout(function(){
+	$('#boxfamilia').focusout(function(){
 		if($(this).val() == ''){
 			$('#erroFami').html('Insira o nome da família!');
 		}else{

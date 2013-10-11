@@ -9,6 +9,7 @@
 	<!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
 	<link rel="stylesheet" href=<?php echo base_url()."assets/style.responsive.css"?> media="all">
 
+	<link rel="stylesheet" type="text/css" href=<?php echo base_url()."assets/ja3.css"?>>
 
 	<script src=<?php echo base_url()."assets/jquery.js";?>></script>
 	<script src=<?php echo base_url()."assets/script.js";?>></script>
@@ -25,8 +26,10 @@
    <nav class="art-nav clearfix">
 	<ul class="art-hmenu">
 		<li><a href=<?php echo base_url()."home";?>	class="active">Home</a></li>
-		<li><a href=<?php echo base_url()."sobre"?> >Sobre</a></li>
-		<li><a href=<?php echo base_url()."contato"?> >Contato</a></li>
+		<!--li><a href=<?php echo base_url()."sobre"?> >Sobre</a></li-->
+		<!--li><a href=<?php echo base_url()."contato"?> >Contato</a></li-->
+		<li><a href=<?php echo base_url()."contato"?> >Buscar</a></li>
+		
 	</nav>
 <div class="art-sheet clearfix">
 	<div class="art-layout-wrapper clearfix">
@@ -39,8 +42,7 @@
 							<div class="art-content-layout">
 								<div class="art-content-layout-row">
 									<div class="art-layout-cell layout-item-0" style="width: 100%">
-										<div class="exibirUsuarios" style="width: 65%;border-style: dotted;float: left">
-										<br><br>
+										<div class="exibir">
 										<p><h3>Usuários</h3></p>
 										<p>
 											<b><a>Username01</a></b>
@@ -51,12 +53,12 @@
 											&nbsp&nbsp&nbsp
 											Telefone 01
 											<form>
-											<input type="checkbox" name="admin">Administrador</input>
-											<input type="checkbox" name="pesq">Pesquisador</input>
-											<input type="checkbox" name="prod">Produtor</input>
+												<input type="checkbox" name="admin">Administrador</input>
+												<input type="checkbox" name="pesq">Pesquisador</input>
+												<input type="checkbox" name="prod">Produtor</input>
+												<button>Salvar Alterações</button>
+												<button id='btnApagar'>Apagar</button>
 											</form>
-											<button>Salvar Alterações</button>
-											<button id='btnApagar'>Apagar</button>
 										</p>
 										<br>
 										<p>
@@ -68,12 +70,12 @@
 											&nbsp&nbsp&nbsp
 											Telefone 02
 											<form>
-											<input type="checkbox" name="admin">Administrador</input>
-											<input type="checkbox" name="pesq">Pesquisador</input>
-											<input type="checkbox" name="prod">Produtor</input>
+												<input type="checkbox" name="admin">Administrador</input>
+												<input type="checkbox" name="pesq">Pesquisador</input>
+												<input type="checkbox" name="prod">Produtor</input>
+												<button>Salvar Alterações</button>
+												<button id='btnApagar'>Apagar</button>
 											</form>
-											<button>Salvar Alterações</button>
-											<button id='btnApagar'>Apagar</button>
 										</p>
 										<br>
 										<p>
@@ -85,25 +87,24 @@
 											&nbsp&nbsp&nbsp
 											Telefone 03
 											<form>
-											<input type="checkbox" name="admin">Administrador</input>
-											<input type="checkbox" name="pesq">Pesquisador</input>
-											<input type="checkbox" name="prod">Produtor</input>
+												<input type="checkbox" name="admin">Administrador</input>
+												<input type="checkbox" name="pesq">Pesquisador</input>
+												<input type="checkbox" name="prod">Produtor</input>
+												<button>Salvar Alterações</button>
+												<button id='btnApagar'>Apagar</button>
 											</form>
-											<button>Salvar Alterações</button>
-											<button id='btnApagar'>Apagar</button>
 										</p>
-										<br>
 										</div>
-										<div class="powerMenu" style="width: 30%;border-style: dotted;float: left">
-											<br><br>
-											<p><h3>Olá, Administrador</h3></p>
-											<p><a>Sair</a></p>
-										</div>
+										
 									</div>
 								</div>
 							</div>
 						</div>
 					</article>
+					<div class="powerMenu">
+						<p><h3>Olá, Você</h3></p>
+						<p><a>Sair</a></p>
+					</div>
 				</div>
 			</div>
 		</div>
