@@ -1,7 +1,12 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Login extends CI_Controller {
-	
+	public function logout()
+	{
+		session_start();
+		session_destroy();
+	}
+
 	public function checklogin()
 	{
 	
