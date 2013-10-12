@@ -38,7 +38,11 @@ class Login extends CI_Controller {
 	}
 	public function index()
 	{		
-		$data['erro'] = '';
-		$this->load->view('login',$data);
+		if($this->session->userdata('logged')){
+			redirect(base_url()."controlPanel",'refresh');
+		}else{
+			$data['erro'] = '';
+			$this->load->view('login',$data);
+		}
 	}
 }
