@@ -38,6 +38,10 @@
 				<div class="art-layout-cell art-content clearfix">
 						<article class="art-post art-article">
 						<h2 class="art-postheader">Entrar</h2>
+						<p>
+							<br>
+							<span id="erroPagina" class="erroinsert"><?php echo $erro ?></span>
+						</p>
 						<div class="art-postcontent art-postcontent-0 clearfix">
 							<div class="art-content-layout">
 								<div class="art-content-layout-row">

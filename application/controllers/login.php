@@ -4,17 +4,34 @@ class Login extends CI_Controller {
 	
 	public function checklogin()
 	{
-		echo $_POST['email']; 
-		echo $_POST['senha']; 
-		$this->load->view('login');
+	
+		$this->load->model('ModelLogin');
+
+		$email = $_POST['email']; 
+		$senha = $_POST['senha']; 
+
+		$loginCheck = $this->ModelLogin->checkLogin($email,$senha);
+		if($loginCheck)
+		 {
+		 	session_register("email");
+			session_register("senha");
+
+			//TODO: Redirecionar pra area do usuário
+		 	echo "logado"; 
+		 }
+		 else
+		{
+			$data['erro'] = 'Email ou senha incorreta!';
+			$this->load->view('login',$data);	
+		}
 	}
 	public function index()
 	{		
-		$this->load->view('login');
+		$data['erro'] = '';
+		$this->load->view('login',$data);
 	}
 	public function logout()
 	{
-		echo "check;";
-		$this->load->view('login');
+		$this->load->view('home');
 	}
 }
