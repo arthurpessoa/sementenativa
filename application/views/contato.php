@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php session_start(); ?>
 <html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.0.0.58833 -->
     <meta charset="utf-8">
     <title>Semente Nativa - Contato</title>

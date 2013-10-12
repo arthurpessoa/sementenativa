@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php session_start(); ?>
 <html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.0.0.58833 -->
 	<meta charset="utf-8">
 	<title>Sementes e Viveiros - Cadastro</title>
@@ -98,10 +99,7 @@
 							</div>
 						</div>  
 					</article>
-					<div class="powerMenu">
-						<p><h3>Olá, Você</h3></p>
-						<p><a>Sair</a></p>
-					</div>
+					<?php include 'modules/powerMenu.php'; ?>
 				</div>
 			</div>
 		</div>
