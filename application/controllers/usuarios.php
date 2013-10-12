@@ -3,7 +3,7 @@
 class Usuarios extends CI_Controller {
 	public function index()
 	{
-		echo 'Usuarios';
-		//$this->load->view('contato');
+		
+		$this->load->view('login');
 	}
 }

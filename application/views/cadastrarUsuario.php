@@ -94,7 +94,18 @@
 												<span id="erroUF" class="erroinsert"></span>
 											</p>
 											<p>
-												<input class="btnenviar" type="submit" value="Cadastrar">
+												<label for="boxsenha">Senha</label>
+												<input id="boxsenha" name="uf" type="password" size="12" />
+												<span id="erroSenha" class="erroinsert"></span>
+											</p>
+											<p>
+												<label for="boxconfirmasenha">Confirmar Senha</label>
+												<input id="boxconfirmasenha" name="uf" type="password" size="12" />
+												<span id="erroConfirmaSenha" class="erroinsert"></span>
+											</p>
+											<br><br>
+											<p>
+												<p><a href=<?php echo base_url()."cadastrarUsuario"?> class="art-button">Cadastrar</a></p>
 											</p>
 										</form>		
 									</div>

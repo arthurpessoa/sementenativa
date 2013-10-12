@@ -60,8 +60,9 @@
 												<label for="boxpopul">Nomes populares</label>
 												<input id="boxpopul" type="text" name="popular"/> (Separados por vírgulas)
 											</p>
+											<br><br>
 											<p>
-												<input class="btnenviar" type="submit" value="Adicionar">
+												<p><a href=<?php echo base_url()."cadastrarUsuario"?> class="art-button">Cadastrar</a></p>
 											</p>
 										</form>
 									</div>
