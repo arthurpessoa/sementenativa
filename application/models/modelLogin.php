@@ -17,4 +17,10 @@ class ModelLogin extends CI_Model {
     		$a =$query->result();
     		return $a[0]->total; //seleciono a Row 0, e o campo Total (que eu usei como "alias" na consulta acima)
     }
+    function getNome($email)
+    {
+        $query = $this->db->query('SELECT `nome` FROM usuarios WHERE `email` = \''.$email.'\'');
+        $a =$query->result();
+        return $a[0]->nome; //seleciono a Row 0
+    }
 }

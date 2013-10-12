@@ -15,8 +15,6 @@
 	<script src=<?php echo base_url()."assets/script.js"?>></script>
 	<script src=<?php echo base_url()."assets/script.responsive.js"?>></script>
 
-
-
 <style>.art-content .art-postcontent-0 .layout-item-0 { padding-right: 10px;padding-left: 10px;  }
 .ie7 .post .layout-cell {border:none !important; padding:0 !important; }
 .ie6 .post .layout-cell {border:none !important; padding:0 !important; }

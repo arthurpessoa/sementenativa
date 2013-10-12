@@ -3,7 +3,8 @@
 class Login extends CI_Controller {
 	public function logout()
 	{
-		$this->load->view('home');
+		$this->session->sess_destroy();
+		redirect(base_url()."login",'refresh');
 	}
 
 	public function checklogin()
@@ -18,8 +19,16 @@ class Login extends CI_Controller {
 		$loginCheck = $this->ModelLogin->checkLogin($email,$senha);
 		if($loginCheck)
 		 {
+		 	
+		 	$session = array(
+                'nome' => $this->ModelLogin->getNome($email),
+                'logged' => true
+            );
+		 	$this->session->set_userdata($session);
+
+
 			$redirect =  base_url()."controlPanel"; //redireciona
-			header("location:$redirect");
+			header("location:$redirect"); 
 		 }
 		 else
 		{
