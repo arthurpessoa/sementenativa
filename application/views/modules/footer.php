@@ -1,6 +1,6 @@
 <footer class="art-footer clearfix">
   <div class="art-footer-inner">
-	<p>Copyright © 2013, Semente Nativa. Todos os direitos reservados.
+	<p>Copyright © 2013, Sementes e Viveiros. Todos os direitos reservados.
 	<br><br>
 	</p>
     <p class="art-page-footer">

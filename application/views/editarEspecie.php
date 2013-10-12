@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<?php session_start(); ?>
 <html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.0.0.58833 -->
 	<meta charset="utf-8">
 	<title>Sementes e Viveiros - Cadastro</title>
@@ -60,8 +59,8 @@
 											</p>
 											<p>
 												<label for="boxsexo">Sexo</label>
-												<input id="sexo" type="radio" name="sexo" value="m" checked/>Masculino
-												<input id="sexo" type="radio" name="sexo" value="f"/>Feminino
+												<input type="radio" name="sexo" value="m"/>Masculino
+												<input type="radio" name="sexo" value="f"/>Feminino
 												<span id="erroSexo" class="erroinsert"></span>
 											</p>
 											<p>
@@ -106,7 +105,7 @@
 											</p>
 											<br><br>
 											<p>
-												<p><a id="EnviarCadastro" href="#" style="float: right;" onclick="" class="art-button" >Cadastrar</a></p>
+												<p><a href="#" style="float: right;" onclick="$(this).closest('form').submit()" class="art-button" >Cadastrar</a></p>
 											</p>
 										</form>		
 									</div>
@@ -114,7 +113,6 @@
 							</div>
 						</div>  
 					</article>
-					<?php include 'modules/powerMenu.php'; ?>
 				</div>
 			</div>
 		</div>
@@ -155,114 +153,5 @@ $(document).ready(function(){
 });
 
 </script>
-<script src="js\jquery-1.6.2.min.js"></script>
-    <script type="text/javascript">
-           $(document).ready(function(){
-           $('#EnviarCadastro').click(function(){
-            // captura email
-            var email = $("#boxemail").val();
-            var nome = $("#boxnome").val();
-            var cep = $("#boxcep").val();
-            var endereco = $("#boxend").val();
-            var bairro = $("#boxbairro").val();
-            var cidade = $("#boxcidade").val();
-            var uf = $("#boxuf").val();
-            var senha = $("#boxsenha").val();
-            var conf_senha = $("#boxconfirmasenha").val();
-            var numero = $("#boxnum").val();
-            var erro=0;
-
-            // expressão regular
-            var nomevalido=/^[a-z][^0-9]+$/;
-            var emailValido=/^.+@.+\..{2,}$/;
- 			var cep_errado = /^[0-9]{5}-[0-9]{2}$/;
- 			var num = /^[0-9]+$/;
- 			if(nome.length <= 0)
-            {
-                alert('Nome não pode ser vazio');
-                erro=1;
-            }
-            else{
-            if(nome.length > 40)
-            {
-                alert('Nome pode conter no máximo 40 caracteres');
-				erro =1;               
-            }
-            else{
-            if(!nomevalido.test(nome)){
-            	alert('Nome não deve conter numeros');
-            	erro=1;
-            }
-            else{
-            if(!emailValido.test(email))
-            {
-                alert('Email inválido!');
-                erro=1;
-            }
-            else{
-            if(cep_errado.test(cep))
-            {
-                alert('CEP não deve conter "-" ');
-                erro=1;
-            }
-            else{
-            if(cep.length<8){
-				alert('CEP deve conter 8 caracteres');
-				erro=1;
-            }
-            else{
-            if(endereco.length <= 0){
-            	alert('Endereço não pode ser vazio');
-            	erro=1;
-            }
-            else{
-            if(bairro.length <= 0){
-            	alert('Bairro não pode ser vazio');
-            	erro=1;
-            }
-            else{
-            if(cidade.length <= 0){
-            	alert('Cidade não pode ser vazio');
-            	erro=1;
-            }
-            else{
-            if(uf.length <= 0){
-            	alert('Estado não pode ser vazio');
-            	erro=1;
-            }
-            else{
-            if(num.lenght <= 0){
-            	alert('Campo numero não deve ser vazio');
-            	erro=1;
-            }
-            else{
-            if(!num.test(numero)){
-            	alert('Numero não deve conter letras');
-            	erro=1;
-            }
-            else{
-            if(senha.length <= 0){
-            	alert('Digite uma senha');
-            	erro=1;
-            }
-            else{
-            if(senha!=conf_senha){
-            	alert('Senha de confirmação deve ser igual à senha digitada.');
-            	erro=1;
-            }
-
-
-            //Fechamento das chaves dos else
-        	}}}}}}}}}}}}}
-
-        	if(erro==0){
-        		$(this).closest('form').submit();
-        	}else{
-        		erro=0;
-        	}
-
-        });
-    });
-    </script>
 </body>
 </html>

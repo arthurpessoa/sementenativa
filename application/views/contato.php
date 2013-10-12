@@ -34,9 +34,9 @@
 
     <div class="art-shapes">
 <h1 class="art-headline" data-left="2.6%">
-        <a href=<?php echo base_url();?>>Semente</a>
+        <a href=<?php echo base_url();?>>Sementes</a>
 </h1>
-<h2 class="art-slogan" data-left="2.45%">Nativa</h2>
+<h2 class="art-slogan" data-left="2.45%">e Viveiros</h2>
 
 <div class="art-object0" data-left="100%"></div>
 

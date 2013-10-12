@@ -36,6 +36,10 @@
 		<div class="art-content-layout">
 			<div class="art-content-layout-row">
 				<div class="art-layout-cell art-content clearfix">
+					<div class="powerMenu">
+						<p><h3>Olá, Você</h3></p>
+						<p><a>Sair</a></p>
+					</div>
 					<article class="art-post art-article">
 						<h2 class="art-postheader">Adicionar Espécie</h2>
 						<div class="art-postcontent art-postcontent-0 clearfix">
@@ -57,8 +61,9 @@
 												<label for="boxpopul">Nomes populares</label>
 												<input id="boxpopul" type="text" name="popular"/> (Separados por vírgulas)
 											</p>
+											<br><br>
 											<p>
-												<input class="btnenviar" type="submit" value="Adicionar">
+												<p><a href=<?php echo base_url()."cadastrarUsuario"?> class="art-button">Cadastrar</a></p>
 											</p>
 										</form>
 									</div>

@@ -1,9 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Produtores extends CI_Controller {
+class CadastrarEspecie extends CI_Controller {
 	public function index()
 	{
-		echo 'produtores';
-		//$this->load->view('contato');
+		$this->load->view('CadastrarEspecie');
 	}
 }
