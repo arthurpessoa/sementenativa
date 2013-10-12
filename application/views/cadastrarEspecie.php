@@ -57,13 +57,14 @@
 												<input id="boxfamilia" type="text" name="familia"/>
 												<span id="erroFami" class="erroinsert"></span>
 											</p>
-											<p>
-												<label for="boxpopul">Nome popular</label>
-												<input id="boxpopul" type="text" name="popular"/>
+											<p id="nompop">
+												<label for="boxpopul">Nome popular 1</label>
+												<input id="boxpopul" type="text" name="popular1"/>
+												<button type="button" id="addNp">+</button>
+                                                <button type="button" id="rmNp">−</button>
 											</p>
-											<br><br>
 											<p>
-												<p><a href=<?php echo base_url()."cadastrarUsuario"?> class="art-button">Cadastrar</a></p>
+												<p><a href=<?php echo base_url()."cadastrarEspecie"?> class="art-button">Cadastrar</a></p>
 											</p>
 										</form>
 									</div>
@@ -71,7 +72,6 @@
 							</div>
 						</div>
 					</article>
-					<?php include 'modules/powerMenu.php'; ?>
 				</div>
 			</div>
 		</div>
@@ -81,6 +81,19 @@
 </div>
 <script>
 $(document).ready(function() {
+	nomPop = 1;
+	$('#addNp').click(function(){
+		nomPop++;
+		$('#nompop').append(
+			"<p id=\"pop"+nomPop+"\"><label for=\"boxpopul\">Nome popular " + nomPop + "</label>"
+			+"<input id=\"boxpopul\" type=\"text\" name=\"popular1\"/></p>");
+	});
+	$('#rmNp').click(function(){
+		if(nomPop > 1){
+			$('#pop' + nomPop.toString()).remove();
+			nomPop--;
+		}
+	});
 	$('#boxcient').focusout(function(){
 		if($(this).val() == ''){
 			$('#erroCient').html('Insira um nome científico!');
