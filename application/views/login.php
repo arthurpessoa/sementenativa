@@ -49,7 +49,7 @@
 
 											<form method="post" action=<?php echo base_url()."login/checklogin" ?> >
 											<p>
-												<label for="boxemail">Email*</label>
+												<label for="boxemail">Email</label>
 												<input id="boxemail" type="text" name="email" size="40"/>
 												<span id="erroEmail" class="erroinsert"></span>
 											</p>

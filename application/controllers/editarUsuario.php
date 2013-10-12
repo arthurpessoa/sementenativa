@@ -35,6 +35,6 @@ class editarUsuario extends CI_Controller {
 	public function index()
 	{
 		$data['erro'] = '';
-		$this->load->view('cadastrarUsuario',$data);
+		$this->load->view('editarUsuario',$data);
 	}
 }

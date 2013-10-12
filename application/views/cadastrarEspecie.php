@@ -57,8 +57,8 @@
 												<span id="erroFami" class="erroinsert"></span>
 											</p>
 											<p>
-												<label for="boxpopul">Nomes populares</label>
-												<input id="boxpopul" type="text" name="popular"/> (Separados por vírgulas)
+												<label for="boxpopul">Nome popular</label>
+												<input id="boxpopul" type="text" name="popular"/>
 											</p>
 											<br><br>
 											<p>

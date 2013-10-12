@@ -20,6 +20,19 @@
 .ie7 .post .layout-cell {border:none !important; padding:0 !important; }
 .ie6 .post .layout-cell {border:none !important; padding:0 !important; }
 
+.art-content .art-postcontent-0 .layout-item-0 { margin-top: 10px;margin-bottom: 10px;  }
+.art-content .art-postcontent-0 .layout-item-1 { border-spacing: 10px 0px; border-collapse: separate;  }
+.art-content .art-postcontent-0 .layout-item-2 { color: #737373; background: #2F89B6; padding: 0px;  }
+.art-content .art-postcontent-0 .layout-item-3 { color: #737373; background: #A04661; padding-right: 10px;padding-left: 10px;  }
+.art-content .art-postcontent-0 .layout-item-4 { color: #737373; background: #5B9121; padding-right: 10px;padding-left: 10px;  }
+.art-content .art-postcontent-0 .layout-item-5 { color: #737373; background: #EB9500; padding-right: 10px;padding-left: 10px;  }
+.art-content .art-postcontent-0 .layout-item-6 { padding-right: 10px;padding-left: 10px;  }
+.art-content .art-postcontent-0 .layout-item-7 { background: ; padding-right: 10px;padding-left: 10px;  }
+.art-content .art-postcontent-0 .layout-item-8 { margin-top: 0px;margin-right: 10px;margin-bottom: 20px;margin-left: 10px;  }
+.art-content .art-postcontent-0 .layout-item-9 {  border-collapse: separate;  }
+.ie7 .post .layout-cell {border:none !important; padding:0 !important; }
+.ie6 .post .layout-cell {border:none !important; padding:0 !important; }
+
 </style></head>
 <body>
 <div id="art-main">
@@ -46,60 +59,24 @@
 							<div class="art-content-layout">
 								<div class="art-content-layout-row">
 									<div class="art-layout-cell layout-item-0" style="width: 100%">
-										<div class="exibir">
-										<p><h3>Usuários</h3></p>
-										<p>
-											<b><a>Username01</a></b>
-											&nbsp&nbsp&nbsp
-											Nome Completo 01
-											&nbsp&nbsp&nbsp
-											email01@gmail.com
-											&nbsp&nbsp&nbsp
-											Telefone 01
-											<form>
-												<input type="checkbox" name="admin">Administrador</input>
-												<input type="checkbox" name="pesq">Pesquisador</input>
-												<input type="checkbox" name="prod">Produtor</input>
-												<button>Salvar Alterações</button>
-												<button id='btnApagar'>Apagar</button>
-											</form>
-										</p>
-										<br>
-										<p>
-											<b><a>Username02</a></b>
-											&nbsp&nbsp&nbsp
-											Nome Completo 02
-											&nbsp&nbsp&nbsp
-											email02@gmail.com
-											&nbsp&nbsp&nbsp
-											Telefone 02
-											<form>
-												<input type="checkbox" name="admin">Administrador</input>
-												<input type="checkbox" name="pesq">Pesquisador</input>
-												<input type="checkbox" name="prod">Produtor</input>
-												<button>Salvar Alterações</button>
-												<button id='btnApagar'>Apagar</button>
-											</form>
-										</p>
-										<br>
-										<p>
-											<b><a>Username03</a></b>
-											&nbsp&nbsp&nbsp
-											Nome Completo 03
-											&nbsp&nbsp&nbsp
-											email03@gmail.com
-											&nbsp&nbsp&nbsp
-											Telefone 03
-											<form>
-												<input type="checkbox" name="admin">Administrador</input>
-												<input type="checkbox" name="pesq">Pesquisador</input>
-												<input type="checkbox" name="prod">Produtor</input>
-												<button>Salvar Alterações</button>
-												<button id='btnApagar'>Apagar</button>
-											</form>
-										</p>
-										</div>
-										
+										<div class="art-content-layout-row">
+										    <div class="art-layout-cell layout-item-2" style="width: 25%" >
+										        <p style="text-align: center;"><a href=<?php echo base_url()."login";?>><img width="100" height="100" alt="" src=<?php echo base_url()."assets/images/produtores.jpg"?> style="margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;" class=""></a></p>
+										        <h4 style="font-size:90%">Cadastrar Manejos</h4>
+										    </div>
+										    <div class="art-layout-cell layout-item-3" style="width: 25%" >
+										        <p style="text-align: center;"><a href=<?php echo base_url()."login";?>><img width="100" height="100" alt="" src=<?php echo base_url()."assets/images/produtores.jpg"?> style="margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;" class=""></a></p>
+										        <h4 style="font-size:90%">Gerar Documentos</h4>
+										    </div>
+										    <div class="art-layout-cell layout-item-4" style="width: 25%" >
+										        <p style="text-align: center;"><a href=<?php echo base_url()."login";?>><img width="100" height="100" alt="" src=<?php echo base_url()."assets/images/produtores.jpg"?> style="margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;" class=""></a></p>
+										        <h4 style="font-size:90%">Produtores</h4>
+										    </div>
+										    <div class="art-layout-cell layout-item-5" style="width: 25%" >
+										        <p style="text-align: center;"><a href=<?php echo base_url()."login";?>><img width="100" height="100" alt="" src=<?php echo base_url()."assets/images/produtores.jpg"?> style="margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;" class=""></a></p>
+										        <h4 style="font-size:90%">Produtores</h4>
+										    </div>
+												
 									</div>
 								</div>
 							</div>

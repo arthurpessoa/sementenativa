@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.0.0.58833 -->
 	<meta charset="utf-8">
-	<title>Sementes e Viveiros - Cadastro</title>
+	<title>Sementes e Viveiros - Alterar dados</title>
 	<meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
 
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -37,7 +37,7 @@
 			<div class="art-content-layout-row">
 				<div class="art-layout-cell art-content clearfix">
 					<article class="art-post art-article">
-						<h2 class="art-postheader">Cadastro de Usuário</h2>
+						<h2 class="art-postheader">Alterar dados</h2>
 						<p>
 							<br>
 							<span id="erroPagina" class="erroinsert"><?php echo $erro ?></span>
@@ -94,18 +94,23 @@
 												<span id="erroUF" class="erroinsert"></span>
 											</p>
 											<p>
-												<label for="boxsenha">Senha</label>
+												<label for="boxsenha">Senha Atual</label>
 												<input id="boxsenha" name="senha" type="password" size="12" />
 												<span id="erroSenha" class="erroinsert"></span>
 											</p>
 											<p>
+												<label for="boxsenha">Nova Senha</label>
+												<input id="boxnovasenha" name="novasenha" type="password" size="12" />
+												<span id="erronovaSenha" class="erroinsert"></span>
+											</p>
+											<p>
 												<label for="boxconfirmasenha">Confirmar Senha</label>
-												<input id="boxconfirmasenha" name="confirmasenha" type="password" size="12" />
-												<span id="erroConfirmaSenha" class="erroinsert"></span>
+												<input id="boxconfirmanovasenha" name="confirmanovasenha" type="password" size="12" />
+												<span id="erroConfirmanovaSenha" class="erroinsert"></span>
 											</p>
 											<br><br>
 											<p>
-												<p><a href="#" style="float: right;" onclick="$(this).closest('form').submit()" class="art-button" >Cadastrar</a></p>
+												<p><a href="#" style="float: right;" onclick="$(this).closest('form').submit()" class="art-button" >Confirmar Alterações</a></p>
 											</p>
 										</form>		
 									</div>
