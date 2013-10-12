@@ -5,6 +5,7 @@ class Login extends CI_Controller {
 	{
 		session_start();
 		session_destroy();
+		$this->load->view('home');
 	}
 
 	public function checklogin()
@@ -34,9 +35,5 @@ class Login extends CI_Controller {
 	{		
 		$data['erro'] = '';
 		$this->load->view('login',$data);
-	}
-	public function logout()
-	{
-		$this->load->view('home');
 	}
 }
