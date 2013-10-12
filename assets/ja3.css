@@ -15,7 +15,7 @@ label{
 
 .art-post{
 	float: left;
-	width: 60%;
+	width: 55%;
 	margin-top:50px;
 	margin-bottom:50px;
 	margin-right:50px;
@@ -27,7 +27,6 @@ label{
 	margin-top:50px;
 	margin-bottom:50px;
 	margin-right:50px;
-	margin-left:50px;
 }
 
 .powerMenu, .art-post{

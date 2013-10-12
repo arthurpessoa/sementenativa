@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php session_start(); ?>
 <html dir="ltr" lang="en-US"><head>
     <meta charset="utf-8">
     <title>Sementes e Viveiros - Home</title>
@@ -108,7 +109,9 @@
 </div>
 </div>
 </div>
-</article></div>
+</article>
+
+</div>
                     </div>
                 </div>
             </div>

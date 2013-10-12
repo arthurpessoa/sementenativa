@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php session_start(); ?>
 <html dir="ltr" lang="en-US"><head>
 	<meta charset="utf-8">
 	<title>Semente Nativa - Painel de Controle</title>
@@ -82,6 +83,7 @@
 							</div>
 						</div>
 					</article>
+					<?php include 'modules/powerMenu.php'; ?>
 				</div>
 			</div>
 		</div>
