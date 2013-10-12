@@ -26,20 +26,15 @@
 <div id="art-main">
 <nav class="art-nav clearfix">
 	<ul class="art-hmenu">
-		<li><a href=<?php echo base_url()."home";?> class="active" >Home</a></li>
-		<!--li><a href=<?php echo base_url()."sobre"?> >Sobre</a></li-->
-		<!--li><a href=<?php echo base_url()."contato"?> >Contato</a></li-->
-		<li><a href=<?php echo base_url()."contato"?> >Buscar</a></li>
+		<li><a href=<?php echo base_url()."controlPanel";?> >Painel de Controle</a></li>
+		<li><a href=<?php echo base_url()."cadastrarEspecie"?> class="active" >Cadastrar Espécie</a></li>
 </nav>
 <div class="art-sheet clearfix">
 	<div class="art-layout-wrapper clearfix">
 		<div class="art-content-layout">
 			<div class="art-content-layout-row">
 				<div class="art-layout-cell art-content clearfix">
-					<div class="powerMenu">
-						<p><h3>Olá, Você</h3></p>
-						<p><a>Sair</a></p>
-					</div>
+					<?php include 'modules/powerMenu.php'; ?>
 					<article class="art-post art-article">
 						<h2 class="art-postheader">Adicionar Espécie</h2>
 						<p>
@@ -65,7 +60,7 @@
 												<label for="boxpopul">Nome popular 1</label>
 												<input id="boxpopul" type="text" name="popular1"/>
 												<button type="button" id="addNp">+</button>
-                                                <button type="button" id="rmNp">−</button>
+                                            <button type="button" id="rmNp">−</button>
 											</p>
 											<br><br>
 											<p>

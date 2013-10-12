@@ -36,10 +36,7 @@
 		<div class="art-content-layout">
 			<div class="art-content-layout-row">
 				<div class="art-layout-cell art-content clearfix">
-					<div class="powerMenu">
-						<p><h3>Olá, Você</h3></p>
-						<p><a>Sair</a></p>
-					</div>
+					<?php include 'modules/powerMenu.php'; ?>
 					<article class="art-post art-article">
 						<h2 class="art-postheader">Adicionar Caracterização</h2>
 						<p>
