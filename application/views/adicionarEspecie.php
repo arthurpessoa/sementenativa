@@ -35,6 +35,10 @@
 		<div class="art-content-layout">
 			<div class="art-content-layout-row">
 				<div class="art-layout-cell art-content clearfix">
+					<div class="powerMenu">
+						<p><h3>Olá, Você</h3></p>
+						<p><a>Sair</a></p>
+					</div>
 					<article class="art-post art-article">
 						<h2 class="art-postheader">Adicionar Espécie</h2>
 						<div class="art-postcontent art-postcontent-0 clearfix">
@@ -65,10 +69,6 @@
 							</div>
 						</div>
 					</article>
-					<div class="powerMenu">
-						<p><h3>Olá, Você</h3></p>
-						<p><a>Sair</a></p>
-					</div>
 				</div>
 			</div>
 		</div>

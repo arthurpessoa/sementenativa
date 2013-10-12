@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US"><head>
     <meta charset="utf-8">
-    <title>Semente Nativa - Sobre</title>
+    <title>Sementes e Viveiros - Sobre</title>
     <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
 
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -33,9 +33,9 @@
 
     <div class="art-shapes">
         <h1 class="art-headline" data-left="2.6%">
-                <a href=<?php echo base_url();?>>Semente</a>
+                <a href=<?php echo base_url();?>>Sementes</a>
         </h1>
-        <h2 class="art-slogan" data-left="2.45%">Nativa</h2>
+        <h2 class="art-slogan" data-left="2.45%">e Viveiros</h2>
 
         <div class="art-object0" data-left="100%"></div>
 

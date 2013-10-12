@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US"><head>
     <meta charset="utf-8">
-    <title>Semente Nativa - Home</title>
+    <title>Sementes e Viveiros - Home</title>
     <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
     
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -40,9 +40,9 @@
 <header class="art-header clearfix">
     <div class="art-shapes">
     <h1 class="art-headline" data-left="2.6%">
-        <a href=<?php echo base_url();?>>Semente</a>
+        <a href=<?php echo base_url();?>>Sementes</a>
     </h1>
-    <h2 class="art-slogan" data-left="2.45%">Nativa</h2>
+    <h2 class="art-slogan" data-left="2.45%">e Viveiros</h2>
     <div class="art-object0" data-left="100%"></div>
     </div>          
 </header>
@@ -57,11 +57,12 @@
 <div class="art-content-layout layout-item-1">
     <div class="art-content-layout-row">
     <div class="art-layout-cell layout-item-2" style="width: 25%" >
-        <p style="text-align: center;"><img width="187" height="187" alt="" src=<?php echo base_url()."assets/images/produtores.jpg"?> style="margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;" class=""></p>
-        <h4>Produtores</h4>    
+        <p style="text-align: center;"><a href=<?php echo base_url()."usuarios";?>><img width="187" height="187" alt="" src=<?php echo base_url()."assets/images/produtores.jpg"?> style="margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;" class=""></a></p>
+        <h4>Produtores</h4>
+        <h4>e Pesquisadores<h4>    
     </div>
     <div class="art-layout-cell layout-item-3" style="width: 25%" >
-        <p style="text-align: center;"><img width="187" height="187" alt="" src=<?php echo base_url()."assets/images/especies.jpg"?> style="margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;" class=""></p>
+          <p style="text-align: center;"><a href=<?php echo base_url()."especies";?>><img width="187" height="187" alt="" src=<?php echo base_url()."assets/images/especies.jpg"?> style="margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;" class=""></a></p>
         <h4>Banco de espécies</h4>
     </div>
     <div class="art-layout-cell layout-item-4" style="width: 25%" >
@@ -78,10 +79,11 @@
 <div class="art-content-layout layout-item-1">
     <div class="art-content-layout-row">
     <div class="art-layout-cell layout-item-6" style="width: 25%" >
-        <p style="text-align: justify;">produtoresprodutores produtoresprodutores </p>
-        <p><a href=<?php echo base_url()."produtores"?> class="art-button">Acessar</a></p>
+        <p style="text-align: left;">Área dedicada a ferramentas que
+                                    facilitam o trabalho de produtores e pesquisadores.</p>
+        <p><a href=<?php echo base_url()."usuarios"?> class="art-button">Acessar</a></p>
     </div><div class="art-layout-cell layout-item-6" style="width: 25%" >
-        <p>espéciesespécies espéciesespécies</p>
+        <p>Aqui você obtém os mais diveros dados sobre o cultivo e manejo de espécies florestais.</p>
         <p><a href=<?php echo base_url()."especies"?> class="art-button">Acessar</a></p>
     </div><div class="art-layout-cell layout-item-6" style="width: 25%" >
         <p>WIKIWIKIWIKIWIKI WIKIWIKIWIKI WIKIWIKI</p>
