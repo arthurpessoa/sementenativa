@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<?php session_start(); ?>
 <html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.0.0.58833 -->
 	<meta charset="utf-8">
 	<title>Sementes e Viveiros - Cadastro</title>
@@ -46,17 +45,19 @@
 						<div class="art-postcontent art-postcontent-0 clearfix">
 							<div class="art-content-layout">
 								<div class="art-content-layout-row">
-									<div class="art-layout-cell layout-item-0" style="width: 100%" >
+									<div class="art-layout-cell layout-item-0" style="width: 130%" >
 											<form method="post" action=<?php echo base_url()."cadastrarUsuario/checkCadastro" ?>>
 											<p>
 												<label for="boxnome">Nome*</label>
 												<input id="boxnome" type="text" name="nome" size="40"/>
-												<span id="erroNome" class="erroinsert"></span>
+												<span  hidden id="erroNomeVazio" class="erroinsert">*Não deve ser vazio</span>
+												<span  hidden id="erroNomeNumero" class="erroinsert">*Nome não deve conter números</span>
+												<span  hidden id="erroNomeGrande" class="erroinsert">*Nome deve conter no máximo 40 letras</span>
 											</p>
 											<p>
 												<label for="boxemail">Email*</label>
 												<input id="boxemail" type="text" name="email" size="40"/>
-												<span id="erroEmail" class="erroinsert"></span>
+												<span hidden id="erroEmail" class="erroinsert">*e-mail inválido</span>
 											</p>
 											<p>
 												<label for="boxsexo">Sexo</label>
@@ -67,42 +68,44 @@
 											<p>
 												<label for="boxcep">CEP</label>
 												<input name="cep" type="text" id="boxcep" value="" size="8" maxlength="8"/> (Sem traço)
-												<span id="erroCep" class="erroinsert"></span>
+												<span hidden id="erroCepForma" class="erroinsert">*CEP não deve conter "-"</span>
+												<span hidden id="erroCepTamanho" class="erroinsert">*CEP deve conter 8 numeros</span>
 											</p>
 											<p>
 												<label for="boxend">Endereço</label>
 												<input id="boxend" name="endereco" type="text" size="40" />
-												<span id="erroEnd" class="erroinsert"></span>
+												<span hidden id="erroEnd" class="erroinsert">*Endereço não pode ser vazio</span>
 											</p>
 											<p>
 												<label for="boxnum">Número</label>
 												<input id="boxnum" name="num" type="text" size="5"/>
-												<span id="erroNum" class="erroinsert"></span>
+												<span hidden id="erroNumVazio" class="erroinsert">*Numero não pode ser vazio</span>
+												<span hidden id="erroNumLetras" class="erroinsert">*Numero não pode conter letras</span>
 											</p>
 											<p>
 												<label for="boxbairro">Bairro</label>
 												<input id="boxbairro" name="bairro" type="text" id="bairro" size="30" />
-												<span id="erroBairro" class="erroinsert"></span>
+												<span hidden id="erroBairro" class="erroinsert">*Bairro não pode ser vazio</span>
 											</p>
 											<p>
 												<label for="boxcidade">Cidade</label>
 												<input id="boxcidade" name="cidade" type="text" size="40" />
-												<span id="erroCidade" class="erroinsert"></span>
+												<span hidden id="erroCidade" class="erroinsert">*Cidade não pode ser vazio</span>
 											</p>
 											<p>
 												<label for="boxuf">Estado</label>
 												<input id="boxuf" name="uf" type="text" size="2" />
-												<span id="erroUF" class="erroinsert"></span>
+												<span hidden id="erroUF" class="erroinsert">*Estado não pode ser vazio</span>
 											</p>
 											<p>
 												<label for="boxsenha">Senha</label>
 												<input id="boxsenha" name="senha" type="password" size="12" />
-												<span id="erroSenha" class="erroinsert"></span>
+												<span hidden id="erroSenha" class="erroinsert">*Senha não pode ser vazia</span>
 											</p>
 											<p>
 												<label for="boxconfirmasenha">Confirmar Senha</label>
 												<input id="boxconfirmasenha" name="confirmasenha" type="password" size="12" />
-												<span id="erroConfirmaSenha" class="erroinsert"></span>
+												<span hidden id="erroConfirmaSenha" class="erroinsert">*Confirmação diferente da senha digitada</span>
 											</p>
 											<br><br>
 											<p>
@@ -172,88 +175,114 @@ $(document).ready(function(){
             var erro=0;
 
             // expressão regular
-            var nomevalido=/^[a-z][^0-9]+$/;
+            var nomevalido=/^[a-zA-Z][^0-9]+$/;
             var emailValido=/^.+@.+\..{2,}$/;
  			var cep_errado = /^[0-9]{5}-[0-9]{2}$/;
  			var num = /^[0-9]+$/;
  			if(nome.length <= 0)
             {
-                alert('Nome não pode ser vazio');
                 erro=1;
+                $("#erroNomeVazio").show() 
             }
             else{
+            	$("#erroNomeVazio").hide()
+            	
             if(nome.length > 40)
             {
-                alert('Nome pode conter no máximo 40 caracteres');
-				erro =1;               
+				erro =1;   	
+                $("#erroNomeGrande").show()
             }
             else{
+            	$("#erroNomeGrande").hide()
+            
             if(!nomevalido.test(nome)){
-            	alert('Nome não deve conter numeros');
+                $("#erroNomeNumero").show() 
             	erro=1;
             }
             else{
+            	$("#erroNomeNumero").hide() 
+            }}}
+
             if(!emailValido.test(email))
             {
-                alert('Email inválido!');
+
+                $("#erroEmail").show() 
                 erro=1;
-            }
-            else{
+            
+            }else{
+            	$("#erroEmail").hide() 
+			}
             if(cep_errado.test(cep))
             {
-                alert('CEP não deve conter "-" ');
+                $("#erroCepForma").show() 
                 erro=1;
             }
             else{
-            if(cep.length<8){
-				alert('CEP deve conter 8 caracteres');
+            	$("#erroCepForma").hide() 
+            if(cep.length<7){
+				$("#erroCepTamanho").show() 
 				erro=1;
             }
             else{
+            	$("#erroCepTamanho").hide() 
+            }}
+
             if(endereco.length <= 0){
-            	alert('Endereço não pode ser vazio');
+            	$("#erroEnd").show()
             	erro=1;
             }
             else{
+            	$("#erroEnd").hide()
+            }
             if(bairro.length <= 0){
-            	alert('Bairro não pode ser vazio');
+            	$("#erroBairro").show()
             	erro=1;
             }
             else{
+            	$("#erroBairro").hide()
+            }
             if(cidade.length <= 0){
-            	alert('Cidade não pode ser vazio');
+            	$("#erroCidade").show()
             	erro=1;
             }
             else{
+            	$("#erroCidade").hide()
+            }
             if(uf.length <= 0){
-            	alert('Estado não pode ser vazio');
+            	$("#erroUF").show()
             	erro=1;
             }
             else{
+            	$("#erroUF").hide()
+            }
             if(num.lenght <= 0){
-            	alert('Campo numero não deve ser vazio');
+            	$("#erroNumVazio").show()
             	erro=1;
             }
             else{
+            	$("#erroNumVazio").hide()
             if(!num.test(numero)){
-            	alert('Numero não deve conter letras');
+            	$("#erroNumLetras").show()
             	erro=1;
             }
             else{
+            	$("#erroNumLetras").hide()
+            }}
             if(senha.length <= 0){
-            	alert('Digite uma senha');
+            	$("#erroSenha").show()
             	erro=1;
             }
             else{
+            	$("#erroSenha").hide()
+
             if(senha!=conf_senha){
-            	alert('Senha de confirmação deve ser igual à senha digitada.');
+            	$("#erroConfirmaSenha").show()
             	erro=1;
-            }
+            }else{
+            $("#erroConfirmaSenha").hide()
+        }}
 
-
-            //Fechamento das chaves dos else
-        	}}}}}}}}}}}}}
-
+          
         	if(erro==0){
         		$(this).closest('form').submit();
         	}else{
