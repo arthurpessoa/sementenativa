@@ -42,7 +42,8 @@
 							<div class="art-content-layout">
 								<div class="art-content-layout-row">
 									<div class="art-layout-cell layout-item-0" style="width: 100%" >
-											<form>
+
+											<form method="post" action=<?php echo base_url()."login/checklogin" ?> >
 											<p>
 												<label for="boxemail">Email*</label>
 												<input id="boxemail" type="text" name="email" size="40"/>
@@ -50,14 +51,12 @@
 											</p>
 											<p>
 												<label for="boxsenha">Senha</label>
-												<input id="boxsenha" name="uf" type="password" size="12" />
+												<input id="boxsenha" name="senha" type="password" size="12" />
 												<span id="erroSenha" class="erroinsert"></span>
 											</p>
 											<br><br>
 
-												<p><a href=<?php echo base_url().""?>style=style="float: right;" class="art-button" >Login</a></p>
-
-					
+												<p><a href="#" style="float: right;" onclick="$(this).closest('form').submit()" class="art-button" >Login</a></p>					
 											<p>
 												<p><a href=<?php echo base_url()."cadastrarUsuario"?>>Registrar</a></p>
 												<p><a href=<?php echo base_url()."cadastrarUsuario"?>>Esqueceu a Senha?</a></p>
@@ -75,38 +74,5 @@
 </div>
 <?php include 'modules/footer.php'; ?>
 </div>
-<script>
-$(document).ready(function(){
-	//Preenche os campos na a&#231;&#227;o "Blur" (mudar de campo)
-	$("#boxcep").blur(function(){
-		$("#boxend").val("...")
-		$("#boxbairro").val("...")
-		$("#boxcidade").val("...")
-		$("#boxuf").val("...")
-			
-		// seta a variavel requisitada no campo cep
-		consulta = $("#boxcep").val()
-					
-		//Realiza a consulta
-		/*Realiza a consulta atrav&#233;s do toolsweb passando o cep como parametro
-		 e informando que vamos consultar no tipo javascript
-		*/
-		$.getScript("http://www.toolsweb.com.br/webservice/clienteWebService.php?cep="+consulta+"&formato=javascript", function(){
-			//unescape - Decodifica uma string codificada com o m&#233;todo escape.
-			rua=unescape(resultadoCEP.logradouro)
-			bairro=unescape(resultadoCEP.bairro)
-			cidade=unescape(resultadoCEP.cidade)
-			uf=unescape(resultadoCEP.estado)
-							
-			// preenche os campos
-			$("#boxend").val(rua)
-			$("#boxbairro").val(bairro)
-			$("#boxcidade").val(cidade)
-			$("#boxuf").val(uf)
-		});
-	});
-});
-
-</script>
 </body>
 </html>

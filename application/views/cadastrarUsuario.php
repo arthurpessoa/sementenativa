@@ -36,17 +36,13 @@
 		<div class="art-content-layout">
 			<div class="art-content-layout-row">
 				<div class="art-layout-cell art-content clearfix">
-					<div class="powerMenu">
-						<p><h3>Olá, Você</h3></p>
-						<p><a>Sair</a></p>
-					</div>
 					<article class="art-post art-article">
 						<h2 class="art-postheader">Cadastro de Usuário</h2>
 						<div class="art-postcontent art-postcontent-0 clearfix">
 							<div class="art-content-layout">
 								<div class="art-content-layout-row">
 									<div class="art-layout-cell layout-item-0" style="width: 100%" >
-											<form>
+											<form method="post" action=<?php echo base_url()."cadastrarUsuario/checkCadastro" ?>>
 											<p>
 												<label for="boxnome">Nome*</label>
 												<input id="boxnome" type="text" name="nome" size="40"/>
@@ -59,18 +55,18 @@
 											</p>
 											<p>
 												<label for="boxsexo">Sexo</label>
-												<input type="radio" name="sexo" value="masculino"/>Masculino
-												<input type="radio" name="sexo" value="feminino"/>Feminino
+												<input type="radio" name="sexo" value="m"/>Masculino
+												<input type="radio" name="sexo" value="f"/>Feminino
 												<span id="erroSexo" class="erroinsert"></span>
 											</p>
 											<p>
 												<label for="boxcep">CEP</label>
-												<input name="cep" type="text" id="boxcep" value="" size="15" maxlength="8"/> (Sem traço)
+												<input name="cep" type="text" id="boxcep" value="" size="8" maxlength="8"/> (Sem traço)
 												<span id="erroCep" class="erroinsert"></span>
 											</p>
 											<p>
 												<label for="boxend">Endereço</label>
-												<input id="boxend" name="rua" type="text" size="40" />
+												<input id="boxend" name="endereco" type="text" size="40" />
 												<span id="erroEnd" class="erroinsert"></span>
 											</p>
 											<p>
@@ -95,17 +91,17 @@
 											</p>
 											<p>
 												<label for="boxsenha">Senha</label>
-												<input id="boxsenha" name="uf" type="password" size="12" />
+												<input id="boxsenha" name="senha" type="password" size="12" />
 												<span id="erroSenha" class="erroinsert"></span>
 											</p>
 											<p>
 												<label for="boxconfirmasenha">Confirmar Senha</label>
-												<input id="boxconfirmasenha" name="uf" type="password" size="12" />
+												<input id="boxconfirmasenha" name="confirmasenha" type="password" size="12" />
 												<span id="erroConfirmaSenha" class="erroinsert"></span>
 											</p>
 											<br><br>
 											<p>
-												<p><a href=<?php echo base_url()."cadastrarUsuario"?> class="art-button">Cadastrar</a></p>
+												<p><a href="#" style="float: right;" onclick="$(this).closest('form').submit()" class="art-button" >Cadastrar</a></p>
 											</p>
 										</form>		
 									</div>
