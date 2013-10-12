@@ -57,7 +57,7 @@
 <div class="art-content-layout layout-item-1">
     <div class="art-content-layout-row">
     <div class="art-layout-cell layout-item-2" style="width: 25%" >
-        <p style="text-align: center;"><a href=<?php echo base_url()."usuarios";?>><img width="187" height="187" alt="" src=<?php echo base_url()."assets/images/produtores.jpg"?> style="margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;" class=""></a></p>
+        <p style="text-align: center;"><a href=<?php echo base_url()."login";?>><img width="187" height="187" alt="" src=<?php echo base_url()."assets/images/produtores.jpg"?> style="margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;" class=""></a></p>
         <h4>Produtores</h4>
         <h4>e Pesquisadores<h4>    
     </div>
@@ -81,7 +81,7 @@
     <div class="art-layout-cell layout-item-6" style="width: 25%" >
         <p style="text-align: left;">Área dedicada a ferramentas que
                                     facilitam o trabalho de produtores e pesquisadores.</p>
-        <p><a href=<?php echo base_url()."usuarios"?> class="art-button">Acessar</a></p>
+        <p><a href=<?php echo base_url()."login"?> class="art-button">Acessar</a></p>
     </div><div class="art-layout-cell layout-item-6" style="width: 25%" >
         <p>Aqui você obtém os mais diveros dados sobre o cultivo e manejo de espécies florestais.</p>
         <p><a href=<?php echo base_url()."especies"?> class="art-button">Acessar</a></p>
