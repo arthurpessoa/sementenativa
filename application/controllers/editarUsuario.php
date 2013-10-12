@@ -1,10 +1,10 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class CadastrarUsuario extends CI_Controller {
+class editarUsuario extends CI_Controller {
 	public function checkCadastro()
 	{
 
-		 $this->load->model('ModelUsuario');
+		 $this->load->model('ModelCadastrarUsuario');
 
 		 //recebo os dados do form
 		 $nome = $_POST['nome'];
@@ -23,7 +23,7 @@ class CadastrarUsuario extends CI_Controller {
 		 if($emailCheck)
 		 {
 		 	$data['erro'] = '*Email já cadastrado!';
-		 	$this->load->view('cadastrarUsuario',$data);	
+		 	$this->load->view('editarUsuario',$data);	
 		 }
 		 else
 		 {
