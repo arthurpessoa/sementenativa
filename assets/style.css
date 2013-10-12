@@ -549,6 +549,7 @@ ul.art-hmenu a, ul.art-hmenu a:link, ul.art-hmenu a:visited, ul.art-hmenu a:hove
    outline: none;
    position: relative;
    z-index: 11;
+   color: #d6dece;
 }
 
 ul.art-hmenu, ul.art-hmenu ul
@@ -657,6 +658,25 @@ ul.art-hmenu>li>a
    border:1px solid transparent;
    padding:0 28px;
    margin:0 auto;
+   position: relative;
+   display: block;
+   height: 34px;
+   cursor: pointer;
+   text-decoration: none;
+   color: #98AE9A;
+   line-height: 34px;
+   text-align: center;
+}
+
+ul.art-hmenu>li>a
+{
+   -webkit-border-radius:3px;
+   -moz-border-radius:3px;
+   border-radius:3px;
+   border:1px solid transparent;
+   padding:0 28px;
+   margin:0 auto;
+   margin-bottom: 2px;
    position: relative;
    display: block;
    height: 34px;
@@ -1234,7 +1254,7 @@ input.art-button
    margin:0 auto;
 }
 .art-button.active, .art-button.active:hover {
-   color: #DAE2DB !important;
+   color: #FFFFFF !important;
 }
 
 .art-button.hover, .art-button:hover

@@ -36,15 +36,22 @@
 </style></head>
 <body>
 <div id="art-main">
-   <nav class="art-nav clearfix">
+
+<nav class="art-nav clearfix">
 	<ul class="art-hmenu">
-		<li><a href=<?php echo base_url()."";?>>Home</a></li>
-		<li><a href=<?php echo base_url()."controlPanel";?>	class="active">Painel de Controle</a></li>
-		<!--li><a href=<?php echo base_url()."sobre"?> >Sobre</a></li-->
-		<!--li><a href=<?php echo base_url()."contato"?> >Contato</a></li-->
-		<li><a href=<?php echo base_url()."contato"?> >Ajuda</a></li>
+		   <li><a href=<?php echo base_url()."home";?>>Home</a></li>
+        <li><a href=<?php echo base_url()."sobre"?>               >Sobre</a></li>
+        <li><a href=<?php echo base_url()."contato"?>               >Contato</a></li>
 	</ul>
-	</nav>
+</nav>
+<nav class="art-nav clearfix" style="   background: #6DAF28;">
+	<ul class="art-hmenu" style="height: 29px;">
+		<li><a href=<?php echo base_url()."controlPanel";?> class="active" >Painel de Controle</a></li>
+		<li><a href=<?php echo base_url()."ajuda";?> >Ajuda</a></li>
+	</ul>
+</nav>
+
+
 <div class="art-sheet clearfix">
 	<div class="art-layout-wrapper clearfix">
 		<div class="art-content-layout">
@@ -69,8 +76,8 @@
 										        <h4 style="font-size:90%">Caracterização de espécies</h4>
 										    </div>
 										    <div class="art-layout-cell layout-item-4" style="width: 25%" >
-										        <p style="text-align: center;"><a href=<?php echo base_url()."login";?>><img width="100" height="100" alt="" src=<?php echo base_url()."assets/images/produtores.jpg"?> style="margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;" class=""></a></p>
-										        <h4 style="font-size:90%">Produtores</h4>
+										        <p style="text-align: center;"><a href=<?php echo base_url()."cadastrarGerminacao";?>><img width="100" height="100" alt="" src=<?php echo base_url()."assets/images/produtores.jpg"?> style="margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;" class=""></a></p>
+										        <h4 style="font-size:90%">Cadastrar dados da Germinacao</h4>
 										    </div>
 										    <div class="art-layout-cell layout-item-5" style="width: 25%" >
 										        <p style="text-align: center;"><a href=<?php echo base_url()."login";?>><img width="100" height="100" alt="" src=<?php echo base_url()."assets/images/produtores.jpg"?> style="margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;" class=""></a></p>

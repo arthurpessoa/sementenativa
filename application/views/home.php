@@ -37,6 +37,7 @@
         <li><a href=<?php echo base_url()."home";?> class="active">Home</a></li>
         <li><a href=<?php echo base_url()."sobre"?>               >Sobre</a></li>
         <li><a href=<?php echo base_url()."contato"?>               >Contato</a></li>
+    </ul>
     </nav>
 <header class="art-header clearfix">
     <div class="art-shapes">
