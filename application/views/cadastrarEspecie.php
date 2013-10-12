@@ -26,8 +26,10 @@
 <div id="art-main">
 <nav class="art-nav clearfix">
 	<ul class="art-hmenu">
+		<li><a href=<?php echo base_url()."";?>>Home</a></li>
 		<li><a href=<?php echo base_url()."controlPanel";?> >Painel de Controle</a></li>
 		<li><a href=<?php echo base_url()."cadastrarEspecie"?> class="active" >Cadastrar Espécie</a></li>
+		<li><a href=<?php echo base_url()."contato"?> >Ajuda</a></li>
 </nav>
 <div class="art-sheet clearfix">
 	<div class="art-layout-wrapper clearfix">
