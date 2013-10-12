@@ -80,6 +80,41 @@
 								</div>
 							</div>
 						</div>
+
+
+
+
+						<div class="art-postcontent art-postcontent-0 clearfix">
+							<div class="art-content-layout">
+								<div class="art-content-layout-row">
+									<div class="art-layout-cell layout-item-0" style="width: 100%">
+										<div class="art-content-layout-row">
+										    <div class="art-layout-cell layout-item-2" style="width: 25%" >
+										        <p style="text-align: center;"><a href=<?php echo base_url()."login";?>><img width="100" height="100" alt="" src=<?php echo base_url()."assets/images/produtores.jpg"?> style="margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;" class=""></a></p>
+										        <h4 style="font-size:90%">Cadastrar Manejos</h4>
+										    </div>
+										    <div class="art-layout-cell layout-item-3" style="width: 25%" >
+										        <p style="text-align: center;"><a href=<?php echo base_url()."login";?>><img width="100" height="100" alt="" src=<?php echo base_url()."assets/images/produtores.jpg"?> style="margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;" class=""></a></p>
+										        <h4 style="font-size:90%">Gerar Documentos</h4>
+										    </div>
+										    <div class="art-layout-cell layout-item-4" style="width: 25%" >
+										        <p style="text-align: center;"><a href=<?php echo base_url()."login";?>><img width="100" height="100" alt="" src=<?php echo base_url()."assets/images/produtores.jpg"?> style="margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;" class=""></a></p>
+										        <h4 style="font-size:90%">Produtores</h4>
+										    </div>
+										    <div class="art-layout-cell layout-item-5" style="width: 25%" >
+										        <p style="text-align: center;"><a href=<?php echo base_url()."login";?>><img width="100" height="100" alt="" src=<?php echo base_url()."assets/images/produtores.jpg"?> style="margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;" class=""></a></p>
+										        <h4 style="font-size:90%">Produtores</h4>
+										    </div>
+												
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+
+						
 					</article>
 				</div>
 			</div>
