@@ -125,6 +125,7 @@
 											<br><br>
 											<p>
 												<p><a id="EnviarCadastro" href="#" style="float: right;" onclick="" class="art-button" >Cadastrar</a></p>
+												<p><a href=<?php echo base_url()."controlPanel";?> style="float: right;" onclick="" class="art-button" >Voltar</a></p>
 											</p>
 										</form>
 									</div>
