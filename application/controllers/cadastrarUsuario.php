@@ -5,7 +5,8 @@ class CadastrarUsuario extends CI_Controller {
 	{
 
 		 $this->load->model('ModelCadastrarUsuario');
-		
+
+		 //recebo os dados do form
 		 $nome = $_POST['nome'];
 		 $email = $_POST['email'];
 		 $sexo = $_POST['sexo'];
@@ -17,12 +18,23 @@ class CadastrarUsuario extends CI_Controller {
 		 $estado = $_POST['uf'];
 		 $senha = $_POST['senha'];
 
+		 $emailCheck = $this->ModelCadastrarUsuario->checkEmail($email);
+		 
+		 if($emailCheck)
+		 {
+		 	$data['erro'] = '*Email já cadastrado!';
+		 	$this->load->view('cadastrarUsuario',$data);	
+		 }
+		 else
+		 {
+		 	$this->ModelCadastrarUsuario->cadastrar($nome,$email,$sexo, $CEP, $endereco, $num, $bairro, $cidade, $estado, $senha);
+		 }
 
-		 $this->ModelCadastrarUsuario->cadastrar($nome,$email,$sexo, $CEP, $endereco, $num, $bairro, $cidade, $estado, $senha);
-		 $this->load->view('cadastrarUsuario');	
+
 	}
 	public function index()
 	{
-		$this->load->view('cadastrarUsuario');
+		$data['erro'] = '';
+		$this->load->view('cadastrarUsuario',$data);
 	}
 }
