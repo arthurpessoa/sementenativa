@@ -3,8 +3,6 @@
 class Login extends CI_Controller {
 	public function logout()
 	{
-		session_start();
-		session_destroy();
 		$this->load->view('home');
 	}
 
@@ -19,9 +17,6 @@ class Login extends CI_Controller {
 		$loginCheck = $this->ModelLogin->checkLogin($email,$senha);
 		if($loginCheck)
 		 {
-		 	session_register("email");
-			session_register("senha");
-
 			//TODO: Redirecionar pra area do usuário
 		 	echo "logado"; 
 		 }
