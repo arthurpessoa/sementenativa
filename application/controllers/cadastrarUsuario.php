@@ -28,6 +28,8 @@ class CadastrarUsuario extends CI_Controller {
 		 else
 		 {
 		 	$this->ModelUsuario->cadastrar($nome,$email,$sexo, $CEP, $endereco, $num, $bairro, $cidade, $estado, $senha);
+		 	$redirect =  base_url()."login"; //redireciona
+			header("location:$redirect");
 		 }
 
 

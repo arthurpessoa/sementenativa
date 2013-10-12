@@ -14,6 +14,7 @@ class Login extends CI_Controller {
 		$email = $_POST['email']; 
 		$senha = $_POST['senha']; 
 
+		
 		$loginCheck = $this->ModelLogin->checkLogin($email,$senha);
 		if($loginCheck)
 		 {
