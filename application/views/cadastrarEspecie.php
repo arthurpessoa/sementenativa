@@ -42,11 +42,15 @@
 					</div>
 					<article class="art-post art-article">
 						<h2 class="art-postheader">Adicionar Espécie</h2>
+						<p>
+							<br>
+							<span id="erroPagina" class="erroinsert"><?php echo $erro ?></span>
+						</p>
 						<div class="art-postcontent art-postcontent-0 clearfix">
 							<div class="art-content-layout">
 								<div class="art-content-layout-row">
 									<div class="art-layout-cell layout-item-0" style="width: 100%" >
-										<form>
+										<form method="post" action=<?php echo base_url()."cadastrarEspecie/checkEspecie" ?>>
 											<p>
 												<label for="boxcient"> Nome Científico* </label>
 												<input id="boxcient" type="text" name="cientifico"/>
@@ -63,8 +67,9 @@
 												<button type="button" id="addNp">+</button>
                                                 <button type="button" id="rmNp">−</button>
 											</p>
+											<br><br>
 											<p>
-												<p><a href=<?php echo base_url()."cadastrarEspecie"?> class="art-button">Cadastrar</a></p>
+												<p><a id="EnviarCadastro" href="#" style="float: right;" onclick="" class="art-button" >Cadastrar</a></p>
 											</p>
 										</form>
 									</div>
@@ -86,7 +91,7 @@ $(document).ready(function() {
 		nomPop++;
 		$('#nompop').append(
 			"<p id=\"pop"+nomPop+"\"><label for=\"boxpopul\">Nome popular " + nomPop + "</label>"
-			+"<input id=\"boxpopul\" type=\"text\" name=\"popular1\"/></p>");
+			+"<input id=\"boxpopul\" type=\"text\" name=\"popular"+nomPop+"\"/></p>");
 	});
 	$('#rmNp').click(function(){
 		if(nomPop > 1){
