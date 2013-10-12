@@ -15,7 +15,7 @@ label{
 
 .art-post{
 	float: left;
-	width: 55%;
+	width: 60%;
 	margin-top:50px;
 	margin-bottom:50px;
 	margin-right:50px;
@@ -30,14 +30,14 @@ label{
 }
 
 .powerMenu, .art-post{
-	/*Borda para design, remover depois*/
+	/*Borda para design, remover depois
 	border-style: dotted;
-	/**/
+	*/
 }
 
 p label {
     display: inline-block;
-    width: 150px;
+    width: 140px;
 }
 
 .art-postcontent{
