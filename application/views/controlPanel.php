@@ -43,7 +43,7 @@
 		<!--li><a href=<?php echo base_url()."sobre"?> >Sobre</a></li-->
 		<!--li><a href=<?php echo base_url()."contato"?> >Contato</a></li-->
 		<li><a href=<?php echo base_url()."contato"?> >Ajuda</a></li>
-		
+	</ul>
 	</nav>
 <div class="art-sheet clearfix">
 	<div class="art-layout-wrapper clearfix">

@@ -30,6 +30,7 @@
 		<li><a href=<?php echo base_url()."controlPanel";?> >Painel de Controle</a></li>
 		<li><a href=<?php echo base_url()."cadastrarEspecie"?> class="active" >Cadastrar Espécie</a></li>
 		<li><a href=<?php echo base_url()."contato"?> >Ajuda</a></li>
+	</ul>
 </nav>
 <div class="art-sheet clearfix">
 	<div class="art-layout-wrapper clearfix">
@@ -61,11 +62,13 @@
 											<p id="nompop">
 												<label for="boxpopul">Nome popular 1</label>
 												<input id="boxpopul" type="text" name="popular1"/>
-											
-											<button type="button" id="addNp">+</button>
-                                            <button type="button" id="rmNp">−</button>
+												<a id="addNp" href="#" style="float: right;" onclick="" class="art-button" >+</a>
+												<a id="rmNp" href="#" style="float: right;" onclick="" class="art-button" >-</a>
+              
 											</p>
+											               
 											<br><br>
+
 											<p>
 												<p><a id="EnviarCadastro" href="#" style="float: right;" onclick="" class="art-button" >Cadastrar</a></p>
 												<p><a href=<?php echo base_url()."controlPanel";?> style="float: right;" onclick="" class="art-button" >Voltar</a></p>
