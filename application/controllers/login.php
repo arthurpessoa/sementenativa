@@ -17,8 +17,8 @@ class Login extends CI_Controller {
 		$loginCheck = $this->ModelLogin->checkLogin($email,$senha);
 		if($loginCheck)
 		 {
-			//TODO: Redirecionar pra area do usuário
-		 	echo "logado"; 
+			$redirect =  base_url()."controlPanel"; //redireciona
+			header("location:$redirect");
 		 }
 		 else
 		{
