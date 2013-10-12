@@ -18,7 +18,7 @@ class CadastrarUsuario extends CI_Controller {
 		 $estado = $_POST['uf'];
 		 $senha = $_POST['senha'];
 
-		 $emailCheck = $this->ModelCadastrarUsuario->checkEmail($email);
+		 $emailCheck = $this->ModelUsuario->checkEmail($email);
 		 
 		 if($emailCheck)
 		 {
@@ -27,7 +27,7 @@ class CadastrarUsuario extends CI_Controller {
 		 }
 		 else
 		 {
-		 	$this->ModelCadastrarUsuario->cadastrar($nome,$email,$sexo, $CEP, $endereco, $num, $bairro, $cidade, $estado, $senha);
+		 	$this->ModelUsuario->cadastrar($nome,$email,$sexo, $CEP, $endereco, $num, $bairro, $cidade, $estado, $senha);
 		 }
 
 
