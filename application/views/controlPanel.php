@@ -83,7 +83,6 @@
 							</div>
 						</div>
 					</article>
-					<?php include 'modules/powerMenu.php'; ?>
 				</div>
 			</div>
 		</div>
