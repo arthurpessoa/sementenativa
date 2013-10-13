@@ -13,7 +13,7 @@ class CadastrarEspecie extends CI_Controller {
 		 $popCount = 1;
 		 while(isset($_POST['popular'.$popCount])){
 		 	$popular[$popCount-1] =  $_POST['popular'.$popCount];
-		 	$popCount = $popCout + 1;
+		 	$popCount = $popCount + 1;
 		 }
 		 
 		 $especieCheck = $this->ModelEspecie->checkEspecie($cientifico);
@@ -21,11 +21,15 @@ class CadastrarEspecie extends CI_Controller {
 		 if($especieCheck)
 		 {
 		 	$data['erro'] = '*Espécie já cadastrada!';
+			$data['ok'] = '';
 		 	$this->load->view('CadastrarEspecie', $data);
 		 }
 		 else
 		 {
-			 $this->ModelUsuario->cadastrar($cientifico,$familia,$popular);
+			 $this->ModelEspecie->cadastrar($cientifico,$familia,$popular);
+			 $data['ok'] = "Espécie cadastrada com sucesso!";
+			 $data['erro'] = '';
+			 $this->load->view('CadastrarEspecie', $data);
 		 }
 
 
@@ -33,6 +37,7 @@ class CadastrarEspecie extends CI_Controller {
 	public function index()
 	{
 		$data['erro'] = '';
+		$data['ok'] = '';
 		$this->load->view('CadastrarEspecie', $data);
 	}
 }
