@@ -50,11 +50,11 @@
 	<div class="art-content-layout-row">
 	<div class="art-layout-cell layout-item-0" style="width: 100%" >
 		<p><span style="font-weight: bold; font-size: 16px">Nome Científico</span></p>
-		<p><?php echo $data['cientifico'][0]?></p>
+		<p><?php echo $cientifico[0]?></p>
 		<p><span style="font-weight: bold; font-size: 16px">Nomes Populares</span></p>
-	    <p><?php echo $data['popular'][0]?></p>
+	    <p><?php echo $popular[0]?></p>
         <p><span style="font-weight: bold; font-size: 16px">Família</span></p>
-        <p><?php echo $data['familia'][0]?></p>
+        <p><?php echo $familia[0]?></p>
         
         <?php
 			$arrlength=count($data);
@@ -62,25 +62,25 @@
 			for($i=0;$i<$arrlength;$i++)
  			{
  			 echo "<p><span style='font-weight: bold; font-size: 16px'>Revistas para referência:</span></p>"
- 			 echo "<p>Numero: " echo $data['nrevista'][$i] echo " Título do artigo: " echo $data['tituloArtigo'][$i];
- 			 echo " Autores: " echo $data['autores'][$i] echo "</p>"
- 			 echo "<p>Revista: " echo $data['revista'][$i] echo " Ano: " echo $data['ano'][$i]
- 			 echo " Volume: " echo $data['volume'][$i] echo " Páginas: " echo $data['pagini'][$i]
- 			 echo "-" echo $data['pagend'][$i] echo "</p>"
+ 			 echo "<p>Numero: " echo $nrevista[$i] echo " Título do artigo: " echo $tituloArtigo[$i];
+ 			 echo " Autores: " echo $autores[$i] echo "</p>"
+ 			 echo "<p>Revista: " echo $revista[$i] echo " Ano: " echo $ano[$i]
+ 			 echo " Volume: " echo $volume[$i] echo " Páginas: " echo $pagini[$i]
+ 			 echo "-" echo $pagend[$i] echo "</p>"
 
  			 echo "<p><span style='font-weight: bold; font-size: 16px'>Informações sobre colheitas:</span></p>"
- 			 echo "<p> Classificador: " echo $data['classificador'][$i] echo " Local da colheita: " echo $data['localcolheita'][$i] echo "</p>"
- 			 echo "<p> Floração: " echo $data['floracao'][$i] echo " Período de colheita: " echo $data['peridocolheita'][$i] echo "</p>"
- 			 echo "<p> Equipamentos Usados: " echo $data['equipusados'][$i] echo " Tempo de Colheita: " echo $data['tempocolheita'][$i] echo "</p>"
- 			 echo "<p> Tempo de Secagem dos frutos: " echo $data['tsecagemfrutos'][$i] echo " Condições de secagem: " echo $data['consecagem'][$i] echo "</p>"
- 			 echo "<p> Metodo de Extração das Sementes: " echo $data['metodoextracaosementes'][$i] echo " Metodo de quebra de dormencia: " echo $data['colquebradorm'][$i] echo "</p>"
- 			 echo "<p> Tempo de Beneficiamento: " echo $data['tempobenef'][$i] echo " Armazenamento: " echo $data['armazenamento'][$i] echo "</p>"
- 			 echo "<p> Substrato utilizado: " echo $data['colsubstrato'][$i] echo " Temperatura utilizada: " echo $data['coltemperatura'][$i] echo "</p>"
- 			 echo "<p> Fotoperíodo: " echo $data['fotoperiodo'][$i] echo " Tratamentos: " echo $data['tratamentos'][$i] echo "</p>"
- 			 echo "<p> Melhor Germinação: " echo $data['melhorgerm'][$i] echo " Testes Realizados: " echo $data['testesrealiz'][$i] echo "</p>"
- 			 echo "<p> Metodologia: " echo $data['metodologia'][$i] echo " Recomendações: " echo $data['recomendacoes'][$i] echo "</p>"
- 			 echo "<p> Observações: " echo $data['observacoes'][$i] echo "</p>"
- 			 echo "<p> Fontes: " echo $data['colfontes'][$i]
+ 			 echo "<p> Classificador: " echo $classificador[$i] echo " Local da colheita: " echo $localcolheita[$i] echo "</p>"
+ 			 echo "<p> Floração: " echo $floracao[$i] echo " Período de colheita: " echo $peridocolheita[$i] echo "</p>"
+ 			 echo "<p> Equipamentos Usados: " echo $equipusados[$i] echo " Tempo de Colheita: " echo $tempocolheita[$i] echo "</p>"
+ 			 echo "<p> Tempo de Secagem dos frutos: " echo $tsecagemfrutos[$i] echo " Condições de secagem: " echo $consecagem[$i] echo "</p>"
+ 			 echo "<p> Metodo de Extração das Sementes: " echo $metodoextracaosementes[$i] echo " Metodo de quebra de dormencia: " echo $colquebradorm[$i] echo "</p>"
+ 			 echo "<p> Tempo de Beneficiamento: " echo $tempobenef[$i] echo " Armazenamento: " echo $armazenamento[$i] echo "</p>"
+ 			 echo "<p> Substrato utilizado: " echo $colsubstrato[$i] echo " Temperatura utilizada: " echo $coltemperatura[$i] echo "</p>"
+ 			 echo "<p> Fotoperíodo: " echo $fotoperiodo[$i] echo " Tratamentos: " echo $tratamentos[$i] echo "</p>"
+ 			 echo "<p> Melhor Germinação: " echo $melhorgerm[$i] echo " Testes Realizados: " echo $testesrealiz[$i] echo "</p>"
+ 			 echo "<p> Metodologia: " echo $metodologia[$i] echo " Recomendações: " echo $recomendacoes[$i] echo "</p>"
+ 			 echo "<p> Observações: " echo $observacoes[$i] echo "</p>"
+ 			 echo "<p> Fontes: " echo $colfontes[$i]
  			}
 		?>
 		

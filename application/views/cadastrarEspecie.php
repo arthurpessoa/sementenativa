@@ -79,7 +79,7 @@
 											<br><br>
 
 											<p>
-												<p><button id="EnviarCadastro" type="submit" style="float: right;" onclick="" class="art-button" >Cadastrar</button></p>
+												<p><button disabled id="EnviarCadastro" type="submit" style="float: right;" onclick="" class="art-button" >Cadastrar</button></p>
 												<p><a href=<?php echo base_url()."controlPanel";?> style="float: right;" onclick="" class="art-button" >Voltar</a></p>
 											</p>
 										</form>
@@ -98,6 +98,7 @@
 <script>
 $(document).ready(function() {
 	nomPop = 1;
+	erro=2;
 	$('#addNp').click(function(){
 		nomPop++;
 		$('#nompop').append(
@@ -116,6 +117,10 @@ $(document).ready(function() {
 		}else{
 			$('#erroCient').fadeOut(1000, function() {
 				$(this).html('');
+				erro--;
+				if($erro ==0){
+					$('#EnviarCadastro').prop('disabled', false);
+				}
             });
 		}
 	});
@@ -125,6 +130,8 @@ $(document).ready(function() {
 		}else{
 			$('#erroFami').fadeOut(1000, function() {
 				$(this).html('');
+				erro--;
+				$('#EnviarCadastro').prop('disabled', false);
             });
 		}
 	});
