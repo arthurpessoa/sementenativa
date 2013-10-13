@@ -34,7 +34,7 @@
 <nav class="art-nav clearfix" style="   background: #6DAF28;">
 	<ul class="art-hmenu" style="height: 29px;">
 		<li><a href=<?php echo base_url()."controlPanel";?> >Painel de Controle</a></li>
-		<li><a href=<?php echo base_url()."cadastrarEspecie"?> class="active" >Cadastrar Colheita</a></li>
+		<li><a href=<?php echo base_url()."cadastrarColheita"?> class="active" >Cadastrar Colheita</a></li>
 		<li><a href=<?php echo base_url()."ajuda";?> >Ajuda</a></li>
 	</ul>
 </nav>

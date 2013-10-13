@@ -26,22 +26,26 @@
 <div id="art-main">
 <nav class="art-nav clearfix">
 	<ul class="art-hmenu">
-		<li><a href=<?php echo base_url()."home";?> class="active" >Home</a></li>
-		<!--li><a href=<?php echo base_url()."sobre"?> >Sobre</a></li-->
-		<!--li><a href=<?php echo base_url()."contato"?> >Contato</a></li-->
-		<li><a href=<?php echo base_url()."contato"?> >Buscar</a></li>
+		   <li><a href=<?php echo base_url()."home";?>>Home</a></li>
+        <li><a href=<?php echo base_url()."sobre"?>               >Sobre</a></li>
+        <li><a href=<?php echo base_url()."contato"?>               >Contato</a></li>
+	</ul>
+</nav>
+<nav class="art-nav clearfix" style="   background: #6DAF28;">
+	<ul class="art-hmenu" style="height: 29px;">
+		<li><a href=<?php echo base_url()."controlPanel";?> >Painel de Controle</a></li>
+		<li><a href=<?php echo base_url()."cadastrarGerminacao"?> class="active" >Cadastrar Germinação</a></li>
+		<li><a href=<?php echo base_url()."ajuda";?> >Ajuda</a></li>
+	</ul>
 </nav>
 <div class="art-sheet clearfix">
 	<div class="art-layout-wrapper clearfix">
 		<div class="art-content-layout">
 			<div class="art-content-layout-row">
 				<div class="art-layout-cell art-content clearfix">
-					<div class="powerMenu">
-						<p><h3>Olá, Você</h3></p>
-						<p><a>Sair</a></p>
-					</div>
+					<?php include 'modules/powerMenu.php'; ?>
 					<article class="art-post art-article">
-						<h2 class="art-postheader">Adicionar Caracterização</h2>
+						<h2 class="art-postheader">Cadastro de Germinação</h2>
 						<p>
 							<br>
 							<span id="erroPagina" class="erroinsert"><?php echo $erro ?></span>
@@ -118,7 +122,10 @@
 											</p>
 											<br><br>
 											<p>
+
 												<p><a id="EnviarCadastro" href="#" style="float: right;" onclick="" class="art-button" >Cadastrar</a></p>
+												<p><a href=<?php echo base_url()."controlPanel";?> style="float: right;" onclick="" class="art-button" >Voltar</a></p>
+									
 											</p>
 										</form>
 									</div>
