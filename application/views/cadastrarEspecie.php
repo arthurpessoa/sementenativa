@@ -46,8 +46,11 @@
 					<?php include 'modules/powerMenu.php'; ?>
 					<article class="art-post art-article">
 						<h2 class="art-postheader">Adicionar Espécie</h2>
+						<br>
 						<p>
-							<br>
+							<span id="okPagina" class="okinsert"><?php echo $ok ?></span>
+						</p>
+						<p>
 							<span id="erroPagina" class="erroinsert"><?php echo $erro ?></span>
 						</p>
 						<div class="art-postcontent art-postcontent-0 clearfix">
@@ -76,7 +79,7 @@
 											<br><br>
 
 											<p>
-												<p><a id="EnviarCadastro" href="#" style="float: right;" onclick="" class="art-button" >Cadastrar</a></p>
+												<p><button id="EnviarCadastro" type="submit" style="float: right;" onclick="" class="art-button" >Cadastrar</button></p>
 												<p><a href=<?php echo base_url()."controlPanel";?> style="float: right;" onclick="" class="art-button" >Voltar</a></p>
 											</p>
 										</form>

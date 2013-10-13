@@ -21,6 +21,6 @@ class ModelEspecie extends CI_Model {
 			$pop = $pop.$popular[$x].'#';
 		}
 		$pop = $pop.$popular[$arrlength-1]; //sem o # no final
-		$query = $this->db->query('INSERT INTO `sementeseviveiros`.`espcie` (`cientifico`, `popular`, `familia`) VALUES (\''.$cientifico.' \', \''. $popular.'\', \''. $familia.'\');');
+		$query = $this->db->query('INSERT INTO `sementeseviveiros`.`especie` (`cientifico`, `popular`, `familia`) VALUES (\''.$cientifico.' \', \''. $pop.'\', \''. $familia.'\');');
 	}
 }
