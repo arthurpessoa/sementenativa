@@ -26,20 +26,24 @@
 <div id="art-main">
 <nav class="art-nav clearfix">
 	<ul class="art-hmenu">
-		<li><a href=<?php echo base_url()."home";?> class="active" >Home</a></li>
-		<!--li><a href=<?php echo base_url()."sobre"?> >Sobre</a></li-->
-		<!--li><a href=<?php echo base_url()."contato"?> >Contato</a></li-->
-		<li><a href=<?php echo base_url()."contato"?> >Buscar</a></li>
+		   <li><a href=<?php echo base_url()."home";?>>Home</a></li>
+        <li><a href=<?php echo base_url()."sobre"?>               >Sobre</a></li>
+        <li><a href=<?php echo base_url()."contato"?>               >Contato</a></li>
+	</ul>
+</nav>
+<nav class="art-nav clearfix" style="   background: #6DAF28;">
+	<ul class="art-hmenu" style="height: 29px;">
+		<li><a href=<?php echo base_url()."controlPanel";?> >Painel de Controle</a></li>
+		<li><a href=<?php echo base_url()."cadastrarEspecie"?> class="active" >Cadastrar Colheita</a></li>
+		<li><a href=<?php echo base_url()."ajuda";?> >Ajuda</a></li>
+	</ul>
 </nav>
 <div class="art-sheet clearfix">
 	<div class="art-layout-wrapper clearfix">
 		<div class="art-content-layout">
 			<div class="art-content-layout-row">
 				<div class="art-layout-cell art-content clearfix">
-					<div class="powerMenu">
-						<p><h3>Olá, Você</h3></p>
-						<p><a>Sair</a></p>
-					</div>
+					<?php include 'modules/powerMenu.php'; ?>
 					<article class="art-post art-article">
 						<h2 class="art-postheader">Adicionar Colheita e Manejo</h2>
 						<p>
@@ -75,8 +79,10 @@
 											<p id="autores">
 												<label for="boxauto">Autor 1</label>
 												<input id="boxauto" name="auto1"/>
-												<button type="button" id="addAut">+</button>
-                                            	<button type="button" id="rmAut">−</button>
+											
+                                            	<a id="addAut" href="#" style="float: right;" onclick="" class="art-button" >+</a>
+												<a id="rmAut" href="#" style="float: right;" onclick="" class="art-button" >-</a>
+
 											</p>
 											<p>
 												<label for="boxrevi">Revista</label>
@@ -194,6 +200,7 @@
 											<br><br>
 											<p>
 												<p><a id="EnviarCadastro" href="#" style="float: right;" onclick="" class="art-button" >Cadastrar</a></p>
+												<p><a href=<?php echo base_url()."controlPanel";?> style="float: right;" onclick="" class="art-button" >Voltar</a></p>
 											</p>
 										</form>
 									</div>
