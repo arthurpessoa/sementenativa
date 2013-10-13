@@ -23,4 +23,10 @@ class ModelLogin extends CI_Model {
         $a =$query->result();
         return $a[0]->nome; //seleciono a Row 0
     }
+	function getAllinfo($email)
+	{
+		$query = $this->db->query('SELECT * FROM usuarios WHERE `email` = \''.$email.'\'');
+		$a = $query->result();
+		return $a[0];
+	}
 }

@@ -22,6 +22,7 @@ class Login extends CI_Controller {
 		 	
 		 	$session = array(
                 'nome' => $this->ModelLogin->getNome($email),
+				'email' => $email,
                 'logged' => true
             );
 		 	$this->session->set_userdata($session);
