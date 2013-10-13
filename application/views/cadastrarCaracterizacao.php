@@ -151,6 +151,10 @@
 												<input id="boxpmf" type="text" name="pmf"/>
 											</p>
 											<p>
+												<label>Número de sementes por fruto</label>
+												<input id="boxspf" type="text" name="spf" size="6"/>
+											</p>
+											<p>
 												<label>Número de sementes por kilo</label>
 												<input id="boxspq" type="text" name="spk" size="6"/>
 											</p>
