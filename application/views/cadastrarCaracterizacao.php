@@ -17,16 +17,77 @@
 	<script src=<?php echo base_url()."assets/script.responsive.js"?>></script>
 
 
+
 <style>.art-content .art-postcontent-0 .layout-item-0 { padding-right: 10px;padding-left: 10px;  }
 .ie7 .post .layout-cell {border:none !important; padding:0 !important; }
 .ie6 .post .layout-cell {border:none !important; padding:0 !important; }
 
+
+  
+#lightbox{
+    display:none;
+    position:absolute;
+    z-index:1000;
+    background:url(http://images3.wikia.nocookie.net/__cb20110703044636/umemaro3d/images/b/b4/Bg-white-50.png);
+    width:100%;
+    height:100%;
+}
+#lightbox_area{
+    position:relative;
+    margin:50px auto;
+    background:#fff;
+    width:60%;
+    height:300px;
+    padding:23px;
+    border:1px solid #444;
+    border-radius:20px;
+}
+  .open{
+    cursor:pointer;
+  }
+  .close{
+    cursor:pointer;
+    border:1px solid #444;
+    width:25px;
+    height:25px;
+    line-height:24px;
+    border-radius:20px;
+    text-align:center;
+    position:absolute;
+    right:-8px;
+    top:-28px;
+    background:#e11;
+    color:#fff;
+  }
+
+
+
 </style></head>
 <body>
+
+
+<div id="lightbox">
+  <div id="lightbox_area">
+    <h2>Buscar Espécies</h2>
+    <br><br>
+
+    <h5>Digite o nome vulgar ou parte dele, e clique em "Buscar", após isso clique na espécie desejada</h5>
+
+	<p><input id="boxespecie" type="text" name="nomeespecie" style="width: 100px;"/></p>
+	<p><a id="selecionarEsp" href="#" style="" onclick="" class="art-button" >Buscar</a></p>
+
+    <p class="close"><b>X</b></p>
+  </div>
+</div>
+
+
+
+
+
 <div id="art-main">
 <nav class="art-nav clearfix">
 	<ul class="art-hmenu">
-		   <li><a href=<?php echo base_url()."home";?>>Home</a></li>
+		  <li><a href=<?php echo base_url()."home";?>>Home</a></li>
         <li><a href=<?php echo base_url()."sobre"?>               >Sobre</a></li>
         <li><a href=<?php echo base_url()."contato"?>               >Contato</a></li>
 	</ul>
@@ -55,19 +116,15 @@
 								<div class="art-content-layout-row">
 									<div class="art-layout-cell layout-item-0" style="width: 100%" >
 										<form method="post" action=<?php echo base_url()."cadastrarCaracterizacao/checkCaracterizacao" ?>>
+											
 											<p>
 												<label for="selespecie">Especie* </label>
-												<select id="selespecie" type="text" name="especie">
-													<option value=""/>
-													<?php
-														$espc = count($especies);
-														for($i = 0; $i < $espc; $i++){
-															echo "<option value=\"".$especies[$i]."\">".$especies[$i]."</option>";
-														}
-													?>
-												</select>
+												<p class="open"><input id="boxespecie" type="text" name="nomeespecie" disabled="disabled"/>
+												<a id="selecionarEsp" href="#" style="" onclick="" class="art-button" >Buscar Espécie</a></p>
 												<span id="erroEspecie" class="erroinsert"></span>
 											</p>
+											
+											<br><br>
 											<p>
 												<label>Data de colheita </label>
 												<input id="boxdata" type="text" name="data"/>
@@ -148,6 +205,21 @@
 <?php include 'modules/footer.php'; ?>
 </div>
 <script>
+
+
+$('.open').click(function(){
+  $('#lightbox').fadeTo(1000, 1);
+  $("#wrapper").css({'text-shadow': '0px 0px 10px #000'});
+  $("body").css("overflow", "hidden");
+});
+
+$('.close').click(function(){
+  $('#lightbox').hide();
+  $("#wrapper").css({'text-shadow': '0px 0px 0px #000'});
+   $("body").css("overflow", "visible");
+});
+
+
 $(document).ready(function() {
 	nomPop = 1;
 	$('#addNp').click(function(){
