@@ -23,4 +23,24 @@ class ModelEspecie extends CI_Model {
 		$pop = $pop.$popular[$arrlength-1]; //sem o # no final
 		$query = $this->db->query('INSERT INTO `sementeseviveiros`.`especie` (`cientifico`, `popular`, `familia`) VALUES (\''.$cientifico.' \', \''. $pop.'\', \''. $familia.'\');');
 	}
+	function dadosespecie($id)
+	{
+		$query = $this->db->query('SELECT * FROM especie where especie.id = '.$id);
+		return $query->result();
+	}
+	function dadoscolheita($id)
+	{
+		$query = $this->db->query('SELECT * FROM colheita where colheita.idEspecie = '.$id);
+		return $query->result();
+	}
+	function dadosgerminacao($id)
+	{
+		$query = $this->db->query('SELECT * FROM germinacao where germicanao.idEspecie = '.$id);
+		return $query->result();
+	}
+	function dadoscaracterizacao($id)
+	{
+		$query = $this->db->query('SELECT * FROM caracterizacao caracterizacao.idEspecie = '.$id);
+		return $query->result();
+	}
 }
