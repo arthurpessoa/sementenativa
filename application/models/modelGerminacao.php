@@ -6,9 +6,9 @@ class ModelGerminacao extends CI_Model {
         parent::__construct();
         $this->load->database();
     }
-    function cadastrar($id, $temperatura, $substrato, $descricaoSemente, $nSementesKg, $pesoMilSementes, $sementesPorRepeticao, $repeticoes, $quebraDormencia, $periodoTeste, $tempoIniGerminacao, $tempoFimGerminacao, $tipoLuz, $umidadeSubstrato, $testeGemrinacaoSementes, $fontes)
+    function addGerminacao($id, $temperatura, $substrato, $descricaoSemente, $nSementesKg, $pesoMilSementes, $sementesPorRepeticao, $repeticoes, $quebraDormencia, $periodoTeste, $tempoIniGerminacao, $tempoFimGerminacao, $tipoLuz, $umidadeSubstrato, $testeGemrinacaoSementes, $fontes)
 	{
-		$query = $this->db->query('INSERT INTO `sementeseviveiros`.`germinacao` (`cientifico`, `popular`, `familia`) VALUES (\''.$id.' \', \''.$temperatura.' \', \''.$substrato.' \', \''.$descricaoSemente.' \', \''.$nSementesKg.' \', \''.$pesoMilSementes.' \', \''.$sementesPorRepeticao.' \', \''.$repeticoes.' \', \''.$quebraDormencia.' \', \''.$periodoTeste.' \', \''.$tempoIniGerminacao.' \', \''.$tempoFimGerminacao.' \', \''.$tipoLuz.' \', \''.$umidadeSubstrato.' \', \''.$testeGemrinacaoSementes.' \', \''.$fontes.'\');');
+		$query = $this->db->query('INSERT INTO `sementeseviveiros`.`germinacao` (`idEspecie`, `temperatura`, `substrato`, `descricaoSemente`, `nSementesKg`, `pesoMilSementes`, `sementesPorRepeticao`, `repeticoes`, `quebraDormencia`, `periodoTeste`, `tempoIniGerminacao`, `tempoFimGerminacao`, `tipoLuz`, `umidadeSubstrato`, `testeGemrinacaoSementes`, `fontes`) VALUES (\''.$id.' \', \''.$temperatura.' \', \''.$substrato.' \', \''.$descricaoSemente.' \', \''.$nSementesKg.' \', \''.$pesoMilSementes.' \', \''.$sementesPorRepeticao.' \', \''.$repeticoes.' \', \''.$quebraDormencia.' \', \''.$periodoTeste.' \', \''.$tempoIniGerminacao.' \', \''.$tempoFimGerminacao.' \', \''.$tipoLuz.' \', \''.$umidadeSubstrato.' \', \''.$testeGemrinacaoSementes.' \', \''.$fontes.'\');');
 	}
 	function dadosgerminacao($id)
 	{

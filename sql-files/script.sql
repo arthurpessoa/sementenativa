@@ -33,7 +33,7 @@ CREATE TABLE COLHEITA(
 	pagEnd INT,
 	idEspecie INT,
 	classificador varchar(200),
-	localColheira varchar(200),
+	localColheita varchar(200),
 	floracao varchar(200),
 	periodoColheita varchar(200),
 	metodoColheita varchar(500),
