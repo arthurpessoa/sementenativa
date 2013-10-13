@@ -36,7 +36,7 @@
     position:relative;
     margin:50px auto;
     background:#fff;
-    width:60%;
+    width:50%;
     height:300px;
     padding:23px;
     border:1px solid #444;
@@ -73,8 +73,8 @@
 
     <h5>Digite o nome vulgar ou parte dele, e clique em "Buscar", após isso clique na espécie desejada</h5>
 
-	<p><input id="boxespecie" type="text" name="nomeespecie" style="width: 100px;"/></p>
-	<p><a id="selecionarEsp" href="#" style="" onclick="" class="art-button" >Buscar</a></p>
+	<p><input id="boxespecie" type="text" name="nomeespecie" style="width: 80%;"/>
+	<a id="selecionarEsp" href="#" style="" onclick="" class="art-button" >Buscar</a></p>
 
     <p class="close"><b>X</b></p>
   </div>
@@ -97,8 +97,8 @@
 		<li><a href=<?php echo base_url()."controlPanel";?> >Painel de Controle</a></li>
 		<li><a href=<?php echo base_url()."cadastrarCaracterizacao"?> class="active" >Cadastrar Caracterização</a></li>
 		<li><a href=<?php echo base_url()."ajuda";?> >Ajuda</a></li>
-	</ul>
 </nav>
+
 <div class="art-sheet clearfix">
 	<div class="art-layout-wrapper clearfix">
 		<div class="art-content-layout">
