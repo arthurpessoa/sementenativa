@@ -2,7 +2,7 @@
 <?php session_start(); ?>
 <html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.0.0.58833 -->
     <meta charset="utf-8">
-    <title>Semente Nativa - Contato</title>
+    <title>Semente Nativa - Ajuda</title>
     <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
 
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -25,13 +25,18 @@
 <div id="art-main">
 <nav class="art-nav clearfix">
     <ul class="art-hmenu">
-        <li><a href=<?php echo base_url()."home";?>                 >Home</a></li>
+           <li><a href=<?php echo base_url()."home";?>>Home</a></li>
         <li><a href=<?php echo base_url()."sobre"?>               >Sobre</a></li>
-        <li><a href=<?php echo base_url()."contato"?> class="active">Contato</a></li>
+        <li><a href=<?php echo base_url()."contato"?>               >Contato</a></li>
+    </ul>
+</nav>
+<nav class="art-nav clearfix" style="   background: #6DAF28;">
+    <ul class="art-hmenu" style="height: 29px;">
+        <li><a href=<?php echo base_url()."controlPanel";?> >Painel de Controle</a></li>
+        <li><a href=<?php echo base_url()."ajuda";?> class="active" >Ajuda</a></li>
+    </ul>
 </nav>
 <header class="art-header clearfix">
-
-
     <div class="art-shapes">
 <h1 class="art-headline" data-left="2.6%">
         <a href=<?php echo base_url();?>>Sementes</a>
@@ -48,29 +53,18 @@
                 <div class="art-content-layout">
                     <div class="art-content-layout-row">
                         <div class="art-layout-cell art-content clearfix"><article class="art-post art-article">
-                                <h2 class="art-postheader">Contatos</h2>
+                                <h2 class="art-postheader">Ajuda</h2>
                                                 
                 <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout">
     <div class="art-content-layout-row">
     <div class="art-layout-cell layout-item-0" style="width: 100%" >
-        <p><span style="font-weight: bold;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra, tellus sit amet congue vulputate, nisi erat iaculis nibh, vitae feugiat sapien ante eget mauris. </span></p>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra, tellus sit amet congue vulputate, nisi erat iaculis nibh, vitae feugiat sapien ante eget mauris.&nbsp;</p>
-        
-        <p>Cras elit nisl, rhoncus nec iaculis ultricies, feugiat eget sapien. Pellentesque ac felis tellus. Aenean sollicitudin imperdiet arcu, vitae dignissim est posuere id. Duis placerat justo eu nunc interdum ultrices.</p>
-        
-        <h2>Semente Nativa</h2>
-        
-        <p>586 Main Ave, Building 42<br />
-        Main City, Country 12345-6789</p>
-        
-        <p>T: (555) 123 - 4567<br />
-        F: (555) 523 - 4567</p>
-        
-        <p>Website :&nbsp;<a href="http://www.sementenativa.com.br">"http://www.sementenativa.com.br</a><br />
-        Email : &nbsp;<a href="mailto:contato@sementenativa.com.br">contato@sementenativa.com.br</a></p>
-        
-        <p><br /></p>
+        <p><span style="font-weight: bold;">
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra, tellus sit amet congue vulputate, nisi erat iaculis nibh, vitae feugiat sapien ante eget mauris. 
+
+Cras elit nisl, rhoncus nec iaculis ultricies, feugiat eget sapien. Pellentesque ac felis tellus. Aenean sollicitudin imperdiet arcu, vitae dignissim est posuere id. Duis placerat justo eu nunc interdum ultrices.
+
+        </p>
     </div>
     </div>
 </div>
