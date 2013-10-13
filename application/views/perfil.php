@@ -26,11 +26,17 @@
 <div id="art-main">
 <nav class="art-nav clearfix">
 	<ul class="art-hmenu">
-		<li><a href=<?php echo base_url()."home";?>>Home</a></li>
-		<li><a href=<?php echo base_url()."sobre"?>>Sobre</a></li>
-		<li><a href=<?php echo base_url()."contato"?>>Contato</a></li>
+		   <li><a href=<?php echo base_url()."home";?>>Home</a></li>
+        <li><a href=<?php echo base_url()."sobre"?>               >Sobre</a></li>
+        <li><a href=<?php echo base_url()."contato"?>               >Contato</a></li>
 	</ul>
-
+</nav>
+<nav class="art-nav clearfix" style="   background: #6DAF28;">
+	<ul class="art-hmenu" style="height: 29px;">
+		<li><a href=<?php echo base_url()."controlPanel";?> >Painel de Controle</a></li>
+		<li><a href=<?php echo base_url()."ajuda";?> class="active"  >Perfil</a></li>
+		<li><a href=<?php echo base_url()."ajuda";?> >Ajuda</a></li>
+	</ul>
 </nav>
 
 <div class="art-sheet clearfix">

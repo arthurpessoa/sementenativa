@@ -4,7 +4,7 @@ class Perfil extends CI_Controller {
 	public function index()
 	{
 		$this->load->model('ModelLogin');
-		$email = $_POST['key'];
+		$email = $this->session->userdata('email');
 		$profile = $this->ModelLogin->getAllinfo($email);
 		
 		$data['nome'] = $profile->nome;
