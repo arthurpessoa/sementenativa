@@ -6,9 +6,9 @@ class ModelGerminacao extends CI_Model {
         parent::__construct();
         $this->load->database();
     }
-    function addGerminacao($id, $temperatura, $substrato, $descricaoSemente, $nSementesKg, $pesoMilSementes, $sementesPorRepeticao, $repeticoes, $quebraDormencia, $periodoTeste, $tempoIniGerminacao, $tempoFimGerminacao, $tipoLuz, $umidadeSubstrato, $testeGemrinacaoSementes, $fontes)
+    function addGerminacao($id, $temperatura, $substrato, $descricaoSemente, $nSementesKg, $pesoMilSementes, $sementesPorRepeticao, $repeticoes, $quebraDormencia, $periodoTeste, $tempoIniGerminacao, $tempoFimGerminacao, $tipoLuz, $umidadeSubstrato, $testeGerminacaoSementes, $fontes)
 	{
-		$query = $this->db->query('INSERT INTO `sementeseviveiros`.`germinacao` (`idEspecie`, `temperatura`, `substrato`, `descricaoSemente`, `nSementesKg`, `pesoMilSementes`, `sementesPorRepeticao`, `repeticoes`, `quebraDormencia`, `periodoTeste`, `tempoIniGerminacao`, `tempoFimGerminacao`, `tipoLuz`, `umidadeSubstrato`, `testeGemrinacaoSementes`, `fontes`) VALUES (\''.$id.' \', \''.$temperatura.' \', \''.$substrato.' \', \''.$descricaoSemente.' \', \''.$nSementesKg.' \', \''.$pesoMilSementes.' \', \''.$sementesPorRepeticao.' \', \''.$repeticoes.' \', \''.$quebraDormencia.' \', \''.$periodoTeste.' \', \''.$tempoIniGerminacao.' \', \''.$tempoFimGerminacao.' \', \''.$tipoLuz.' \', \''.$umidadeSubstrato.' \', \''.$testeGemrinacaoSementes.' \', \''.$fontes.'\');');
+		$query = $this->db->query('INSERT INTO `sementeseviveiros`.`germinacao` (`idEspecie`, `temperatura`, `substrato`, `descricaoSemente`, `nSementesKg`, `pesoMilSementes`, `sementesPorRepeticao`, `repeticoes`, `quebraDormencia`, `periodoTeste`, `tempoIniGerminacao`, `tempoFimGerminacao`, `tipoLuz`, `umidadeSubstrato`, `testeGerminacaoSementes`, `fontes`) VALUES (\''.$id.' \', \''.$temperatura.' \', \''.$substrato.' \', \''.$descricaoSemente.' \', \''.$nSementesKg.' \', \''.$pesoMilSementes.' \', \''.$sementesPorRepeticao.' \', \''.$repeticoes.' \', \''.$quebraDormencia.' \', \''.$periodoTeste.' \', \''.$tempoIniGerminacao.' \', \''.$tempoFimGerminacao.' \', \''.$tipoLuz.' \', \''.$umidadeSubstrato.' \', \''.$testeGerminacaoSementes.' \', \''.$fontes.'\');');
 	}
 	function dadosgerminacao($id)
 	{
