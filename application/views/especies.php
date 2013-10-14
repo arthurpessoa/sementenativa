@@ -14,6 +14,7 @@
     <script src=<?php echo base_url()."assets/jquery.js";?>></script>
     <script src=<?php echo base_url()."assets/script.js";?>></script>
     <script src=<?php echo base_url()."assets/script.responsive.js";?>></script>
+    
 
 
 <style>.art-content .art-postcontent-0 .layout-item-0 { padding-right: 10px;padding-left: 10px;  }
@@ -24,11 +25,11 @@
 <body>
 <div id="art-main">
   <nav class="art-nav clearfix">
-	<ul class="art-hmenu">
-		<li><a href=<?php echo base_url()."home";?> class="active" >Home</a></li>
-		<!--li><a href=<?php echo base_url()."sobre"?> >Sobre</a></li-->
-		<!--li><a href=<?php echo base_url()."contato"?> >Contato</a></li-->
-		<li><a href=<?php echo base_url()."contato"?> >Buscar</a></li>
+   <ul class="art-hmenu">
+        <li><a href=<?php echo base_url()."home";?> class="active">Home</a></li>
+        <li><a href=<?php echo base_url()."sobre"?>               >Sobre</a></li>
+        <li><a href=<?php echo base_url()."contato"?>               >Contato</a></li>
+    </ul>
 </nav>
 <div class="art-sheet clearfix">
 	<div class="art-layout-wrapper clearfix">
