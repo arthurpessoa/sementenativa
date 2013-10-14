@@ -23,56 +23,104 @@
 </style></head>
 <body>
 <div id="art-main">
-   <nav class="art-nav clearfix">
-    <ul class="art-hmenu">
-        <li><a href=<?php echo base_url()."home";?>               >Home</a></li>
-        <li><a href=<?php echo base_url()."sobre"?> class="active">Sobre</a></li>
-        <li><a href=<?php echo base_url()."contato"?>               >Contato</a></li>
-    </nav>
-<header class="art-header clearfix">
-
-
-    <div class="art-shapes">
-        <h1 class="art-headline" data-left="2.6%">
-                <a href=<?php echo base_url();?>>Sementes</a>
-        </h1>
-        <h2 class="art-slogan" data-left="2.45%">e Viveiros</h2>
-
-        <div class="art-object0" data-left="100%"></div>
-
-    </div>
-
-                        
-                    
-</header>
+  <nav class="art-nav clearfix">
+	<ul class="art-hmenu">
+		<li><a href=<?php echo base_url()."home";?> class="active" >Home</a></li>
+		<!--li><a href=<?php echo base_url()."sobre"?> >Sobre</a></li-->
+		<!--li><a href=<?php echo base_url()."contato"?> >Contato</a></li-->
+		<li><a href=<?php echo base_url()."contato"?> >Buscar</a></li>
+</nav>
 <div class="art-sheet clearfix">
-            <div class="art-layout-wrapper clearfix">
-                <div class="art-content-layout">
-                    <div class="art-content-layout-row">
-                        <div class="art-layout-cell art-content clearfix"><article class="art-post art-article">
-                                <h2 class="art-postheader">Sobre Nós</h2>
-                                                
-                <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout">
-    <div class="art-content-layout-row">
-    <div class="art-layout-cell layout-item-0" style="width: 100%" >
-        <p><img width="340" height="227" alt="" src=<?php echo base_url()."assets/images/shutterstock_40367920.jpg"; ?> style="float: left; margin-right: 10px" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra, tellus sit amet congue vulputate, nisi erat iaculis nibh, vitae feugiat sapien ante eget mauris. Cras elit nisl, rhoncus nec iaculis ultricies, feugiat eget sapien. Pellentesque ac felis tellus. Aenean sollicitudin imperdiet arcu, vitae dignissim est posuere id. Duis placerat justo eu nunc interdum ultrices. Phasellus elit dolor, porttitor id consectetur sit amet, posuere id magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pharetra auctor pharetra. Nunc a sollicitudin est. Curabitur ullamcorper gravida felis, sit amet scelerisque lorem iaculis sed. Donec vel neque in neque porta venenatis sed sit amet lectus. Morbi tristique posuere consequat. Sed bibendum tincidunt porttitor. Maecenas ut lorem lacus. Suspendisse et sem odio, at eleifend massa. Donec ut hendrerit enim.</p>
-        
-        <p>Fusce ornare elit nisl, feugiat bibendum lorem. Vivamus pretium dictum sem vel laoreet. In fringilla pharetra purus, semper vulputate ligula cursus in. Donec at nunc nec dui laoreet porta eu eu ipsum. Sed eget lacus sit amet risus elementum dictum. Pellentesque sit amet imperdiet nunc. Aenean tellus mi, adipiscing sit amet laoreet eget, lobortis quis nisl. Quisque volutpat urna orci, id gravida nisi. Nullam posuere interdum est sit amet aliquam. Suspendisse malesuada metus ac enim feugiat commodo. Nullam eu consectetur nulla. Praesent faucibus condimentum quam.</p>
-        
-        <p>Sed at turpis vel ipsum adipiscing viverra eu eget nisi. Praesent neque turpis, volutpat ultrices porta sit amet, tempus ut ante. Nunc aliquet ultrices tortor, id accumsan metus porttitor eu. Mauris aliquet metus a leo iaculis at commodo metus dictum. Proin nulla nibh, tempor dictum luctus hendrerit, egestas quis enim. Mauris lacinia ultrices sem, at accumsan mi consequat sed. Mauris sit amet augue a leo porttitor porta et iaculis quam. Vestibulum at nunc risus, mattis egestas metus. Aliquam erat volutpat. Nullam quis lorem metus, ac vulputate dolor. Sed eu tellus dolor, quis mollis velit. Phasellus ut nibh tortor, vitae blandit est. Integer commodo nisi eget metus aliquet pharetra. In vitae tincidunt felis. Donec in dolor a libero feugiat fermentum. Pellentesque et turpis libero. Integer magna urna, rutrum pretium rhoncus at, fringilla non orci. Ut vel libero a arcu mattis laoreet.</p>
-        
-        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed et faucibus mi. In hendrerit ligula ut diam imperdiet in fringilla diam suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tortor nisl, ultricies quis tincidunt a, gravida ut ante. Curabitur non viverra libero. Aenean ornare arcu urna. Aenean a egestas orci. Maecenas tempus viverra erat, at hendrerit est blandit tincidunt. Fusce ut quam neque. Aliquam vitae eleifend arcu. Pellentesque hendrerit, erat faucibus varius commodo, nunc orci semper mi, non viverra diam massa eu arcu. Praesent at libero dui, ut fermentum urna.</p>
-        
-        <p>Morbi eget sem at eros fermentum pulvinar non quis risus. Etiam eu tortor vel dolor congue lobortis at sed arcu. Sed eget nibh libero, vitae imperdiet orci. Sed elit risus, sodales nec vehicula eget, pharetra non justo. Nunc fringilla porttitor tincidunt. Suspendisse hendrerit egestas dolor a mattis. Sed at elit et nunc tristique accumsan at a libero. Mauris dolor purus, consequat sed tempus in, tempus id magna. Integer commodo, leo nec porttitor congue, dui arcu semper lectus, ac dictum lacus velit sit amet mauris. Praesent et molestie dui. Vestibulum vulputate, nisl id interdum malesuada, massa leo eleifend velit, nec malesuada velit massa et magna. Aliquam auctor tortor sed lacus rhoncus fringilla. Sed gravida erat nec quam posuere fermentum. Donec et tempor erat. Quisque faucibus hendrerit erat, ac suscipit libero porta et.</p>
-    </div>
-    </div>
+	<div class="art-layout-wrapper clearfix">
+		<div class="art-content-layout">
+			<div class="art-content-layout-row">
+				<div class="art-layout-cell art-content clearfix">
+					<article class="art-post art-article">
+						<h2 class="art-postheader">Cadastro de Usuário</h2>
+						<p>
+							<br>
+							<span id="erroPagina" class="erroinsert"><?php echo $erro ?></span>
+						</p>
+						<div class="art-postcontent art-postcontent-0 clearfix">
+							<div class="art-content-layout">
+								<div class="art-content-layout-row">
+									<div class="art-layout-cell layout-item-0" style="width: 130%" >
+											<form method="post" action=<?php echo base_url()."cadastrarUsuario/checkCadastro" ?>>
+											<p>
+												<label for="boxnome">Nome*</label>
+												<input id="boxnome" type="text" name="nome" size="40"/>
+												<span  hidden id="erroNomeVazio" class="erroinsert">*Não deve ser vazio</span>
+												<span  hidden id="erroNomeNumero" class="erroinsert">*Nome não deve conter números</span>
+												<span  hidden id="erroNomeGrande" class="erroinsert">*Nome deve conter no máximo 40 letras</span>
+											</p>
+											<p>
+												<label for="boxemail">Email*</label>
+												<input id="boxemail" type="text" name="email" size="40"/>
+												<span hidden id="erroEmail" class="erroinsert">*e-mail inválido</span>
+											</p>
+											<p>
+												<label for="boxsexo">Sexo</label>
+												<input id="sexo" type="radio" name="sexo" value="m" checked/>Masculino
+												<input id="sexo" type="radio" name="sexo" value="f"/>Feminino
+												<span id="erroSexo" class="erroinsert"></span>
+											</p>
+											<p>
+												<label for="boxcep">CEP</label>
+												<input name="cep" type="text" id="boxcep" value="" size="8" maxlength="8"/> (Sem traço)
+												<span hidden id="erroCepForma" class="erroinsert">*CEP não deve conter "-"</span>
+												<span hidden id="erroCepTamanho" class="erroinsert">*CEP deve conter 8 numeros</span>
+											</p>
+											<p>
+												<label for="boxend">Endereço</label>
+												<input id="boxend" name="endereco" type="text" size="40" />
+												<span hidden id="erroEnd" class="erroinsert">*Endereço não pode ser vazio</span>
+											</p>
+											<p>
+												<label for="boxnum">Número</label>
+												<input id="boxnum" name="num" type="text" size="5"/>
+												<span hidden id="erroNumVazio" class="erroinsert">*Numero não pode ser vazio</span>
+												<span hidden id="erroNumLetras" class="erroinsert">*Numero não pode conter letras</span>
+											</p>
+											<p>
+												<label for="boxbairro">Bairro</label>
+												<input id="boxbairro" name="bairro" type="text" id="bairro" size="30" />
+												<span hidden id="erroBairro" class="erroinsert">*Bairro não pode ser vazio</span>
+											</p>
+											<p>
+												<label for="boxcidade">Cidade</label>
+												<input id="boxcidade" name="cidade" type="text" size="40" />
+												<span hidden id="erroCidade" class="erroinsert">*Cidade não pode ser vazio</span>
+											</p>
+											<p>
+												<label for="boxuf">Estado</label>
+												<input id="boxuf" name="uf" type="text" size="2" />
+												<span hidden id="erroUF" class="erroinsert">*Estado não pode ser vazio</span>
+											</p>
+											<p>
+												<label for="boxsenha">Senha</label>
+												<input id="boxsenha" name="senha" type="password" size="12" />
+												<span hidden id="erroSenha" class="erroinsert">*Senha não pode ser vazia</span>
+											</p>
+											<p>
+												<label for="boxconfirmasenha">Confirmar Senha</label>
+												<input id="boxconfirmasenha" name="confirmasenha" type="password" size="12" />
+												<span hidden id="erroConfirmaSenha" class="erroinsert">*Confirmação diferente da senha digitada</span>
+											</p>
+											<br><br>
+											<p>
+												<p><a id="EnviarCadastro" href="#" style="float: right;" onclick="" class="art-button" >Cadastrar</a></p>
+											</p>
+										</form>		
+									</div>
+								</div>
+							</div>
+						</div>  
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-</div>
-</article></div>
-                    </div>
-                </div>
-            </div>
-    </div>
 <?php include 'modules/footer.php'; ?>
 </div>
 
