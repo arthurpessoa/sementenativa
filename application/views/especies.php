@@ -40,7 +40,14 @@
 						<div class="art-postcontent art-postcontent-0 clearfix">
 							<div class="art-content-layout">
 								<div class="art-content-layout-row">
-									<div class="art-layout-cell layout-item-0" style="width: 130%" >	
+									<div class="art-layout-cell layout-item-0" style="width: 130%" >
+										<?php
+											$c = count($especies);
+											for($i = 0; $i < $c; $i++)
+											{
+												echo "<p>".$especies[$i]."</p>";
+											}
+										?>
 									</div>
 								</div>
 							</div>
