@@ -81,12 +81,20 @@
 												<textarea id="boxdescs" name="descs" type="text"></textarea>
 											</p>
 											<p>
+												<label for="boxsemkg">Numero de sementes por kilo </label>
+												<input id="boxsemkg" name="semkg" type="text" size="6"/>
+											</p>
+											<p>
 												<label for="boxpeso">Peso de Mil Sementes </label>
 												<input id="boxpeso" name="peso" type="text" size="6"/>
 											</p>
 											<p>
 												<label for="boxrepet">Número de sementes por Repetição </label>
 												<input id="boxrepet" name="repet" type="text" size="6"/>
+											</p>
+											<p>
+												<label for="boxnrepet">Número de Repetições </label>
+												<input id="boxnrepet" name="nrepet" type="text" size="6"/>
 											</p>
 											<p>
 												<label for="boxqd">Tratamento para quebra de Dormência </label>
