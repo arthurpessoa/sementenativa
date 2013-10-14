@@ -13,90 +13,93 @@ class VisualizarEspecie extends CI_Controller {
 		$dadosCar = $this->ModelEspecie->dadoscaracterizacao($id);
 		$dadosGer = $this->ModelEspecie->dadosgerminacao($id);
 		
-		print_r( $dadosEsp);
-		
-		$data['cientifico'][0] = $dadosEsp->cientifico;
-		$data['familia'][0] = $dadosEsp->familia;
-		$data['popular'][0] = explode("#", $dadosEsp->popular);
+		$data['cientifico'][0] = $dadosEsp[0]->cientifico;
+		$data['familia'][0] = $dadosEsp[0]->familia;
+		$data['popular'][0] = explode("#", $dadosEsp[0]->popular);
 		
 		$espCo = count($dadosCol);
 		
+		$data['espCo'] = $espCo;
 		for($i=0; $i < $espCo; $i++)
 		{
-			$data['nrevista'][$i] = $dadosEsp[$i]->nRevista;
-			$data['tituloArtigo'][$i] = $dadosEsp[$i]->tituloArtigo;
-			$data['autores'][$i] = explode("#", $dadosEsp[$i]->autores);
-			$data['revista'][$i] = $dadosEsp[$i]->revista;
-			$data['ano'][$i] = $dadosEsp[$i]->ano;
-			$data['volume'][$i] = $dadosEsp[$i]->volume;
-			$data['pagini'][$i] = $dadosEsp[$i]->pagIni;
-			$data['pagend'][$i] = $dadosEsp[$i]->pagEnd;
-			$data['classificador'][$i] = $dadosEsp[$i]->classificador;
-			$data['localcolheita'][$i] = $dadosEsp[$i]->localColheita;
-			$data['floracao'][$i] = $dadosEsp[$i]->floracao;
-			$data['periodocolheita'][$i] = $dadosEsp[$i]->periodoColheita;
-			$data['metodocolheita'][$i] = $dadosEsp[$i]->metodoColheita;
-			$data['equipusados'][$i] = $dadosEsp[$i]->equipamentosColheitaUsados;
-			$data['tempocolheita'][$i] = $dadosEsp[$i]->tempoColheita;
-			$data['tsecagemfrutos'][$i] = $dadosEsp[$i]->tempoSecagemFrutos;
-			$data['condsecagem'][$i] = $dadosEsp[$i]->condicoesSecagem;
-			$data['metodoextracaosementes'][$i] = $dadosEsp[$i]->metodoExtracaoSementes;
-			$data['colquebradorm'][$i] = $dadosEsp[$i]->quebraDormencia;
-			$data['tempobenef'][$i] = $dadosEsp[$i]->tempoBeneficiamento;
-			$data['armazenamento'][$i] = $dadosEsp[$i]->armazenamento;
-			$data['colsubstrato'][$i] = $dadosEsp[$i]->substrato;
-			$data['coltemperatura'][$i] = $dadosEsp[$i]->temperatura;
-			$data['fotoperiodo'][$i] = $dadosEsp[$i]->fotoperiodo;
-			$data['tratamentos'][$i] = $dadosEsp[$i]->tratamentos;
-			$data['melhorgerm'][$i] = $dadosEsp[$i]->melhorGerminacao;
-			$data['testesrealiz'][$i] = $dadosEsp[$i]->testesRealizados;
-			$data['metodologia'][$i] = $dadosEsp[$i]->testesRealizados;
-			$data['recomendacoes'] = $dadosEsp[$i]->recomendacoes;
-			$data['observacoes'] = $dadosEsp[$i]->observacoes;
-			$data['colfontes'] = $dadosEsp[$i]->fontes;
+			$data['nrevista'][$i] = $dadosCol[$i]->nRevista;
+			$data['tituloArtigo'][$i] = $dadosCol[$i]->tituloArtigo;
+			$data['autores'][$i] = explode("#", $dadosCol[$i]->autores);
+			$data['revista'][$i] = $dadosCol[$i]->revista;
+			$data['ano'][$i] = $dadosCol[$i]->ano;
+			$data['volume'][$i] = $dadosCol[$i]->volume;
+			$data['pagini'][$i] = $dadosCol[$i]->pagIni;
+			$data['pagend'][$i] = $dadosCol[$i]->pagEnd;
+			$data['classificador'][$i] = $dadosCol[$i]->classificador;
+			$data['localcolheita'][$i] = $dadosCol[$i]->localColheita;
+			$data['floracao'][$i] = $dadosCol[$i]->floracao;
+			$data['periodocolheita'][$i] = $dadosCol[$i]->periodoColheita;
+			$data['metodocolheita'][$i] = $dadosCol[$i]->metodoColheita;
+			$data['equipusados'][$i] = $dadosCol[$i]->equipamentosColheitaUsados;
+			$data['tempocolheita'][$i] = $dadosCol[$i]->tempoColheita;
+			$data['tsecagemfrutos'][$i] = $dadosCol[$i]->tempoSecagemFrutos;
+			$data['condsecagem'][$i] = $dadosCol[$i]->condicoesSecagem;
+			$data['metodoextracaosementes'][$i] = $dadosCol[$i]->metodoExtracaoSementes;
+			$data['colquebradorm'][$i] = $dadosCol[$i]->quebraDormencia;
+			$data['tempobenef'][$i] = $dadosCol[$i]->tempoBeneficiamento;
+			$data['armazenamento'][$i] = $dadosCol[$i]->armazenamento;
+			$data['colsubstrato'][$i] = $dadosCol[$i]->substrato;
+			$data['coltemperatura'][$i] = $dadosCol[$i]->temperatura;
+			$data['fotoperiodo'][$i] = $dadosCol[$i]->fotoperiodo;
+			$data['tratamentos'][$i] = $dadosCol[$i]->tratamentos;
+			$data['melhorgerm'][$i] = $dadosCol[$i]->melhorGerminacao;
+			$data['testesrealiz'][$i] = $dadosCol[$i]->testesRealizados;
+			$data['metodologia'][$i] = $dadosCol[$i]->testesRealizados;
+			$data['recomendacoes'] = $dadosCol[$i]->recomendacoes;
+			$data['observacoes'] = $dadosCol[$i]->observacoes;
+			$data['colfontes'] = $dadosCol[$i]->fontes;
 		}
 		
 		$espGe = count($dadosGer);
 		
+		$data['espGe'] = $espGe;
+
 		for($i=0; $i < $espGe; $i++)
 		{
-			$data['gertemperatura'] = $dadosGer[$i]->temperatura;
-			$data['gersubstrato'] = $dadosGer[$i]->substrato;
-			$data['descricaosem'] = $dadosGer[$i]->descricaoSemente;
-			$data['nsemkg'] = $dadosGer[$i]->nSementesKg;
-			$data['gerpesosksem'] = $dadosGer[$i]->pesoMilSementes;
-			$data['semporrep'] = $dadosGer[$i]->sementesPorRepeticao;
-			$data['repet'] = $dadosGer[$i]->repeticoes;
-			$data['gerquebradorm'] = $dadosGer[$i]->quebraDormencia;
-			$data['periodoteste'] = $dadosGer[$i]->periodoTeste;
-			$data['tiniger'] = $dadosGer[$i]->tempoIniGerminacao;
-			$data['ifimger'] = $dadosGer[$i]->tempoFimGerminacao;
-			$data['tipoluz'] = $dadosGer[$i]->tipoLuz;
-			$data['umidadesubs'] = $dadosGer[$i]->umidadeSubstrato;
-			$data['testeger'] = $dadosGer[$i]->testeGerminacaoSementes;
-			$data['gerfontes'] = $dadosGer[$i]->fontes;
+			$data['gertemperatura'] = array();
+			$data['gertemperatura'][$i] = $dadosGer[$i]->temperatura;
+			$data['gersubstrato'][$i] = $dadosGer[$i]->substrato;
+			$data['descricaosem'][$i] = $dadosGer[$i]->descricaoSemente;
+			$data['nsemkg'][$i] = $dadosGer[$i]->nSementesKg;
+			$data['gerpesosksem'][$i] = $dadosGer[$i]->pesoMilSementes;
+			$data['semporrep'][$i] = $dadosGer[$i]->sementesPorRepeticao;
+			$data['repet'][$i] = $dadosGer[$i]->repeticoes;
+			$data['gerquebradorm'][$i] = $dadosGer[$i]->quebraDormencia;
+			$data['periodoteste'][$i] = $dadosGer[$i]->periodoTeste;
+			$data['tiniger'][$i] = $dadosGer[$i]->tempoIniGerminacao;
+			$data['ifimger'][$i] = $dadosGer[$i]->tempoFimGerminacao;
+			$data['tipoluz'][$i] = $dadosGer[$i]->tipoLuz;
+			$data['umidadesubs'][$i] = $dadosGer[$i]->umidadeSubstrato;
+			$data['testeger'][$i] = $dadosGer[$i]->testeGerminacaoSementes;
+			$data['gerfontes'][$i] = $dadosGer[$i]->fontes;
 		}
 		
 		$espCa = count($dadosCar);
 		
+		$data['espCa'] = $espCa;
 		for($i = 0; $i < $espCa; $i++)
 		{
-			$data['datacol'] = $dadosCar[$i]->dataColheita;
-			$data['locorigem'] = $dadosCar[$i]->localOrigemSemente;
-			$data['indicmatur'] = $dadosCar[$i]->indicadorMaturacao;
-			$data['dispers'] = $dadosCar[$i]->dispersao;
-			$data['frutoskg'] = $dadosCar[$i]->frutosKilo;
-			$data['pesokfrutos'] = $dadosCar[$i]->pesoMilFrutos;
-			$data['semsfruto'] = $dadosCar[$i]->sementesPorFruto;
-			$data['semskilo'] = $dadosCar[$i]->sementesPorKilo;
-			$data['carpesoksem'] = $dadosCar[$i]->pesoMilSementes;
-			$data['relfrutsem'] = $dadosCar[$i]->relacaoFrutoSemente;
-			$data['tamsemente'] = $dadosCar[$i]->tamanhoSemente;
-			$data['tamfruto'] = $dadosCar[$i]->tamanhoFruto;
-			$data['tipofruto'] = $dadosCar[$i]->tipoFruto;
-			$data['pureza'] = $dadosCar[$i]->pureza;
-			$data['obs'] = $dadosCar[$i]->observacoes;
-			$data['carfontes'] = $dadosCar[$i]->fontes;
+			$data['datacol'][$i] = $dadosCar[$i]->dataColheita;
+			$data['locorigem'][$i] = $dadosCar[$i]->localOrigemSemente;
+			$data['indicmatur'][$i] = $dadosCar[$i]->indicadorMaturacao;
+			$data['dispers'][$i] = $dadosCar[$i]->dispersao;
+			$data['frutoskg'][$i] = $dadosCar[$i]->frutosKilo;
+			$data['pesokfrutos'][$i] = $dadosCar[$i]->pesoMilFrutos;
+			$data['semsfruto'][$i] = $dadosCar[$i]->sementesPorFruto;
+			$data['semskilo'][$i] = $dadosCar[$i]->sementesPorKilo;
+			$data['carpesoksem'][$i] = $dadosCar[$i]->pesoMilSementes;
+			$data['relfrutsem'][$i] = $dadosCar[$i]->relacaoFrutoSemente;
+			$data['tamsemente'][$i] = $dadosCar[$i]->tamanhoSemente;
+			$data['tamfruto'][$i] = $dadosCar[$i]->tamanhoFruto;
+			$data['tipofruto'][$i] = $dadosCar[$i]->tipoFruto;
+			$data['pureza'][$i] = $dadosCar[$i]->pureza;
+			$data['obs'][$i] = $dadosCar[$i]->observacoes;
+			$data['carfontes'][$i] = $dadosCar[$i]->fontes;
 		}
 		
 		

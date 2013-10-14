@@ -54,7 +54,6 @@ class ModelEspecie extends CI_Model {
 	}
 	function dadoscaracterizacao($id)
 	{
-		echo $id;
 		$query = $this->db->query('SELECT * FROM caracterizacao caracterizacao.idEspecie = '.$id);
 		if($query==null)
 		{
