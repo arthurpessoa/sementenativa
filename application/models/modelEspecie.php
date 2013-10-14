@@ -25,8 +25,8 @@ class ModelEspecie extends CI_Model {
 	}
 	function getID($especie)
 	{
-		$query = $this->db->query('SELECT * FROM especie where especie.cientifico = '.$especie);
-		$a =$query->result();
+		$query = $this->db->query('SELECT * FROM especie where especie.cientifico = "'.$especie.'"');
+		$a = $query->result();
     	return $a[0]->id;
 	}
 	function dadosespecie($id)
@@ -37,16 +37,29 @@ class ModelEspecie extends CI_Model {
 	function dadoscolheita($id)
 	{
 		$query = $this->db->query('SELECT * FROM colheita where colheita.idEspecie = '.$id);
+		if($query==null)
+		{
+			return array();
+		}
 		return $query->result();
 	}
 	function dadosgerminacao($id)
 	{
 		$query = $this->db->query('SELECT * FROM germinacao where germicanao.idEspecie = '.$id);
+		if($query==null)
+		{
+			return array();
+		}
 		return $query->result();
 	}
 	function dadoscaracterizacao($id)
 	{
+		echo $id;
 		$query = $this->db->query('SELECT * FROM caracterizacao caracterizacao.idEspecie = '.$id);
+		if($query==null)
+		{
+			return array();
+		}
 		return $query->result();
 	}
 	function getAllSpecies()
