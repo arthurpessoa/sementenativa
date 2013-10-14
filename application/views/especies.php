@@ -45,7 +45,7 @@
 											$c = count($especies);
 											for($i = 0; $i < $c; $i++)
 											{
-												echo "<p>".$especies[$i]."</p>";
+												echo '<p><a href="'.base_url().'visualizarEspecie?nome='.$especies[$i].'">'.$especies[$i]."</a></p>";
 											}
 										?>
 									</div>
