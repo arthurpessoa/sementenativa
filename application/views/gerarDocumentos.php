@@ -49,11 +49,15 @@
             </div>
                     
 </header>
+
 <div class="art-sheet clearfix">
             <div class="art-layout-wrapper clearfix">
                 <div class="art-content-layout">
+
                     <div class="art-content-layout-row">
-                        <div class="art-layout-cell art-content clearfix"><article class="art-post art-article">
+                        <div class="art-layout-cell art-content clearfix">
+
+                <article class="art-post art-article">
                                 <h2 class="art-postheader">Gerar Documentos</h2>
                                                 
                 <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout">
