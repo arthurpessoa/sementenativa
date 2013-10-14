@@ -25,8 +25,9 @@ class ModelEspecie extends CI_Model {
 	}
 	function getID($especie)
 	{
-		$query = $this->db->query('SELECT id FROM especie where especie.cientifico = '.$especie);
-		return $query->result()[0]->id;
+		$query = $this->db->query('SELECT * FROM especie where especie.cientifico = '.$especie);
+		$a =$query->result();
+    	return $a[0]->id;
 	}
 	function dadosespecie($id)
 	{

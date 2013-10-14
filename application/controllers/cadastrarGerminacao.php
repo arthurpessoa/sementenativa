@@ -31,6 +31,8 @@ class CadastrarGerminacao extends CI_Controller {
 	}
 	public function index()
 	{
+		$this->load->model('ModelEspecie');
+		
 		//CONECTAR NO BANCO E RECUPERAR LISTA DE ESPÉCIES
 		$data['erro'] = '';
 		$data['especies'] = $this->ModelEspecie->getAllSpecies();
