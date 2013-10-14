@@ -58,6 +58,6 @@ class ModelEspecie extends CI_Model {
 		{
 			$ans[$i] = $a[$i]->cientifico;
 		}
-		return $ans
+		return $ans;
 	}
 }

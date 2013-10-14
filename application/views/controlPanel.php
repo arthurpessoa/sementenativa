@@ -3,7 +3,6 @@
 	<meta charset="utf-8">
 	<title>Semente Nativa - Painel de Controle</title>
 	<meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
-
 	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	<link rel="stylesheet" href=<?php echo base_url()."assets/style.css"?> media="screen">
 	<!--[if lte IE 7]><link rel="stylesheet" href="style.ie7.css" media="screen" /><![endif]-->
