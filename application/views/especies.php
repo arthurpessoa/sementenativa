@@ -64,7 +64,7 @@
 											$c = count($especies);
 											for($i = 0; $i < $c; $i++)
 											{
-												if(i==20)break;
+												if($i==20)break;
 												echo '<p><a href="'.base_url().'visualizarEspecie?nome='.$especies[$i].'">'.$especies[$i]."</a></p>";
 											}
 										}
