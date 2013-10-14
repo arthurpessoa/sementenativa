@@ -4,6 +4,7 @@ class Especies extends CI_Controller {
 	public function index()
 	{
 		$this->load->model('ModelEspecie');
-		$this->load->view('especies');
+		$data['especies'] = $this->ModelEspecie->getAllSpecies();
+		$this->load->view('especies', $data);
 	}
 }
