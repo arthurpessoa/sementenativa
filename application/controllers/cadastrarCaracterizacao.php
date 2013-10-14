@@ -3,6 +3,8 @@
 class CadastrarCaracterizacao extends CI_Controller {
 	public function checkCaracterizacao()
 	{
+		$this->load->model('ModelCaracterizacao');
+		
 		$especie = $_POST['especie']; //nome da espécie, descobrir numero
 		$data = $_POST['data'];
 		$localOrigem = $_POST['localOrigem'];
@@ -20,12 +22,19 @@ class CadastrarCaracterizacao extends CI_Controller {
 		$pureza = $_POST['pureza'];
 		$obs = $_POST['obs'];
 		$fontes = $_POST['fontes'];
+		
+		$id = $this->ModelEspecie->getID($especie);
+		$this->load->model('ModelEspecie');
+		
+		$this->ModelCaracterizacao->addCaracterizacao($id, $data, $localOrigem, $matura, $dispersao, $fpk, $pmf, $spf, $spk, $pms, $fs, $tamsem, $tamfruto, $tipofruto, $pureza, $obs, $fontes);
 	}
 	public function index()
 	{
+		$this->load->model('ModelEspecie');
+	
 		//CONECTAR NO BANCO E RECUPERAR LISTA DE ESPÉCIES
 		$data['erro'] = '';
-		$data['especies'] = array('esp1', 'esp2', 'esp3');
+		$data['especies'] = $this->ModelEspecie->getAllSpecies();
 		$this->load->view('CadastrarCaracterizacao', $data);
 	}
 }

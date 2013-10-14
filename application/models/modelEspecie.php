@@ -48,4 +48,16 @@ class ModelEspecie extends CI_Model {
 		$query = $this->db->query('SELECT * FROM caracterizacao caracterizacao.idEspecie = '.$id);
 		return $query->result();
 	}
+	function getAllSpecies()
+	{
+		$query = $this->db->query('SELECT cientifico FROM especie');
+		$ans = array();
+		$a = $query->result();
+		$c = count($a);
+		for($i = 0; $i < $c; $i++)
+		{
+			$ans[$i] = $a[$i]->cientifico;
+		}
+		return $ans
+	}
 }
