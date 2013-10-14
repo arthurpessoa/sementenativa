@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US"><head>
     <meta charset="utf-8">
-    <title>Sementes e Viveiros - Sobre</title>
+    <title>Sementes e Viveiros - Buscar Espécies</title>
     <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
 
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -41,14 +41,33 @@
 							<div class="art-content-layout">
 								<div class="art-content-layout-row">
 									<div class="art-layout-cell layout-item-0" style="width: 130%" >
+										<form method="post" action=<?php echo base_url()."especies/buscar" ?>>
+										
+										<h2>Buscar Espécies</h2>
+									    <br><br>
+
+									   Digite o nome da espécie (vulgar ou científico) ou parte dele, e clique em "Buscar", após isso clique na espécie desejada
+
+										<p><input id="especie" type="text" name="especie" style="width: 70%;"/></p>
+										<p><button type="submit" id="buscar" href="#" style="float: left;" onclick="" class="art-button" >Buscar</button></p>
+										
+										</form>
+										
+									</div>
+								</div>
+								<div style="float: left; padding-top: 10px;">
+										<br><br><br><br>
 										<?php
+										if($result){
+											echo "<h3>Resultados</h3>";
 											$c = count($especies);
 											for($i = 0; $i < $c; $i++)
 											{
+												if(i==20)break;
 												echo '<p><a href="'.base_url().'visualizarEspecie?nome='.$especies[$i].'">'.$especies[$i]."</a></p>";
 											}
+										}
 										?>
-									</div>
 								</div>
 							</div>
 						</div>  

@@ -56,7 +56,6 @@
 
                     <div class="art-content-layout-row">
                         <div class="art-layout-cell art-content clearfix">
-
                 <article class="art-post art-article">
                                 <h2 class="art-postheader">Gerar Documentos</h2>
                                                 
@@ -80,48 +79,48 @@
             Anexo III - Relatório de Material Propagacao Vegetal 
         </p>
         <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A1">
+            <input type="checkbox" name="A4">
             Anexo IV - Declaração de Fonte de Sementes
         </p>
         <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A1">
+            <input type="checkbox" name="A5">
             Anexo V - Requerimento Coletor de Sementes
         </p>
         <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A1">
+            <input type="checkbox" name="A6">
             Anexo VI - Relatório de Reembalagem
         </p>        <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A1">
+            <input type="checkbox" name="A7">
             Anexo VII - Declaração De Fonte De Material De Propagação Vegetativa
         </p>
         <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A1">
+            <input type="checkbox" name="A8">
             Anexo VIII - Declaração de Produção de Mudas
         </p>
         <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A1">
+            <input type="checkbox" name="A9">
             Anexo IX - Termo De Conformidade De Semente Florestal
         </p>
         <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A1">
+            <input type="checkbox" name="A10">
             Anexo X - Termo De Conformidade De Material De Propagação Vegetativa
         </p>        <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A1">
+            <input type="checkbox" name="A11">
             Anexo XI - Termo do Conformidade de Muda
         </p>
         <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A1">
+            <input type="checkbox" name="A12">
             Anexo XII - Laudo de Vistoria Florestal
         </p>
         <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A1">
+            <input type="checkbox" name="A13">
             ANEXO XIII - Declaração De Produção De Sementes E Mudas De Espécies Florestais Para Uso Próprio
         </p>
         <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A1">
+            <input type="checkbox" name="A14">
             Anexo XIV - Declaração De Produção De Sementes (Anexo Ao Decreto Nº 5.153, De 23 De julho De 2004) 
         </p>        <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A1">
+            <input type="checkbox" name="A15">
             Anexo XV - Relatório De Utilização De Sementes (Anexo Ao Decreto Nº 5.153, De 23 De julho De 2004)
         </p>
 
