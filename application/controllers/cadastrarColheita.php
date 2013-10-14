@@ -35,17 +35,20 @@ class CadastrarColheita extends CI_Controller {
 		$reco = $_POST['reco'];
 		$obse = $_POST['obse'];
 		$font = $_POST['font'];
-		
+		$autores = "a";
+		/*
 		$i = 1;
+
 		while(isset($_POST['auto'.$i]))
 		{
 			$autores = $autores.$_POST['auto'.$i]."#";
 		}
+		*/
 		
 		$this->load->model('ModelEspecie');
 		$id = $this->ModelEspecie->getID($especie);
+
 		$this->load->model('ModelColheita');
-		
 		$this->ModelColheita->addColheita($id, $nRev, $titu, $autores, $revi, $ano, $volu, $pagI, $pagE, $clas, $loca, $flor, $peri, $metoc, $equi, $tempc, $tempsf, $cond, $metoe, $queb, $tempob, $arma, $subs, $temper, $foto, $trat, $melh, $test, $metod, $reco, $obse, $font);
 		
 

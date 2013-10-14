@@ -54,7 +54,7 @@
 							<div class="art-content-layout">
 								<div class="art-content-layout-row">
 									<div class="art-layout-cell layout-item-0" style="width: 100%" >
-										<form method="post" action=<?php echo base_url()."cadastrarGerminacao/checkGerminacao" ?>>
+										<form method="post" action=<?php echo base_url()."cadastrarColheita/checkColheita" ?>>
 											<p>
 												<label for="selespecie">Especie* </label>
 												<select id="selespecie" type="text" name="especie">
