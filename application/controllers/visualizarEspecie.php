@@ -58,7 +58,7 @@ class VisualizarEspecie extends CI_Controller {
 		$espGe = count($dadosGer);
 		
 		$data['espGe'] = $espGe;
-
+		
 		for($i=0; $i < $espGe; $i++)
 		{
 			$data['gertemperatura'] = array();

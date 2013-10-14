@@ -98,8 +98,6 @@
 
 			for($i = 0; $i < $espGe; $i++)
 			{
-				
-				
 				echo "<td>".$gertemperatura[$i]."</td>";
 				echo "<td>".$gersubstrato[$i]."</td>";
 				echo "<td>".$descricaosem[$i]."</td>";

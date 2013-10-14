@@ -75,7 +75,7 @@ CREATE TABLE GERMINACAO(
 	tempoFimGerminacao varchar(100),
 	tipoLuz varchar(50),
 	umidadeSubstrato varchar(100),
-	testeGemrinacaoSementes varchar(500),
+	testeGerminacaoSementes varchar(500),
 	fontes varchar(500),
 	PRIMARY KEY(id),
 	FOREIGN KEY(idEspecie) REFERENCES ESPECIE(id) ON DELETE CASCADE
