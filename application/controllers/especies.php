@@ -3,6 +3,7 @@
 class Especies extends CI_Controller {
 	public function index()
 	{
+		$this->load->model('ModelEspecie');
 		$this->load->view('especies');
 	}
 }

@@ -52,9 +52,10 @@ class CadastrarColheita extends CI_Controller {
 	}
 	public function index()
 	{
+		$this->load->model('ModelEspecie');
 		//CONECTAR NO BANCO E RECUPERAR LISTA DE ESPÉCIES
 		$data['erro'] = '';
-		$data['especies'] = array('esp1', 'esp2', 'esp3');
+		$data['especies'] = $this->ModelEspecie->getAllSpecies();
 		$this->load->view('CadastrarColheita', $data);
 	}
 }
