@@ -6,7 +6,7 @@ class CadastrarColheita extends CI_Controller {
 		$especie = $_POST['especie'];
 		$nRev = $_POST['nRev'];
 		$titu = $_POST['titu'];
-		$auto1***********************
+		$autores = '';
 		$revi = $_POST['revi'];
 		$ano = $_POST['ano'];
 		$volu = $_POST['volu'];
@@ -16,26 +16,39 @@ class CadastrarColheita extends CI_Controller {
 		$loca = $_POST['loca'];
 		$flor = $_POST['flor'];
 		$peri = $_POST['peri'];
-		***$meto
+		$metoc = $_POST['metoc'];
 		$equi = $_POST['equi'];
 		$tempc = $_POST['tempc'];
 		$tempsf = $_POST['tempsf'];
 		$cond = $_POST['cond'];
-		***$meto
+		$metoe = $_POST['metoe'];
 		$queb = $_POST['queb'];
-		***$temp
+		$tempob = $_POST['tempob'];
 		$arma = $_POST['arma'];
 		$subs = $_POST['subs'];
-		***$temp
+		$temper = $_POST['temper'];
 		$foto = $_POST['foto'];
 		$trat = $_POST['trat'];
 		$melh = $_POST['melh'];
 		$test = $_POST['test'];
-		***$meto
+		$metod = $_POST['metod'];
 		$reco = $_POST['reco'];
 		$obse = $_POST['obse'];
 		$font = $_POST['font'];
 		
+		$i = 1;
+		while(isset($_POST['auto'.$i]))
+		{
+			$autores = $autores.$_POST['auto'.$i]."#";
+		}
+		
+		$this->load->model('ModelEspecie');
+		$id = $this->ModelEspecie->getID($especie);
+		$this->load->model('ModelColheita');
+		
+		$this->ModelColheita->addColheita($id, $nRev, $titu, $autores, $revi, $ano, $volu, $pagI, $pagE, $clas, $loca, $flor, $peri, $metoc, $equi, $tempc, $tempsf, $cond, $metoe, $queb, $tempob, $arma, $subs, $temper, $foto, $trat, $melh, $test, $metod, $reco, $obse, $font);
+		
+
 	}
 	public function index()
 	{

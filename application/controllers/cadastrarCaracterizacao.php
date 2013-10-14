@@ -23,8 +23,10 @@ class CadastrarCaracterizacao extends CI_Controller {
 		$obs = $_POST['obs'];
 		$fontes = $_POST['fontes'];
 		
-		$id = $this->ModelEspecie->getID($especie);
+		
 		$this->load->model('ModelEspecie');
+		$id = $this->ModelEspecie->getID($especie);
+		
 		
 		$this->ModelCaracterizacao->addCaracterizacao($id, $data, $localOrigem, $matura, $dispersao, $fpk, $pmf, $spf, $spk, $pms, $fs, $tamsem, $tamfruto, $tipofruto, $pureza, $obs, $fontes);
 	}

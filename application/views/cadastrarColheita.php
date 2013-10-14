@@ -122,7 +122,7 @@
 											</p>
 											<p>
 												<label for="boxmeto">Método de Colheita</label>
-												<textarea id="boxmeto" name="meto"></textarea>
+												<textarea id="boxmeto" name="metoc"></textarea>
 											</p>
 											<p>
 												<label for="boxequi">Equipamentos de colheita usados</label>
@@ -142,7 +142,7 @@
 											</p>
 											<p>
 												<label for="boxmeto">Método de extração das sementes</label>
-												<input id="boxmeto" name="meto"/>
+												<input id="boxmeto" name="metoe"/>
 											</p>
 											<p>
 												<label for="boxqueb">Tratamento para quebra de dormência</label>
@@ -150,7 +150,7 @@
 											</p>
 											<p>
 												<label for="boxtemp">Tempo de beneficiamento</label>
-												<input id="boxtemp" name="temp"/>
+												<input id="boxtemp" name="tempob"/>
 											</p>
 											<p>
 												<label for="boxarma">Armazenamento Pós-colheita</label>
@@ -162,7 +162,7 @@
 											</p>
 											<p>
 												<label for="boxtemp">Temperatura</label>
-												<input id="boxtemp" name="temp"/>
+												<input id="boxtemp" name="temper"/>
 											</p>
 											<p>
 												<label for="boxfoto">Fotoperíodo</label>
@@ -182,7 +182,7 @@
 											</p>
 											<p>
 												<label for="boxmeto">Metodologia</label>
-												<textarea id="boxmeto" name="meto"></textarea>
+												<textarea id="boxmeto" name="metod"></textarea>
 											</p>
 											<p>
 												<label for="boxreco">Recomendações</label>
