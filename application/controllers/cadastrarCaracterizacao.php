@@ -1,6 +1,26 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class CadastrarCaracterizacao extends CI_Controller {
+
+	public function buscaEspecie(){
+		$q = $_GET['q'];
+		$this->load->model('ModelEspecie');
+		
+		if($q!=""){
+			$especies = $this->ModelEspecie->BuscaEspecies($q);
+			echo "<h3>Resultados</h3>";
+			$c = count($especies);
+			for($i = 0; $i < $c; $i++)
+			{
+				if($i==20)break;
+				
+				  	echo "<input type='hidden' name='hidenInput".$i."' id='hidenInput".$i."' value='".$especies[$i]."'>";
+       				echo "<a id=\"link".$i."\" href=\"#\" onclick=\"BuscaParaTextbox(document.getElementById('hidenInput".$i."').value);\">".$especies[$i]."</a>";
+			}
+		}
+
+
+	}
 	public function checkCaracterizacao()
 	{
 		$this->load->model('ModelCaracterizacao');
