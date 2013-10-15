@@ -21,8 +21,64 @@
 .ie7 .post .layout-cell {border:none !important; padding:0 !important; }
 .ie6 .post .layout-cell {border:none !important; padding:0 !important; }
 
+
+#lightbox{
+    display:none;
+    position:absolute;
+    z-index:1000;
+    background:url(http://images3.wikia.nocookie.net/__cb20110703044636/umemaro3d/images/b/b4/Bg-white-50.png);
+    width:100%;
+    height:100%;
+}
+#lightbox_area{
+    position:relative;
+    margin:50px auto;
+    background:#fff;
+    width:50%;
+    height:300px;
+    padding:23px;
+    border:1px solid #444;
+    border-radius:20px;
+}
+  .open{
+    cursor:pointer;
+  }
+  .close{
+    cursor:pointer;
+    border:1px solid #444;
+    width:25px;
+    height:25px;
+    line-height:24px;
+    border-radius:20px;
+    text-align:center;
+    position:absolute;
+    right:-8px;
+    top:-28px;
+    background:#e11;
+    color:#fff;
+  }
+
 </style></head>
 <body>
+
+<div id="lightbox">
+  <div id="lightbox_area">
+    <h2>Buscar Espécies</h2>
+    <br><br>
+
+    <h5>Digite o nome vulgar ou parte dele, e clique em "Buscar", após isso clique na espécie desejada</h5>
+
+	<p><input id="boxespecie" type="text" name="boxespecie" style="width: 80%;"/>
+	<a id="selecionarEsp" href="#" style="" onclick="buscaEspecie(document.getElementById('boxespecie').value)" class="art-button" >Buscar</a></p>
+    <p class="close"><b>X</b></p>
+    
+
+    <div id="result">
+    </div>
+  </div>
+</div>
+
+
 <div id="art-main">
 <nav class="art-nav clearfix">
 	<ul class="art-hmenu">
@@ -55,19 +111,18 @@
 								<div class="art-content-layout-row">
 									<div class="art-layout-cell layout-item-0" style="width: 100%" >
 										<form method="post" action=<?php echo base_url()."cadastrarGerminacao/checkGerminacao" ?>>
+											
+
 											<p>
-												<label for="selespecie">Especie* </label>
-												<select id="selespecie" type="text" name="especie">
-													<option value=""/>
-													<?php
-														$espc = count($especies);
-														for($i = 0; $i < $espc; $i++){
-															echo "<option value=\"".$especies[$i]."\">".$especies[$i]."</option>";
-														}
-													?>
-												</select>
+												<input type='hidden' name='especieid' id='especieid' value=''>
+												<label for="especie">Especie* </label>
+												
+
+												<p class="open"><input id="especie" type="text" name="especie"/>
+												<a id="selecionarEsp" href="#" style="" onclick="" class="art-button" >Procurar...</a></p>
 												<span id="erroEspecie" class="erroinsert"></span>
 											</p>
+
 											<p>
 												<label for="boxtemp">Temperatura </label>
 												<input id="boxtemp" name="temp" type="text"/>
@@ -149,6 +204,65 @@
 <?php include 'modules/footer.php'; ?>
 </div>
 <script>
+
+
+
+function buscaEspecie(str){
+  	if (str=="")
+  	{
+  		document.getElementById("result").innerHTML="";
+  		return;
+  	}
+  	if (window.XMLHttpRequest)
+  	{// code for IE7+, Firefox, Chrome, Opera, Safari
+  		xmlhttp=new XMLHttpRequest();
+  	}
+	else
+  	{// code for IE6, IE5
+  		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  	}
+	xmlhttp.onreadystatechange=function()
+    {
+  		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    	{
+    		document.getElementById("result").innerHTML=xmlhttp.responseText;
+    	}
+  	}
+
+	xmlhttp.open("GET","cadastrarCaracterizacao/buscaEspecie?q="+str,true);
+	xmlhttp.send();
+}
+
+function BuscaParaTextbox(str)
+{
+	document.getElementById('especie').value=str;
+	$('#lightbox').hide();
+  	$("#wrapper").css({'text-shadow': '0px 0px 0px #000'});
+    $("body").css("overflow", "visible");
+}
+
+
+$('.open').click(function(){
+  $('#lightbox').fadeTo(1000, 1);
+  $("#wrapper").css({'text-shadow': '0px 0px 10px #000'});
+  $("body").css("overflow", "hidden");
+});
+
+$('.close').click(function(){
+  $('#lightbox').hide();
+  $("#wrapper").css({'text-shadow': '0px 0px 0px #000'});
+   $("body").css("overflow", "visible");
+});
+
+
+
+
+
+
+
+
+
+
 $(document).ready(function() {
 	nomPop = 1;
 	$('#addNp').click(function(){

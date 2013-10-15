@@ -27,7 +27,6 @@ class CadastrarGerminacao extends CI_Controller {
 		
 		$this->ModelGerminacao->addGerminacao($id, $temp, $subs, $descs, $semkg, $peso, $repet, $nrepet, $qd, $tempger, $dataini, $datafim, $tipoluz, $umisub, $testegerm, $fontes);
 		
-		
 	}
 	public function index()
 	{
