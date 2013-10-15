@@ -73,21 +73,21 @@
 
     <h5>Digite o nome vulgar ou parte dele, e clique em "Buscar", após isso clique na espécie desejada</h5>
 
-	<p><input id="boxespecie" type="text" name="nomeespecie" style="width: 80%;"/>
-	<a id="selecionarEsp" href="#" style="" onclick="" class="art-button" >Buscar</a></p>
-
+	<p><input id="boxespecie" type="text" name="boxespecie" style="width: 80%;"/>
+	<a id="selecionarEsp" href="#" style="" onclick="buscaEspecie(document.getElementById('boxespecie').value)" class="art-button" >Buscar</a></p>
     <p class="close"><b>X</b></p>
+    
+
+    <div id="result">
+    </div>
   </div>
 </div>
-
-
-
 
 
 <div id="art-main">
 <nav class="art-nav clearfix">
 	<ul class="art-hmenu">
-		  <li><a href=<?php echo base_url()."home";?>>Home</a></li>
+		<li><a href=<?php echo base_url()."home";?>>Home</a></li>
         <li><a href=<?php echo base_url()."sobre"?>               >Sobre</a></li>
         <li><a href=<?php echo base_url()."contato"?>               >Contato</a></li>
 	</ul>
@@ -119,7 +119,7 @@
 											
 											<p>
 												<label for="selespecie">Especie* </label>
-												<p class="open"><input id="boxespecie" type="text" name="nomeespecie" disabled="disabled"/>
+												<p class="open"><input id="tboxespecies" type="text" name="tboxespecies" disabled="disabled"/>
 												<a id="selecionarEsp" href="#" style="" onclick="" class="art-button" >Buscar Espécie</a></p>
 												<span id="erroEspecie" class="erroinsert"></span>
 											</p>
@@ -209,6 +209,41 @@
 <?php include 'modules/footer.php'; ?>
 </div>
 <script>
+
+
+function buscaEspecie(str){
+  	if (str=="")
+  	{
+  		document.getElementById("result").innerHTML="";
+  		return;
+  	}
+  	if (window.XMLHttpRequest)
+  	{// code for IE7+, Firefox, Chrome, Opera, Safari
+  		xmlhttp=new XMLHttpRequest();
+  	}
+	else
+  	{// code for IE6, IE5
+  		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  	}
+	xmlhttp.onreadystatechange=function()
+    {
+  		if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    	{
+    		document.getElementById("result").innerHTML=xmlhttp.responseText;
+    	}
+  	}
+
+	xmlhttp.open("GET","cadastrarCaracterizacao/buscaEspecie?q="+str,true);
+	xmlhttp.send();
+}
+
+function BuscaParaTextbox(str)
+{
+	document.getElementById('tboxespecies').value=str;
+	$('#lightbox').hide();
+  	$("#wrapper").css({'text-shadow': '0px 0px 0px #000'});
+    $("body").css("overflow", "visible");
+}
 
 
 $('.open').click(function(){
