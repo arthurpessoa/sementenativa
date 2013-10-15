@@ -107,10 +107,14 @@
 					<?php include 'modules/powerMenu.php'; ?>
 					<article class="art-post art-article">
 						<h2 class="art-postheader">Adicionar Caracterização</h2>
+						<br>
 						<p>
-							<br>
+							<span id="okPagina" class="okinsert"><?php echo $ok ?></span>
+						</p>
+						<p>
 							<span id="erroPagina" class="erroinsert"><?php echo $erro ?></span>
 						</p>
+						
 						<div class="art-postcontent art-postcontent-0 clearfix">
 							<div class="art-content-layout">
 								<div class="art-content-layout-row">
@@ -119,8 +123,10 @@
 											
 											<p>
 												<label for="selespecie">Especie* </label>
-												<p class="open"><input id="tboxespecies" type="text" name="tboxespecies" disabled="disabled"/>
-												<a id="selecionarEsp" href="#" style="" onclick="" class="art-button" >Procurar...</a></p>
+												<p class="open">
+													<input id="tboxespecies" type="text" name="tboxespecies"/>
+													<a id="selecionarEsp" href="#" style="" onclick="" class="art-button" >Procurar...</a>
+												</p>
 												<span id="erroEspecie" class="erroinsert"></span>
 											</p>
 											

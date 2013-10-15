@@ -25,7 +25,7 @@ class CadastrarCaracterizacao extends CI_Controller {
 	{
 		$this->load->model('ModelCaracterizacao');
 		
-		$especie = $_POST['especie']; //nome da espécie, descobrir numero
+		$especie = $_POST['tboxespecies']; //nome da espécie, descobrir numero
 		$data = $_POST['data'];
 		$localOrigem = $_POST['localOrigem'];
 		$matura = $_POST['matura'];
@@ -49,6 +49,12 @@ class CadastrarCaracterizacao extends CI_Controller {
 		
 		
 		$this->ModelCaracterizacao->addCaracterizacao($id, $data, $localOrigem, $matura, $dispersao, $fpk, $pmf, $spf, $spk, $pms, $fs, $tamsem, $tamfruto, $tipofruto, $pureza, $obs, $fontes);
+		
+		$data['erro'] = '';
+		$data['ok'] = "Caracterização cadastrada com sucesso!";
+		$data['especies'] = $this->ModelEspecie->getAllSpecies();
+		$this->load->view('CadastrarCaracterizacao', $data);
+		
 	}
 	public function index()
 	{
@@ -56,6 +62,7 @@ class CadastrarCaracterizacao extends CI_Controller {
 	
 		//CONECTAR NO BANCO E RECUPERAR LISTA DE ESPÉCIES
 		$data['erro'] = '';
+		$data['ok'] = "Caracterização cadastrada com sucesso!";
 		$data['especies'] = $this->ModelEspecie->getAllSpecies();
 		$this->load->view('CadastrarCaracterizacao', $data);
 	}
