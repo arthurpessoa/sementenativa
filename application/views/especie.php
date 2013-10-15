@@ -95,9 +95,10 @@
 		  </tr>
 		  <tr class="tg-even">
 		  <?php 
-
+		  	
 			for($i = 0; $i < $espGe; $i++)
 			{
+				echo "<tr>";
 				echo "<td>".$gertemperatura[$i]."</td>";
 				echo "<td>".$gersubstrato[$i]."</td>";
 				echo "<td>".$descricaosem[$i]."</td>";
@@ -113,6 +114,7 @@
 				echo "<td>".$umidadesubs[$i]."</td>";
 				echo "<td>".$testeger[$i]."</td>";
 				echo "<td>".$gerfontes[$i]."</td>";
+				echo "</tr>";
 			}
 		  ?>
 		  </tr>
