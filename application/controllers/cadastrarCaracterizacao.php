@@ -50,10 +50,10 @@ class CadastrarCaracterizacao extends CI_Controller {
 		
 		$this->ModelCaracterizacao->addCaracterizacao($id, $data, $localOrigem, $matura, $dispersao, $fpk, $pmf, $spf, $spk, $pms, $fs, $tamsem, $tamfruto, $tipofruto, $pureza, $obs, $fontes);
 		
-		$data['erro'] = '';
-		$data['ok'] = "Caracterização cadastrada com sucesso!";
-		$data['especies'] = $this->ModelEspecie->getAllSpecies();
-		$this->load->view('CadastrarCaracterizacao', $data);
+		$hue['erro'] = "";
+		$hue['ok'] = "Caracterização cadastrada com sucesso!";
+		$hue['especies'] = $this->ModelEspecie->getAllSpecies();
+		$this->load->view('CadastrarCaracterizacao', $hue);
 		
 	}
 	public function index()
