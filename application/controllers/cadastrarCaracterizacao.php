@@ -62,7 +62,7 @@ class CadastrarCaracterizacao extends CI_Controller {
 	
 		//CONECTAR NO BANCO E RECUPERAR LISTA DE ESPÉCIES
 		$data['erro'] = '';
-		$data['ok'] = "Caracterização cadastrada com sucesso!";
+		$data['ok'] = '';
 		$data['especies'] = $this->ModelEspecie->getAllSpecies();
 		$this->load->view('CadastrarCaracterizacao', $data);
 	}
