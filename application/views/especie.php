@@ -79,15 +79,15 @@
 		  <tr>
 			<th>Temperatura</th>
 			<th>Substrato</th>
-			<th>Descrição da Semente</th>
-			<th>Número de sementes por Kg</th>
-			<th>Peso de 1000 sementes</th>
+			<!--th>Descrição da Semente</th-->
+			<!--th>Número de sementes por Kg</th-->
+			<!--th>Peso de 1000 sementes</th-->
 			<th>Número de sementes por Repetição</th>
 			<th>Número de Repetições</th>
 			<th>Quebra de Dormencia</th>
-			<th>Tempo inicial de Germinação</th>
-			<th>Período de Teste</th>
-			<th>Tempo final de Germinação</th>
+			<!--th>Tempo inicial de Germinação</th-->
+			<!--th>Período de Teste</th-->
+			<!--th>Tempo final de Germinação</th-->
 			<th>Tipo de Luz</th>
 			<th>Umidade do Substrato</th>
 			<th>Teste de Germinação</th>
@@ -101,19 +101,66 @@
 				echo "<tr>";
 				echo "<td>".$gertemperatura[$i]."</td>";
 				echo "<td>".$gersubstrato[$i]."</td>";
-				echo "<td>".$descricaosem[$i]."</td>";
-				echo "<td>".$nsemkg[$i]."</td>";
-				echo "<td>".$gerpesosksem[$i]."</td>";
+				//echo "<td>".$descricaosem[$i]."</td>";
+				//echo "<td>".$nsemkg[$i]."</td>";
+				//echo "<td>".$gerpesosksem[$i]."</td>";
 				echo "<td>".$semporrep[$i]."</td>";
 				echo "<td>".$repet[$i]."</td>";
 				echo "<td>".$gerquebradorm[$i]."</td>";
-				echo "<td>".$periodoteste[$i]."</td>";
-				echo "<td>".$tiniger[$i]."</td>";
-				echo "<td>".$ifimger[$i]."</td>";
+				//echo "<td>".$periodoteste[$i]."</td>";
+				//echo "<td>".$tiniger[$i]."</td>";
+				//echo "<td>".$ifimger[$i]."</td>";
 				echo "<td>".$tipoluz[$i]."</td>";
 				echo "<td>".$umidadesubs[$i]."</td>";
 				echo "<td>".$testeger[$i]."</td>";
 				echo "<td>".$gerfontes[$i]."</td>";
+				echo "</tr>";
+			}
+		  ?>
+		  </tr>
+		</table>
+		<br>
+		<table class="tg-table-green">
+		  <tr>
+			<th>Data da colheita</th>
+			<!--th>Origem das sementes</th-->
+			<th>Indicador de Maturação</th>
+			<th>Dispersão</th>
+			<th>Nº Frutos por quilo</th>
+			<!--th>Peso de 1000 frutos</th-->
+			<th>Nº de Sementes por fruto</th>
+			<!--th>Nº de Sementes por quilo</th-->
+			<!--th>Peso de 1000 sementes</th-->
+			<!--th>Relação fruto:semente</th-->
+			<!--th>Tamanho da semente</th-->
+			<!--th>Tamanho do fruto</th-->
+			<th>Tipo do fruto</th>
+			<th>Pureza</th>
+			<!--th>Observações</th-->
+			<th>Fontes</th>
+		  </tr>
+		  <tr class="tg-even">
+		  <?php 
+		  	
+			for($i = 0; $i < $espCa; $i++)
+			{
+				echo "<tr>";
+				echo "<td>".$datacol[$i]."</td>";
+				//echo "<td>".$locorigem[$i]."</td>";
+				echo "<td>".$indicmatur[$i]."</td>";
+				echo "<td>".$dispers[$i]."</td>";
+				echo "<td>".$frutoskg[$i]."</td>";
+				//echo "<td>".$pesokfrutos[$i]."</td>";
+				echo "<td>".$semsfruto[$i]."</td>";
+				//echo "<td>".$semskilo[$i]."</td>";
+				//echo "<td>".$carpesoksem[$i]."</td>";
+				//echo "<td>".$relfrutsem[$i]."</td>";
+				//echo "<td>".$tamsemente[$i]."</td>";
+				//echo "<td>".$tamfruto[$i]."</td>";
+				echo "<td>".$tipofruto[$i]."</td>";
+				echo "<td>".$pureza[$i]."</td>";
+				//echo "<td>".$obs[$i]."</td>";
+				echo "<td>".$carfontes[$i]."</td>";
 				echo "</tr>";
 			}
 		  ?>
