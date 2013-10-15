@@ -120,7 +120,7 @@
 											<p>
 												<label for="selespecie">Especie* </label>
 												<p class="open"><input id="tboxespecies" type="text" name="tboxespecies" disabled="disabled"/>
-												<a id="selecionarEsp" href="#" style="" onclick="" class="art-button" >Buscar Espécie</a></p>
+												<a id="selecionarEsp" href="#" style="" onclick="" class="art-button" >Procurar...</a></p>
 												<span id="erroEspecie" class="erroinsert"></span>
 											</p>
 											
