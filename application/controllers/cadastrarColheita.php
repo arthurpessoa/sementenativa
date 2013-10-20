@@ -35,6 +35,28 @@ class CadastrarColheita extends CI_Controller {
 		$reco = $_POST['reco'];
 		$obse = $_POST['obse'];
 		$font = $_POST['font'];
+		
+		if($nRev == '')
+		{
+			$nRev = 0;
+		}
+		if($ano == '')
+		{
+			$ano = 0;
+		}
+		if($volu == '')
+		{
+			$volu = 0;
+		}
+		if($pagI == '')
+		{
+			$pagI = 0;
+		}
+		if($pagE == '')
+		{
+			$pagE = 0;
+		}
+		
 		$autores = "a";
 		/*
 		$i = 1;
