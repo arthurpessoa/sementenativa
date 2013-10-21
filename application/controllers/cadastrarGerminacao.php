@@ -27,6 +27,11 @@ class CadastrarGerminacao extends CI_Controller {
 		
 		$this->ModelGerminacao->addGerminacao($id, $temp, $subs, $descs, $semkg, $peso, $repet, $nrepet, $qd, $tempger, $dataini, $datafim, $tipoluz, $umisub, $testegerm, $fontes);
 		
+		$data['erro'] = '';
+		$data['ok'] = 'Germinação cadastrada com uscesso!';
+		$data['especies'] = $this->ModelEspecie->getAllSpecies();
+		$this->load->view('CadastrarGerminacao', $data);
+		
 	}
 	public function index()
 	{
@@ -34,6 +39,7 @@ class CadastrarGerminacao extends CI_Controller {
 		
 		//CONECTAR NO BANCO E RECUPERAR LISTA DE ESPÉCIES
 		$data['erro'] = '';
+		$data['ok'] = '';
 		$data['especies'] = $this->ModelEspecie->getAllSpecies();
 		$this->load->view('CadastrarGerminacao', $data);
 	}

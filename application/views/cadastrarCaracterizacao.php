@@ -132,7 +132,7 @@
 											
 											<br><br>
 											<p>
-												<label>Data de colheita </label>
+												<label for="boxdata">Data de colheita </label>
 												<input id="boxdata" type="text" name="data"/>
 												<span id="erroData" class="erroinsert"></span>
 											</p>
