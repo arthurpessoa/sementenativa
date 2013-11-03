@@ -44,12 +44,11 @@
 				<div class="art-content-layout">
 					<div class="art-content-layout-row">
 						<div class="art-layout-cell art-content clearfix"><article class="art-post art-article">
-								<h2 class="art-postheader">Seu Perfil</h2>
+								<h2 class="art-postheader">Perfil</h2>
 												
 				<div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout">
 	<div class="art-content-layout-row">
 	<div class="art-layout-cell layout-item-0" style="width: 100%" >
-		<p><span style="font-weight: bold; font-size: 20px">Perfil</span></p>
 		<p><span style="font-weight: bold; font-size: 16px">Nome</span></p>
 		<p><?php echo $nome?></p>
 		<p><span style="font-weight: bold; font-size: 16px">Tipo de Usuário</span></p>
