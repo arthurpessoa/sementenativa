@@ -37,6 +37,7 @@ class Login extends CI_Controller {
 		 else
 		{
 			$data['erro'] = 'Email ou senha incorreta!';
+			$data['ok'] = '';
 			$this->load->view('login',$data);	
 		}
 	}
@@ -46,6 +47,7 @@ class Login extends CI_Controller {
 			redirect(base_url()."controlPanel",'refresh');
 		}else{
 			$data['erro'] = '';
+			$data['ok'] = '';
 			$this->load->view('login',$data);
 		}
 	}

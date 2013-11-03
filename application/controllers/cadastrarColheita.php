@@ -73,13 +73,17 @@ class CadastrarColheita extends CI_Controller {
 		$this->load->model('ModelColheita');
 		$this->ModelColheita->addColheita($id, $nRev, $titu, $autores, $revi, $ano, $volu, $pagI, $pagE, $clas, $loca, $flor, $peri, $metoc, $equi, $tempc, $tempsf, $cond, $metoe, $queb, $tempob, $arma, $subs, $temper, $foto, $trat, $melh, $test, $metod, $reco, $obse, $font);
 		
-
+		$data['erro'] = '';
+		$data['ok'] = 'Colheita cadastrada com sucesso!';
+		$data['especies'] = $this->ModelEspecie->getAllSpecies();
+		$this->load->view('CadastrarColheita', $data);
 	}
 	public function index()
 	{
 		$this->load->model('ModelEspecie');
 		//CONECTAR NO BANCO E RECUPERAR LISTA DE ESPÉCIES
 		$data['erro'] = '';
+		$data['ok'] = '';
 		$data['especies'] = $this->ModelEspecie->getAllSpecies();
 		$this->load->view('CadastrarColheita', $data);
 	}
