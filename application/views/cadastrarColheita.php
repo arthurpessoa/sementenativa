@@ -46,8 +46,11 @@
 					<?php include 'modules/powerMenu.php'; ?>
 					<article class="art-post art-article">
 						<h2 class="art-postheader">Adicionar Colheita e Manejo</h2>
+						<br>
 						<p>
-							<br>
+							<span id="okPagina" class="okinsert"><?php echo $ok ?></span>
+						</p>
+						<p>
 							<span id="erroPagina" class="erroinsert"><?php echo $erro ?></span>
 						</p>
 						<div class="art-postcontent art-postcontent-0 clearfix">
