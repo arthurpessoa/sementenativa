@@ -10,6 +10,8 @@ CREATE TABLE `usuarios` (
 `bairro` varchar(40) NOT NULL,
 `cidade` varchar(40) NOT NULL,
 `estado` varchar(2) NOT NULL,
+`cpf-cnpj` int,
+`renasem` int,
 PRIMARY KEY (`email`)
 ) ENGINE=MyISAM;
 
