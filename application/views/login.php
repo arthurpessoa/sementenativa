@@ -36,9 +36,12 @@
 				<div class="art-layout-cell art-content clearfix">
 						<article class="art-post art-article">
 						<h2 class="art-postheader">Entrar</h2>
+						<br>
 						<p>
-							<br>
 							<span id="erroPagina" class="erroinsert"><?php echo $erro ?></span>
+						</p>
+						<p>
+							<span id="okPagina" class="okinsert"><?php echo $ok ?></span>
 						</p>
 						<div class="art-postcontent art-postcontent-0 clearfix">
 							<div class="art-content-layout">

@@ -64,8 +64,7 @@
         <p><?php echo $endereco.", ".$numero ?></p>
         <p><?php echo $bairro ?></p>
         <p><?php echo $cidade." - ".$estado ?></p>
-        <p><span style="font-weight: bold; font-size: 16px">Rede Social para contato</span></p>
-        <p>facebook.com/joseSilva</p>
+        <p>CEP: <?php echo $cep ?></p>
         <p><br /></p>
     </div>
     </div>

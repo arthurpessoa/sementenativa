@@ -9,7 +9,9 @@ class CadastrarUsuario extends CI_Controller {
 		 //recebo os dados do form
 		 $nome = $_POST['nome'];
 		 $email = $_POST['email'];
-		 $sexo = $_POST['sexo'];
+		 //$sexo = $_POST['sexo'];
+		 $renasem = $_POST['renasem'];
+		 $cpfcnpj = $_POST['cpfcnpj'];
 		 $CEP = $_POST['cep'];
 		 $endereco = $_POST['endereco'];
 		 $num = $_POST['num'];
@@ -23,13 +25,17 @@ class CadastrarUsuario extends CI_Controller {
 		 if($emailCheck)
 		 {
 		 	$data['erro'] = '*Email já cadastrado!';
+		 	$data['ok'] = '';
 		 	$this->load->view('cadastrarUsuario',$data);	
 		 }
 		 else
 		 {
-		 	$this->ModelUsuario->cadastrar($nome,$email,$sexo, $CEP, $endereco, $num, $bairro, $cidade, $estado, $senha);
-		 	$redirect =  base_url()."login"; //redireciona
-			header("location:$redirect");
+		 	$this->ModelUsuario->cadastrar($nome,$email, $renasem, $cpfcnpj, $CEP, $endereco, $num, $bairro, $cidade, $estado, $senha);
+		 	$data['erro'] = '';
+		 	$data['ok'] = 'Usuário cadastrado com sucesso!';
+		 	$this->load->view('login',$data);
+		 	//$redirect =  base_url()."login"; //redireciona
+			//header("location:$redirect");
 		 }
 
 

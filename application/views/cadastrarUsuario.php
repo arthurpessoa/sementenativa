@@ -60,10 +60,14 @@
 												<span hidden id="erroEmail" class="erroinsert">*e-mail inválido</span>
 											</p>
 											<p>
-												<label for="boxsexo">Sexo</label>
-												<input id="sexo" type="radio" name="sexo" value="m" checked/>Masculino
-												<input id="sexo" type="radio" name="sexo" value="f"/>Feminino
-												<span id="erroSexo" class="erroinsert"></span>
+												<label for="boxrenasem">Número RENASEM</label>
+												<input id="boxrenasem" type="text" name="renasem" size="40"/>
+												<span id="errorenasem" class="erroinsert"></span>
+											</p>
+											<p>
+												<label for="boxcpfcnpj">CPF/CNPJ</label>
+												<input id="boxcpfcnpj" type="text" name="cpfcnpj" size="40"/>
+												<span id="errocpfcnpj" class="erroinsert"></span>
 											</p>
 											<p>
 												<label for="boxcep">CEP</label>

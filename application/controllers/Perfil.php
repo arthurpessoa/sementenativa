@@ -9,7 +9,9 @@ class Perfil extends CI_Controller {
 		
 		$data['nome'] = $profile->nome;
 		$data['email'] = $profile->email;
-		$data['sexo'] = $profile->sexo;
+		//$data['sexo'] = $profile->sexo;
+		$data['renasem'] = $profile->renasem;
+		$data['cpfcnpj'] = $profile->cpfcnpj;
 		$data['cep'] = $profile->CEP;
 		$data['endereco'] = $profile->endereco;
 		$data['numero'] = $profile->numero;
