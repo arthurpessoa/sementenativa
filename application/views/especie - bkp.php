@@ -119,6 +119,87 @@
 		  ?>
 		  </tr>
 		</table>
+		<br>
+		<table class="tg-table-green">
+		  <tr>
+			<th>Data da colheita</th>
+			<!--th>Origem das sementes</th-->
+			<th>Indicador de Maturação</th>
+			<th>Dispersão</th>
+			<th>Nº Frutos por quilo</th>
+			<!--th>Peso de 1000 frutos</th-->
+			<th>Nº de Sementes por fruto</th>
+			<!--th>Nº de Sementes por quilo</th-->
+			<!--th>Peso de 1000 sementes</th-->
+			<!--th>Relação fruto:semente</th-->
+			<!--th>Tamanho da semente</th-->
+			<!--th>Tamanho do fruto</th-->
+			<th>Tipo do fruto</th>
+			<th>Pureza</th>
+			<!--th>Observações</th-->
+			<th>Fontes</th>
+		  </tr>
+		  <tr class="tg-even">
+		  <?php 
+		  	
+			for($i = 0; $i < $espCa; $i++)
+			{
+				echo "<tr>";
+				echo "<td>".$datacol[$i]."</td>";
+				//echo "<td>".$locorigem[$i]."</td>";
+				echo "<td>".$indicmatur[$i]."</td>";
+				echo "<td>".$dispers[$i]."</td>";
+				echo "<td>".$frutoskg[$i]."</td>";
+				//echo "<td>".$pesokfrutos[$i]."</td>";
+				echo "<td>".$semsfruto[$i]."</td>";
+				//echo "<td>".$semskilo[$i]."</td>";
+				//echo "<td>".$carpesoksem[$i]."</td>";
+				//echo "<td>".$relfrutsem[$i]."</td>";
+				//echo "<td>".$tamsemente[$i]."</td>";
+				//echo "<td>".$tamfruto[$i]."</td>";
+				echo "<td>".$tipofruto[$i]."</td>";
+				echo "<td>".$pureza[$i]."</td>";
+				//echo "<td>".$obs[$i]."</td>";
+				echo "<td>".$carfontes[$i]."</td>";
+				echo "</tr>";
+			}
+		  ?>
+		  </tr>
+		</table>
+		
+        <?php
+			$arrlength=count($espGe);
+/*
+			for($i=0;$i<$arrlength;$i++)
+ 			{
+ 			 echo "<p><span style='font-weight: bold; font-size: 16px'>Revistas para referência:</span></p>";
+ 			 echo "<p>Numero: "; 	echo $nrevista[$i]; echo " Título do artigo: "; echo $tituloArtigo[$i];
+ 			 echo " Autores: "; 	echo $autores[$i]; 	echo "</p>";
+ 			 echo "<p>Revista: "; 	echo $revista[$i]; 	echo " Ano: "; 				echo $ano[$i];
+ 			 echo " Volume: "; 		echo $volume[$i]; 	echo " Páginas: "; 			echo $pagini[$i];
+ 			 echo "-"; 				echo $pagend[$i]; 	echo "</p>";
+
+ 			 echo "<p><span style='font-weight: bold; font-size: 16px'>Informações sobre colheitas:</span></p>";
+ 			 echo "<p> Classificador: "; echo $classificador[$i]; echo " Local da colheita: "; echo $localcolheita[$i]; echo "</p>";
+ 			 echo "<p> Floração: "; echo $floracao[$i]; echo " Período de colheita: "; echo $peridocolheita[$i]; echo "</p>";
+ 			 echo "<p> Equipamentos Usados: "; echo $equipusados[$i]; echo " Tempo de Colheita: "; echo $tempocolheita[$i]; echo "</p>";
+ 			 echo "<p> Tempo de Secagem dos frutos: "; echo $tsecagemfrutos[$i]; echo " Condições de secagem: "; echo $consecagem[$i]; echo "</p>";
+ 			 echo "<p> Metodo de Extração das Sementes: "; echo $metodoextracaosementes[$i]; echo " Metodo de quebra de dormencia: "; echo $colquebradorm[$i]; echo "</p>";
+ 			 echo "<p> Tempo de Beneficiamento: "; echo $tempobenef[$i]; echo " Armazenamento: "; echo $armazenamento[$i]; echo "</p>";
+ 			 echo "<p> Substrato utilizado: "; echo $colsubstrato[$i]; echo " Temperatura utilizada: "; echo $coltemperatura[$i]; echo "</p>";
+ 			 echo "<p> Fotoperíodo: "; echo $fotoperiodo[$i]; echo " Tratamentos: "; echo $tratamentos[$i]; echo "</p>";
+ 			 echo "<p> Melhor Germinação: "; echo $melhorgerm[$i]; echo " Testes Realizados: "; echo $testesrealiz[$i]; echo "</p>";
+ 			 echo "<p> Metodologia: "; echo $metodologia[$i]; echo " Recomendações: "; echo $recomendacoes[$i]; echo "</p>";
+ 			 echo "<p> Observações: "; echo $observacoes[$i]; echo "</p>";
+ 			 echo "<p> Fontes: "; echo $colfontes[$i];
+ 			}
+*/
+		?>
+		
+
+
+        
+        <p><br /></p>
     </div>
     </div>
 </div>

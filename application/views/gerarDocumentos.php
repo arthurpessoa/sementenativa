@@ -63,16 +63,17 @@
     <div class="art-content-layout-row">
     <div class="art-layout-cell layout-item-0" style="width: 100%" >
         <p><span style="font-weight: bold;">
-            <input type="checkbox" name="IN56"> 
             Instrução Normativa 56/2011
+            <a href=<?php echo base_url()."assets/reports/IN56.pdf";?> target="_blank" onclick="">Download (PDF)</a>
+            
         </p>
         <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A1">
             Anexo I - Relatório de Sementes 
+            <a href=<?php echo base_url()."reports/Anexo_I";?> target="_blank" onclick="">Visualizar</a>
         </p>
         <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A2">
             Anexo II - Relatório de Mudas
+
         </p>
         <p><span style="font-weight: bold;">
             <input type="checkbox" name="A3">
@@ -127,7 +128,6 @@
         <br><br><br><br>
     <p>
         <a href=<?php echo base_url()."controlPanel";?> style="float: right;" onclick="" class="art-button" >Imprimir</a></p>
-        <a href=<?php echo base_url()."controlPanel";?> style="float: right;" onclick="" class="art-button" >Download (PDF)</a></p>
         <a href=<?php echo base_url()."controlPanel";?> style="float: right;" onclick="" class="art-button" >Voltar</a></p>
     </p>
     <br><br><br>

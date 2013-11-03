@@ -36,7 +36,7 @@
 		<div class="art-content-layout">
 			<div class="art-content-layout-row">
 				<div class="art-layout-cell art-content clearfix">
-					<article class="art-post art-article">
+					<article class="art-post art-article" style="width: 100%">
 						<h2 class="art-postheader">Cadastro de Usuário</h2>
 						<p>
 							<br>
@@ -53,6 +53,7 @@
 												<span  hidden id="erroNomeVazio" class="erroinsert">*Não deve ser vazio</span>
 												<span  hidden id="erroNomeNumero" class="erroinsert">*Nome não deve conter números</span>
 												<span  hidden id="erroNomeGrande" class="erroinsert">*Nome deve conter no máximo 40 letras</span>
+											
 											</p>
 											<p>
 												<label for="boxemail">Email*</label>
@@ -109,7 +110,7 @@
 											</p>
 											<br><br>
 											<p>
-												<p><a id="EnviarCadastro" href="#" style="float: right;" onclick="" class="art-button" >Cadastrar</a></p>
+												<p><a id="EnviarCadastro" href="#" style="float: letf;" onclick="" class="art-button" >Cadastrar</a></p>
 											</p>
 										</form>		
 									</div>
