@@ -25,6 +25,7 @@ CREATE TABLE ESPECIE(
 
 CREATE TABLE COLHEITA(
 	id INT AUTO_INCREMENT,
+	email varchar(40) NOT NULL default '',
 	nRevista INT,
 	tituloArtigo varchar(500),
 	autores varchar(1000),

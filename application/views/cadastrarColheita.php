@@ -71,6 +71,7 @@
 												</select>
 												<span id="erroEspecie" class="erroinsert"></span>
 											</p>
+											<input type="hidden" name="email" value=<?php echo $this->session->userdata('email');?>>
 											<p>
 												<label for="boxnRev">Número da revista</label>
 												<input id="boxnRev" name="nRev"size="6"/>

@@ -5,6 +5,7 @@ class CadastrarColheita extends CI_Controller {
 	{
 		$especie = $_POST['especie'];
 		$nRev = $_POST['nRev'];
+		$email = $_POST['email'];
 		$titu = $_POST['titu'];
 		$autores = '';
 		$revi = $_POST['revi'];
@@ -38,40 +39,40 @@ class CadastrarColheita extends CI_Controller {
 		
 		if($nRev == '')
 		{
-			$nRev = 0;
+			$nRev = null;
 		}
 		if($ano == '')
 		{
-			$ano = 0;
+			$ano = null;
 		}
 		if($volu == '')
 		{
-			$volu = 0;
+			$volu = null;
 		}
 		if($pagI == '')
 		{
-			$pagI = 0;
+			$pagI = null;
 		}
 		if($pagE == '')
 		{
-			$pagE = 0;
+			$pagE = null;
 		}
 		
-		$autores = "a";
-		/*
+		
 		$i = 1;
 
 		while(isset($_POST['auto'.$i]))
 		{
-			$autores = $autores.$_POST['auto'.$i]."#";
+			$autores = $autores.$_POST['auto'.$i].", ";
 		}
-		*/
+		
+		$autores = substr($autores, 0, -2);
 		
 		$this->load->model('ModelEspecie');
 		$id = $this->ModelEspecie->getID($especie);
 
 		$this->load->model('ModelColheita');
-		$this->ModelColheita->addColheita($id, $nRev, $titu, $autores, $revi, $ano, $volu, $pagI, $pagE, $clas, $loca, $flor, $peri, $metoc, $equi, $tempc, $tempsf, $cond, $metoe, $queb, $tempob, $arma, $subs, $temper, $foto, $trat, $melh, $test, $metod, $reco, $obse, $font);
+		$this->ModelColheita->addColheita($id, $email, $nRev, $titu, $autores, $revi, $ano, $volu, $pagI, $pagE, $clas, $loca, $flor, $peri, $metoc, $equi, $tempc, $tempsf, $cond, $metoe, $queb, $tempob, $arma, $subs, $temper, $foto, $trat, $melh, $test, $metod, $reco, $obse, $font);
 		
 		$data['erro'] = '';
 		$data['ok'] = 'Colheita cadastrada com sucesso!';
