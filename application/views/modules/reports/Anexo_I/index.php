@@ -65,7 +65,7 @@
 		        <td rowspan="3">Saldo do Ano Anterior (kg)</td>
 		        <td colspan="6">Produção Acumulada no Ano (kg)</td>
 		        <td rowspan="3">Saldo (kg)*</td>
-		        <td rowspan="3">Previsão de Produção Para o Ano: <?php echo $anoProducao; ?></td>
+		        <td rowspan="3">Previsão de Produção Para o Ano: <?php echo "string"; $anoProducao; ?></td>
 		    </tr>
 		    <tr>
 		        <td rowspan="2">Produção</td>
