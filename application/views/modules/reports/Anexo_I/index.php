@@ -23,6 +23,17 @@
 
 	?>
 
+<style type="text/css">
+	table{
+		border-collapse:collapse;
+		width: 100%;
+	}
+	td
+	{
+		border: 1px solid gray;
+	}
+
+</style>
 
 	<!-- End embedded font definitions -->
 
@@ -36,15 +47,15 @@
 		<h3 style="text-align: center;">RELATÓRIO ANUAL DE PRODUÇÃO E COMERCIALIZAÇÃO DE SEMENTES DE ESPÉCIES FLORESTAIS</h3>
 
 
-		<table border=0 style="border-collapse:collapse; width: 100%;">
+		<table border=0>
 		<tr>
-			<td style=" border: 1px solid gray; width: 65%;">Produtor: <?php echo $nome;?></td>
-			<td style=" border: 1px solid gray;">Inscrição no RENASEM nº: <?php echo $RENASEM; ?></td>
+			<td style="width: 65%;">Produtor: <?php echo $nome;?></td>
+			<td>Inscrição no RENASEM nº: <?php echo $RENASEM; ?></td>
 		</tr>
 		</table>	
 		<br>
-		
-		<table border=1 style="width: 100%">
+
+		<table border=1>
 		    <tbody>
 		    <tr>
 		        <td rowspan="3">Espécie</td>
@@ -54,7 +65,7 @@
 		        <td rowspan="3">Saldo do Ano Anterior (kg)</td>
 		        <td colspan="6">Produção Acumulada no Ano (kg)</td>
 		        <td rowspan="3">Saldo (kg)*</td>
-		        <td rowspan="3">Previsão de Produção Para o Ano:____</td>
+		        <td rowspan="3">Previsão de Produção Para o Ano: <?php echo $anoProducao; ?></td>
 		    </tr>
 		    <tr>
 		        <td rowspan="2">Produção</td>
@@ -85,6 +96,9 @@
 		    </tbody>
 		</table>
 		* Saldo de Sementes = saldo de sementes do ano anterior + produção do ano – (comercializada + plantio próprio + outros destinos)
+		
+		<br>
+		<br>
 		<table border=1 style="width: 35%">
 			<tr>
 				<td>Local e Data:</td>
@@ -99,10 +113,6 @@
 			</tr>
 		</table>
 
-	<br>
-	* Saldo de Sementes = saldo de sementes do ano anterior + produção do ano – (comercializada + plantio próprio + outros destinos) 
-	<br>
-	<br>
 	<br>
 	<div id="brand" style="margin:0 auto; width:94px; padding:5px; clear: both;">
 	</div>
