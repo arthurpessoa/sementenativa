@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-    <title>Anexo II</title>
+    <title>Anexo III</title>
     <style type="text/css" media="print">
         @page 
         {
@@ -43,8 +43,8 @@
 	<div style=" width: 90%;  margin-left: 5%; margin-right: 5%; margin-top: 5%">
 
 
-		<h4 style="text-align: center;"> Anexo II </h4>
-		<h3 style="text-align: center;">RELATÓRIO ANUAL DE PRODUÇÃO E COMERCIALIZAÇÃO DE MUDAS DE ESPÉCIES FLORESTAIS</h3>
+		<h4 style="text-align: center;"> Anexo III </h4>
+		<h3 style="text-align: center;">RELATÓRIO ANUAL DE PRODUÇÃO E COMERCIALIZAÇÃO DE MATERIAL DE PROPAGAÇÃO VEGETATIVA DE ESPÉCIES FLORESTAIS</h3>
 
 
 		<table border=0>
@@ -60,8 +60,8 @@
 		    <tr>
 		        <td rowspan="3">Espécie</td>
 		        <td rowspan="3">Nome Comum /Cultivar</td>
-		        <td rowspan="3">Categoria*</td>
-		        <td rowspan="3">Saldo do Ano Anterior (unidades)</td>
+		        <td rowspan="3">Tipo de Material Vegetativo</td>
+		        <td rowspan="3">Categoria</td>
 		        <td colspan="6" style="text-align: center">Produção Acumulada no Ano (unidades)</td>
 		        <td rowspan="3">Saldo (unidades)**</td>
 		    </tr>
@@ -95,9 +95,7 @@
 
 		
 		<br>
-		* Categoria do material que originou a muda;
-		<br>
-		** Saldo de mudas = saldo de mudas do ano anterior + produção do ano – (comercializada + plantio próprio + outros destinos)
+		* Saldo = produção do ano – (comercializada + plantio próprio + outros destinos) 
 		<br>
 		<br>
 		<table border=1 style="width: 35%">

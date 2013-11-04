@@ -73,56 +73,59 @@
         </p>
         <p><span style="font-weight: bold;">
             Anexo II - Relatório de Mudas
-
+            <a href=<?php echo base_url()."reports/Anexo_II";?> target="_blank" onclick="">Visualizar</a>
         </p>
         <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A3">
             Anexo III - Relatório de Material Propagacao Vegetal 
+            <a href=<?php echo base_url()."reports/Anexo_III";?> target="_blank" onclick="">Visualizar</a>
         </p>
         <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A4">
             Anexo IV - Declaração de Fonte de Sementes
+            <a href=<?php echo base_url()."reports/Anexo_IV";?> target="_blank" onclick="">Visualizar</a>
         </p>
         <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A5">
             Anexo V - Requerimento Coletor de Sementes
+            <a href=<?php echo base_url()."reports/Anexo_V";?> target="_blank" onclick="">Visualizar</a>
         </p>
         <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A6">
             Anexo VI - Relatório de Reembalagem
-        </p>        <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A7">
+            <a href=<?php echo base_url()."reports/Anexo_VI";?> target="_blank" onclick="">Visualizar</a>
+        </p>
+        <p><span style="font-weight: bold;">
             Anexo VII - Declaração De Fonte De Material De Propagação Vegetativa
+            <a href=<?php echo base_url()."reports/Anexo_VII";?> target="_blank" onclick="">Visualizar</a>
         </p>
         <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A8">
             Anexo VIII - Declaração de Produção de Mudas
+            <a href=<?php echo base_url()."reports/Anexo_VIII";?> target="_blank" onclick="">Visualizar</a>
         </p>
         <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A9">
             Anexo IX - Termo De Conformidade De Semente Florestal
+            <a href=<?php echo base_url()."reports/Anexo_IX";?> target="_blank" onclick="">Visualizar</a>
         </p>
         <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A10">
             Anexo X - Termo De Conformidade De Material De Propagação Vegetativa
-        </p>        <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A11">
+            <a href=<?php echo base_url()."reports/Anexo_X";?> target="_blank" onclick="">Visualizar</a>
+        </p>        
+        <p><span style="font-weight: bold;">
             Anexo XI - Termo do Conformidade de Muda
+            <a href=<?php echo base_url()."reports/Anexo_XI";?> target="_blank" onclick="">Visualizar</a>
         </p>
         <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A12">
             Anexo XII - Laudo de Vistoria Florestal
+            <a href=<?php echo base_url()."reports/Anexo_XII";?> target="_blank" onclick="">Visualizar</a>
         </p>
         <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A13">
             ANEXO XIII - Declaração De Produção De Sementes E Mudas De Espécies Florestais Para Uso Próprio
+            <a href=<?php echo base_url()."reports/Anexo_XIII";?> target="_blank" onclick="">Visualizar</a>
         </p>
         <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A14">
             Anexo XIV - Declaração De Produção De Sementes (Anexo Ao Decreto Nº 5.153, De 23 De julho De 2004) 
-        </p>        <p><span style="font-weight: bold;">
-            <input type="checkbox" name="A15">
+            <a href=<?php echo base_url()."reports/Anexo_XIV";?> target="_blank" onclick="">Visualizar</a>
+        </p>        
+        <p><span style="font-weight: bold;">
             Anexo XV - Relatório De Utilização De Sementes (Anexo Ao Decreto Nº 5.153, De 23 De julho De 2004)
+            <a href=<?php echo base_url()."reports/Anexo_XV";?> target="_blank" onclick="">Visualizar</a>
         </p>
 
         <br><br><br><br>
