@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-    <title>Anexo III</title>
+    <title>Anexo VIII</title>
     <style type="text/css" media="print">
         @page 
         {
@@ -43,59 +43,92 @@
 	<div style=" width: 90%;  margin-left: 5%; margin-right: 5%; margin-top: 5%">
 
 
-		<h4 style="text-align: center;"> Anexo III </h4>
-		<h3 style="text-align: center;">RELATÓRIO ANUAL DE PRODUÇÃO E COMERCIALIZAÇÃO DE MATERIAL DE PROPAGAÇÃO VEGETATIVA DE ESPÉCIES FLORESTAIS</h3>
+		<h4 style="text-align: center;"> Anexo VIII </h4>
+		<h3 style="text-align: center;">DECLARAÇÃO DE PRODUÇÃO ESTIMADA DE MUDAS DE ESPÉCIES FLORESTAIS </h3>
+		<br><br>
 
-
+		Identificação do Produtor de Mudas: 
 		<table border=0>
 		<tr>
-			<td style="width: 65%;">Produtor: <?php echo $nome;?></td>
-			<td>Inscrição no RENASEM nº: <?php echo $RENASEM; ?></td>
+			<td style="width: 65%;">Produtor:</td>
+			<td>Inscrição no RENASEM nº: </td>
+		</tr>
+		<tr>
+			<td style="width: 65%;">Endereço: </td>
+			<td>CEP:</td>
+		</tr>
+		<tr>
+			<td style="width: 65%;">Endereço Eletrônico: </td>
+			<td>Telefone:</td>
 		</tr>
 		</table>	
 		<br>
+		<br>
 
+		Identificação do Responsável Técnico:  
+		<table border=0>
+		<tr>
+			<td style="width: 65%;">Produtor:</td>
+			<td>Inscrição no RENASEM nº: </td>
+		</tr>
+		<tr>
+			<td style="width: 65%;">Endereço: </td>
+			<td>CEP:</td>
+		</tr>
+		<tr>
+			<td style="width: 65%;">Endereço Eletrônico: </td>
+			<td>Telefone:</td>
+		</tr>
+		</table>	
+		<br>
+		<br>
+		O produtor, acima identificado, em comprimento à legislação vigente, vem declarar a:
 		<table>
 		    <tbody>
 		    <tr>
-		        <td rowspan="3">Espécie</td>
-		        <td rowspan="3">Nome Comum /Cultivar</td>
-		        <td rowspan="3">Tipo de Material Vegetativo</td>
-		        <td rowspan="3">Categoria</td>
-		        <td colspan="6" style="text-align: center">Produção Acumulada no Ano (unidades)</td>
-		        <td rowspan="3">Saldo (unidades)**</td>
+		        <td>( ) PRODUÇÃO ESTIMADA DE MUDAS DO VIVEIRO FLORESTAL para o ano de 201__.</td>
 		    </tr>
 		    <tr>
-		        <td rowspan="2">Produção</td>
-		        <td colspan="3" style="text-align: center">Comercializada</td>
-		        <td rowspan="2">Plantio Próprio</td>
-		        <td rowspan="2">Outros Destinos</td>
-		    </tr>
-		    <tr>
-		        <td>No Estado</td>
-		        <td>Outros Estados</td>
-		        <td>Exportado</td>
-		    </tr>
-		    <tr>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
+		        <td>( ) INCLUSÃO DA PRODUÇÃO DE NOVAS ESPÉCIES. </td>
 		    </tr>
 		    </tbody>
 		</table>
 
 
-		
-		<br>
-		* Saldo = produção do ano – (comercializada + plantio próprio + outros destinos) 
+		<br><br>
+		ESTIMATIVA DA PRODUÇÃO DO VIVEIRO FLORESTAL 
+
+		<table>
+		    <tbody>
+		    <tr>
+		        <td style="width: 14%">Espécie </td>
+		        <td style="width: 14%">Nome Comum </td>
+		        <td style="width: 14%">Cultivar</td>
+		        <td style="width: 14%">Categoria do Material de Propagação </td>
+		        <td style="width: 14%">Nº de Mudas que Pretende Produzir </td>
+		        <td style="width: 14%">Jardim Clonal Próprio? Sim ou Não </td>
+		        <td style="width: 14%">Produção de Semente Própria? Sim ou Não </td>
+		    </tr>
+		    <tr>
+		        <td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
+		    </tr>
+		    </tbody>
+		</table>
+		<br><br>
+		Esta declaração deverá ser entregue ao Órgão de Fiscalização do MAPA juntamente com os seguintes documentos: <br>
+		I – croqui ou roteiro de acesso ao viveiro florestal; e <br>
+		II – autorização do detentor dos direitos da propriedade intelectual da cultivar protegida no Brasil, quando for o caso. <br>
+
+
+
+		<br><br>
+
 		<br>
 		<br>
 		<table border=1 style="width: 35%">
