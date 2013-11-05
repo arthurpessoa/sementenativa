@@ -77,7 +77,6 @@
         </p>
         <p><span style="font-weight: bold;">
             Anexo III - Relatório de Material Propagacao Vegetal 
-            <a href=<?php echo base_url()."reports/Anexo_III";?> target="_blank" onclick="">Visualizar</a>
         </p>
         <p><span style="font-weight: bold;">
             Anexo IV - Declaração de Fonte de Sementes
@@ -89,11 +88,9 @@
         </p>
         <p><span style="font-weight: bold;">
             Anexo VI - Relatório de Reembalagem
-            <a href=<?php echo base_url()."reports/Anexo_VI";?> target="_blank" onclick="">Visualizar</a>
         </p>
         <p><span style="font-weight: bold;">
             Anexo VII - Declaração De Fonte De Material De Propagação Vegetativa
-            <a href=<?php echo base_url()."reports/Anexo_VII";?> target="_blank" onclick="">Visualizar</a>
         </p>
         <p><span style="font-weight: bold;">
             Anexo VIII - Declaração de Produção de Mudas
@@ -105,7 +102,6 @@
         </p>
         <p><span style="font-weight: bold;">
             Anexo X - Termo De Conformidade De Material De Propagação Vegetativa
-            <a href=<?php echo base_url()."reports/Anexo_X";?> target="_blank" onclick="">Visualizar</a>
         </p>        
         <p><span style="font-weight: bold;">
             Anexo XI - Termo do Conformidade de Muda
@@ -121,7 +117,6 @@
         </p>
         <p><span style="font-weight: bold;">
             Anexo XIV - Declaração De Produção De Sementes (Anexo Ao Decreto Nº 5.153, De 23 De julho De 2004) 
-            <a href=<?php echo base_url()."reports/Anexo_XIV";?> target="_blank" onclick="">Visualizar</a>
         </p>        
         <p><span style="font-weight: bold;">
             Anexo XV - Relatório De Utilização De Sementes (Anexo Ao Decreto Nº 5.153, De 23 De julho De 2004)
