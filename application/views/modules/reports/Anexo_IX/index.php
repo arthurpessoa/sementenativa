@@ -84,8 +84,6 @@
 
 		Atesto que os lotes de sementes, abaixo discriminados, foram produzidos de acordo com as normas e padrões estabelecidos pelo Ministério da Agricultura, 
 		<br>Pecuária e Abastecimento, pelos quais assumo a responsabilidade pela identidade e qualidade:
-		<br>
-		<br>
 		<table>
 		    <tbody>
 		    <tr>
@@ -130,7 +128,6 @@
 		    	<td >Obs: </td>
 		    </tr>
 		</table>
-		<br>
 		(1) - para a ACS-MS, APS, PS e Matriz. <br>
 		(2) - para a APS, PS e Matriz. <br> 
 		(3) - para o caso de a fonte de semente ter sido plantada. <br>
