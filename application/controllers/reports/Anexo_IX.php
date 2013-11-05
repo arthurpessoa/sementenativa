@@ -3,6 +3,6 @@
 class Anexo_IX extends CI_Controller {
 	public function index()
 	{
-		$this->load->view('/modules/Reports/IX/index');
+		$this->load->view('/modules/Reports/Anexo_IX/index');
 	}
 }

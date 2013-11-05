@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-    <title>Anexo III</title>
+    <title>Anexo IX</title>
     <style type="text/css" media="print">
         @page 
         {
@@ -43,59 +43,103 @@
 	<div style=" width: 90%;  margin-left: 5%; margin-right: 5%; margin-top: 5%">
 
 
-		<h4 style="text-align: center;"> Anexo III </h4>
-		<h3 style="text-align: center;">RELATÓRIO ANUAL DE PRODUÇÃO E COMERCIALIZAÇÃO DE MATERIAL DE PROPAGAÇÃO VEGETATIVA DE ESPÉCIES FLORESTAIS</h3>
+		<h4 style="text-align: center;"> Anexo IX </h4>
+		<h3 style="text-align: center;">TERMO DE CONFORMIDADE DE SEMENTE FLORESTAL Nº ___________________</h3>
+		<br><br>
 
-
+		Identificação do Produtor de Sementes: 
 		<table border=0>
 		<tr>
-			<td style="width: 65%;">Produtor: <?php echo $nome;?></td>
-			<td>Inscrição no RENASEM nº: <?php echo $RENASEM; ?></td>
+			<td style="width: 65%;">Produtor:</td>
+			<td>Inscrição no RENASEM nº: </td>
+		</tr>
+		<tr>
+			<td style="width: 65%;">Endereço: </td>
+			<td>CEP:</td>
+		</tr>
+		<tr>
+			<td style="width: 65%;">Endereço Eletrônico: </td>
+			<td>Telefone:</td>
+		</tr>
+		</table>	
+		<br>
+		<br>
+
+		Identificação do Responsável Técnico:  
+		<table border=0>
+		<tr>
+			<td style="width: 65%;">Produtor:</td>
+			<td>Inscrição no RENASEM nº: </td>
+		</tr>
+		<tr>
+			<td style="width: 65%;">Endereço: </td>
+			<td>CEP:</td>
+		</tr>
+		<tr>
+			<td style="width: 65%;">Endereço Eletrônico: </td>
+			<td>Telefone:</td>
 		</tr>
 		</table>	
 		<br>
 
+		Atesto que os lotes de sementes, abaixo discriminados, foram produzidos de acordo com as normas e padrões estabelecidos pelo Ministério da Agricultura, 
+		<br>Pecuária e Abastecimento, pelos quais assumo a responsabilidade pela identidade e qualidade:
+		<br>
+		<br>
 		<table>
 		    <tbody>
 		    <tr>
-		        <td rowspan="3">Espécie</td>
-		        <td rowspan="3">Nome Comum /Cultivar</td>
-		        <td rowspan="3">Tipo de Material Vegetativo</td>
-		        <td rowspan="3">Categoria</td>
-		        <td colspan="6" style="text-align: center">Produção Acumulada no Ano (unidades)</td>
-		        <td rowspan="3">Saldo (unidades)**</td>
+		        <td rowspan="2">Espécie</td>
+		        <td rowspan="2">Nome Comum / Cultivar </td>
+		        <td rowspan="2">Categoria</td>
+		        <td rowspan="2">Critério de Seleção (1)</td>
+		        <td rowspan="2">Tipo de Isolamento (2)</td>
+		        <td rowspan="2">Procedência (3) </td>
+		        <td rowspan="2">Identif. LOTE </td>
+		        <td rowspan="2">Nº de Matrizes que compõe o Lote (4)</td>
+		        <td rowspan="2">Peso total do LOTE (Kg) </td>
+		        <td colspan="2">BOLETIM DE ANÁLISE</td>
+		        <td rowspan="2">PUREZA (%) </td>
+		        <td rowspan="2">PUREZA (%) </td>
+		        <td rowspan="2">VALIDADE DO TESTE </td>
 		    </tr>
 		    <tr>
-		        <td rowspan="2">Produção</td>
-		        <td colspan="3" style="text-align: center">Comercializada</td>
-		        <td rowspan="2">Plantio Próprio</td>
-		        <td rowspan="2">Outros Destinos</td>
+		        <td>Nº </td>
+		        <td>DATA </td>
 		    </tr>
 		    <tr>
-		        <td>No Estado</td>
-		        <td>Outros Estados</td>
-		        <td>Exportado</td>
-		    </tr>
-		    <tr>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
 		    </tr>
 		    </tbody>
 		</table>
-
-
-		
+		<table>
+			<tr>
+		    	<td >Obs: </td>
+		    </tr>
+		</table>
 		<br>
-		* Saldo = produção do ano – (comercializada + plantio próprio + outros destinos) 
+		(1) - para a ACS-MS, APS, PS e Matriz. <br>
+		(2) - para a APS, PS e Matriz. <br> 
+		(3) - para o caso de a fonte de semente ter sido plantada. <br>
+		(4) - preenchimento facultativo. <br>
+
+
+
+		<br><br>
+
 		<br>
 		<br>
 		<table border=1 style="width: 35%">
