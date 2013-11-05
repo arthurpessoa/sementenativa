@@ -63,7 +63,7 @@
 		</p>
         <p><span style="font-weight: bold; font-size: 16px">Família</span></p>
         <p><?php echo $familia[0]?></p>
-        
+        <br>
 		<p><span style="font-weight: bold; font-size: 16px">Análise de Germinação</span></p>
 		
 		<style type="text/css">
@@ -114,6 +114,129 @@
 				echo "<td>".$umidadesubs[$i]."</td>";
 				echo "<td>".$testeger[$i]."</td>";
 				echo "<td>".$gerfontes[$i]."</td>";
+				echo "</tr>";
+			}
+		  ?>
+		  </tr>
+		</table>
+		<p><span style="font-weight: bold; font-size: 16px">Colheita e Manejo</span></p>
+		<table class="tg-table-green">
+		  <tr>
+			<!--th>Número da revista</th-->
+			<!--th>Título do Artigo</th-->
+			<!--th>Autores</th-->
+			<!--th>Revista</th-->
+			<!--th>Ano</th-->
+			<!--th>Volume</th-->
+			<!--th>Paginação*</th-->
+			<!--th>Classificador</th-->
+			<th>Local de colheita</th>
+			<th>Floração</th>
+			<!--th>Período de colheita</th-->
+			<th>Método de colheita</th>
+			<!--th>Equipamentos de colheita usados</th-->
+			<!--th>Tempo de colheita</th-->
+			<!--th>Tempo de secagem dos frutos</th-->
+			<th>Condições de secagem</th>
+			<th>Método de extração das sementes</th>
+			<th>Tratamento para quebra de dormência</th>
+			<!--th>Tempo de beneficiamento</th-->
+			<!--th>Armazenamento Pós-colheita</th-->
+			<!--th>Substrato</th-->
+			<!--th>Temperatura</th-->
+			<!--th>Fotoperíodo</th-->
+			<th>Tratamentos realizados</th>
+			<!--th>Melhor % de Germinação</th-->
+			<th>Testes Realizados</th>
+			<th>Metodologia</th>
+			<!--th>Recomendações</th-->
+			<!--th>Observações</th-->
+			<th>Fontes</th>
+		  </tr>
+		  <tr class="tg-even">
+		  <?php 
+		  	
+			for($i = 0; $i < $espGe; $i++)
+			{
+				echo "<tr>";
+				//echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				echo "<td>".$i."</td>";
+				echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				echo "<td>".$i."</td>";
+				echo "<td>".$i."</td>";
+				echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				echo "<td>".$i."</td>";
+				echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				echo "<td>".$i."</td>";
+				echo "</tr>";
+			}
+		  ?>
+		  </tr>
+		</table>
+		<p><span style="font-weight: bold; font-size: 16px">Caracterização</span></p>
+		<table class="tg-table-green">
+		  <tr>
+			<th>Data de Colheita</th>
+			<th>Local de origem das sementes</th>
+			<th>Indicador de Maturação</th>
+			<th>Dispersão</th>
+			<!--th>Número de Frutos por kilo</th-->
+			<!--th>Peso de mil frutos</th-->
+			<th>Número de sementes por fruto</th>
+			<th>Número de sementes por kilo</th>
+			<!--th>Peso de mil sementes</th-->
+			<!--th>Relação Fruto : Semente</th-->
+			<th>Tamanho da semente</th>
+			<th>Tamanho do fruto</th>
+			<!--th>Tipo de Fruto</th-->
+			<!--th>Pureza</th-->
+			<th>Observações</th>
+			<th>Fontes</th>
+			
+		  </tr>
+		  <tr class="tg-even">
+		  <?php 
+		  	
+			for($i = 0; $i < $espGe; $i++)
+			{
+				echo "<tr>";
+				echo "<td>".$i."</td>";
+				echo "<td>".$i."</td>";
+				echo "<td>".$i."</td>";
+				echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				echo "<td>".$i."</td>";
+				echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				echo "<td>".$i."</td>";
+				echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				//echo "<td>".$i."</td>";
+				echo "<td>".$i."</td>";
+				echo "<td>".$i."</td>";
 				echo "</tr>";
 			}
 		  ?>
