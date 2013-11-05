@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-    <title>Anexo III</title>
+    <title>Anexo XII</title>
     <style type="text/css" media="print">
         @page 
         {
@@ -43,59 +43,63 @@
 	<div style=" width: 90%;  margin-left: 5%; margin-right: 5%; margin-top: 5%">
 
 
-		<h4 style="text-align: center;"> Anexo III </h4>
-		<h3 style="text-align: center;">RELATÓRIO ANUAL DE PRODUÇÃO E COMERCIALIZAÇÃO DE MATERIAL DE PROPAGAÇÃO VEGETATIVA DE ESPÉCIES FLORESTAIS</h3>
+		<h4 style="text-align: center;"> Anexo XII </h4>
+		<h3 style="text-align: center;">LAUDO DE VISTORIA FLORESTAL Nº___________</h3>
+		<br><br>
 
-
+		Identificação do Produtor de Sementes: 
 		<table border=0>
 		<tr>
-			<td style="width: 65%;">Produtor: <?php echo $nome;?></td>
-			<td>Inscrição no RENASEM nº: <?php echo $RENASEM; ?></td>
+			<td style="width: 65%;">Produtor:</td>
+			<td>Inscrição no RENASEM nº: </td>
+		</tr>
+		<tr>
+			<td style="width: 65%;">Endereço: </td>
+			<td>CEP:</td>
+		</tr>
+		<tr>
+			<td style="width: 65%;">Endereço Eletrônico: </td>
+			<td>Telefone:</td>
 		</tr>
 		</table>	
 		<br>
+		<br>
 
+		Identificação do Responsável Técnico:  
+		<table border=0>
+		<tr>
+			<td style="width: 65%;">Produtor:</td>
+			<td>Inscrição no RENASEM nº: </td>
+		</tr>
+		<tr>
+			<td style="width: 65%;">Endereço: </td>
+			<td>CEP:</td>
+		</tr>
+		<tr>
+			<td style="width: 65%;">Endereço Eletrônico: </td>
+			<td>Telefone:</td>
+		</tr>
+		</table>	
+		<br>
+		<h3 style="text-align: center;">SITUAÇÃO ENCONTRADA</h3>
 		<table>
-		    <tbody>
-		    <tr>
-		        <td rowspan="3">Espécie</td>
-		        <td rowspan="3">Nome Comum /Cultivar</td>
-		        <td rowspan="3">Tipo de Material Vegetativo</td>
-		        <td rowspan="3">Categoria</td>
-		        <td colspan="6" style="text-align: center">Produção Acumulada no Ano (unidades)</td>
-		        <td rowspan="3">Saldo (unidades)**</td>
+
+			<tr>
+		    	<td >lalalalalaala </td>
 		    </tr>
-		    <tr>
-		        <td rowspan="2">Produção</td>
-		        <td colspan="3" style="text-align: center">Comercializada</td>
-		        <td rowspan="2">Plantio Próprio</td>
-		        <td rowspan="2">Outros Destinos</td>
+		</table>
+
+		<h3 style="text-align: center;">RECOMENDAÇÕES </h3>
+		<table>
+
+			<tr>
+		    	<td >lalalalalaala </td>
 		    </tr>
-		    <tr>
-		        <td>No Estado</td>
-		        <td>Outros Estados</td>
-		        <td>Exportado</td>
-		    </tr>
-		    <tr>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    </tr>
-		    </tbody>
 		</table>
 
 
-		
-		<br>
-		* Saldo = produção do ano – (comercializada + plantio próprio + outros destinos) 
+		<br><br>
+
 		<br>
 		<br>
 		<table border=1 style="width: 35%">
@@ -108,7 +112,7 @@
 
 		<table border=1 style="width: 60%; margin-left: 20%; margin-right:20%;">
 			<tr>
-				<td style="text-align: left;">Assinatura do Produtor:</td>
+				<td style="text-align: left;">Assinatura do Responsável Técnico:</td>
 			</tr>
 		</table>
 
