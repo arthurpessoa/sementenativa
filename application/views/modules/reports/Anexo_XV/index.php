@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-    <title>Anexo III</title>
+    <title>Anexo XV</title>
     <style type="text/css" media="print">
         @page 
         {
@@ -16,12 +16,6 @@
     </style>
 </head>
 <body>
-	<?php
-		$nome = "Arthur Pessoa";
-		$RENASEM = "6666";
-		$anoProducao = "2013";
-
-	?>
 
 <style type="text/css">
 	table{
@@ -43,74 +37,46 @@
 	<div style=" width: 90%;  margin-left: 5%; margin-right: 5%; margin-top: 5%">
 
 
-		<h4 style="text-align: center;"> Anexo III </h4>
-		<h3 style="text-align: center;">RELATÓRIO ANUAL DE PRODUÇÃO E COMERCIALIZAÇÃO DE MATERIAL DE PROPAGAÇÃO VEGETATIVA DE ESPÉCIES FLORESTAIS</h3>
+		<h4 style="text-align: center;"> Anexo XV </h4>
+		<h3 style="text-align: center;">RELATÓRIO DE UTILIZAÇÃO DE SEMENTES E DE MUDAS DE QUE TRATA O ART. 175 DO ANEXO AO DECRETO Nº 5.153, DE 23 DE JULHO DE 2004</h3>	
+		<br><br>
+		Nome da Instituição:_______________________________________________________________________ CNPJ: _____________________________<br>
+		Nome do responsável pela Instituição: _________________________________________________________ CPF: __________________________<br> 
+		Telefone: ___________________________ / ________________ Endereço Eletrônico: _________________________________________________<br>
+		<br><br>
+		Nome do órgão público responsável: __________________________________________________________ CNPJ: _____________________________<br>
+		Nome do responsável pelo órgão público: _________________________________________________________ Cargo: __________________________<br>
+		Telefone: ___________________________ / ________________ Endereço Eletrônico: ___________________________________________________<br>
+ 		<br><br>
 
+ 		UTILIZAÇÃO DE SEMENTES E MUDAS no ano de:
 
-		<table border=0>
-		<tr>
-			<td style="width: 65%;">Produtor: <?php echo $nome;?></td>
-			<td>Inscrição no RENASEM nº: <?php echo $RENASEM; ?></td>
-		</tr>
-		</table>	
-		<br>
-
-		<table>
+ 		<table>
 		    <tbody>
 		    <tr>
-		        <td rowspan="3">Espécie</td>
-		        <td rowspan="3">Nome Comum /Cultivar</td>
-		        <td rowspan="3">Tipo de Material Vegetativo</td>
-		        <td rowspan="3">Categoria</td>
-		        <td colspan="6" style="text-align: center">Produção Acumulada no Ano (unidades)</td>
-		        <td rowspan="3">Saldo (unidades)**</td>
+		        <td>Espécie </td>
+		        <td>Nome Comum </td>
+		        <td>Quantidade de sementes produzida (kg) </td>
+		        <td>Quantidade de mudas produzida (unidade) </td>
+		        <td>Localização da área efetivamente recuperada (plantada) </td>
+		        <td>Tamanho da área (ha) efetivamente plantada</td>
 		    </tr>
 		    <tr>
-		        <td rowspan="2">Produção</td>
-		        <td colspan="3" style="text-align: center">Comercializada</td>
-		        <td rowspan="2">Plantio Próprio</td>
-		        <td rowspan="2">Outros Destinos</td>
-		    </tr>
-		    <tr>
-		        <td>No Estado</td>
-		        <td>Outros Estados</td>
-		        <td>Exportado</td>
-		    </tr>
-		    <tr>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
+		        <td>dado</td>
 		    </tr>
 		    </tbody>
 		</table>
-
-
-		
-		<br>
-		* Saldo = produção do ano – (comercializada + plantio próprio + outros destinos) 
-		<br>
-		<br>
-		<table border=1 style="width: 35%">
-			<tr>
-				<td>Local e Data:</td>
-			</tr>
-		</table>
-
-		<br>
-
-		<table border=1 style="width: 60%; margin-left: 20%; margin-right:20%;">
-			<tr>
-				<td style="text-align: left;">Assinatura do Produtor:</td>
-			</tr>
-		</table>
+		<br><br><br>
+		Local e data: _________________, _____ / _____ / ________<br>
+		Assinatura do responsável pela Instituição: _______________________________________________________<br>
+		Data: _____ / _____ / ________<br>
+		Assinatura do responsável pelo Órgão Público: _____________________________________________________<br> 
+ 
 
 	<br>
 	<div id="brand" style="margin:0 auto; width:94px; padding:5px; clear: both;">

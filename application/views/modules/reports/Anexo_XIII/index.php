@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-    <title>Anexo III</title>
+    <title>Anexo XIII</title>
     <style type="text/css" media="print">
         @page 
         {
@@ -43,77 +43,26 @@
 	<div style=" width: 90%;  margin-left: 5%; margin-right: 5%; margin-top: 5%">
 
 
-		<h4 style="text-align: center;"> Anexo III </h4>
-		<h3 style="text-align: center;">RELATÓRIO ANUAL DE PRODUÇÃO E COMERCIALIZAÇÃO DE MATERIAL DE PROPAGAÇÃO VEGETATIVA DE ESPÉCIES FLORESTAIS</h3>
+		<h4 style="text-align: center;"> Anexo XIII </h4>
+		<h3 style="text-align: center;">DECLARAÇÃO DE PRODUÇÃO DE SEMENTES E MUDAS DE ESPÉCIES FLORESTAIS PARA USO PRÓPRIO</h3>
 
 
-		<table border=0>
-		<tr>
-			<td style="width: 65%;">Produtor: <?php echo $nome;?></td>
-			<td>Inscrição no RENASEM nº: <?php echo $RENASEM; ?></td>
-		</tr>
-		</table>	
-		<br>
 
-		<table>
-		    <tbody>
-		    <tr>
-		        <td rowspan="3">Espécie</td>
-		        <td rowspan="3">Nome Comum /Cultivar</td>
-		        <td rowspan="3">Tipo de Material Vegetativo</td>
-		        <td rowspan="3">Categoria</td>
-		        <td colspan="6" style="text-align: center">Produção Acumulada no Ano (unidades)</td>
-		        <td rowspan="3">Saldo (unidades)**</td>
-		    </tr>
-		    <tr>
-		        <td rowspan="2">Produção</td>
-		        <td colspan="3" style="text-align: center">Comercializada</td>
-		        <td rowspan="2">Plantio Próprio</td>
-		        <td rowspan="2">Outros Destinos</td>
-		    </tr>
-		    <tr>
-		        <td>No Estado</td>
-		        <td>Outros Estados</td>
-		        <td>Exportado</td>
-		    </tr>
-		    <tr>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    	<td>dado</td>
-		    </tr>
-		    </tbody>
-		</table>
+		Ano: ____________ <br>
 
+		Nome do usuário:__________________________________ CNPJ/CPF: __________________ <br>
+		Endereço: ______________________________________________________________________<br>
+		Município/UF: __________________________________________ CEP: __________________<br>
+		Telefone: ____________________ Endereço eletrônico: ___________________________ <br>
+		<br><br><br>
 
-		
-		<br>
-		* Saldo = produção do ano – (comercializada + plantio próprio + outros destinos) 
-		<br>
-		<br>
-		<table border=1 style="width: 35%">
-			<tr>
-				<td>Local e Data:</td>
-			</tr>
-		</table>
+		<div style="text-align: center;">PROPRIEDADE</div>
+		Nome: ______________________________________________ Município/UF: _____________<br>
+		<br>Roteiro detalhado de acesso: _______________________________________________<br>
+		<br><br><br>
 
-		<br>
-
-		<table border=1 style="width: 60%; margin-left: 20%; margin-right:20%;">
-			<tr>
-				<td style="text-align: left;">Assinatura do Produtor:</td>
-			</tr>
-		</table>
-
-	<br>
 	<div id="brand" style="margin:0 auto; width:94px; padding:5px; clear: both;">
+	</div>	
 	</div>
 </body>
 </html>
