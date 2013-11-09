@@ -4,6 +4,7 @@ class CadastrarColheita extends CI_Controller {
 	public function checkColheita()
 	{
 		$especie = $_POST['especie'];
+
 		$nRev = $_POST['nRev'];
 		$email = $_POST['email'];
 		$titu = $this->checar($_POST['titu']);
@@ -78,6 +79,7 @@ class CadastrarColheita extends CI_Controller {
 		$data['ok'] = 'Colheita cadastrada com sucesso!';
 		$data['especies'] = $this->ModelEspecie->getAllSpecies();
 		$this->load->view('CadastrarColheita', $data);
+
 	}
 	public function index()
 	{
@@ -85,9 +87,31 @@ class CadastrarColheita extends CI_Controller {
 		//CONECTAR NO BANCO E RECUPERAR LISTA DE ESPÉCIES
 		$data['erro'] = '';
 		$data['ok'] = '';
-		$data['especies'] = $this->ModelEspecie->getAllSpecies();
 		$this->load->view('CadastrarColheita', $data);
 	}
+
+	public function buscaEspecie(){
+		$q = $_GET['q'];
+		$this->load->model('ModelEspecie');
+		
+		if($q!=""){
+			$especies = $this->ModelEspecie->BuscaEspecies($q);
+			echo "<h3>Resultados</h3>";
+			$c = count($especies);
+			for($i = 0; $i < $c; $i++)
+			{
+				if($i==7)break;
+				
+				  	echo "<input type='hidden' name='hidenInput".$i."' id='hidenInput".$i."' value='".$especies[$i]."'>";
+       				echo "<a id=\"link".$i."\" href=\"#\" onclick=\"BuscaParaTextbox(document.getElementById('hidenInput".$i."').value);\">".$especies[$i]."</a>";
+
+       				echo "<br>";
+			}
+		}
+	}
+
+
+
 	public function checar($var){
 		if(empty(trim($var))){
 			$var = "Não Especificado";
