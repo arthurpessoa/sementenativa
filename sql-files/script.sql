@@ -11,6 +11,9 @@ CREATE TABLE `usuarios` (
 `estado` varchar(2) NOT NULL,
 `cpf-cnpj` int,
 `renasem` int,
+`admin` int default 0,
+`produtor` int default 0,
+`tecnico` int default 0,
 PRIMARY KEY (`email`)
 ) ENGINE=MyISAM;
 
