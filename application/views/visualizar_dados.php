@@ -25,7 +25,7 @@
 <body>
 <div id="art-main">
 
-<div class="clearfix">
+<div class="clearfix" style="overflow:scroll">
 	<div class="art-layout-wrapper clearfix">
 		<div class="art-content-layout">
 			<div class="art-content-layout-row">
@@ -99,7 +99,7 @@
 											<th>Revista</th>
 											<th>Ano</th>
 											<th>Volume</th>
-											<th>Paginação*</th>
+											<th>Paginação</th>
 											<th>Classificador</th>
 											<th>Local de colheita</th>
 											<th>Floração</th>
