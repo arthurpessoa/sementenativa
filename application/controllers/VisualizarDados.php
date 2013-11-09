@@ -4,7 +4,7 @@ class VisualizarDados extends CI_Controller {
 	public function index()
 	{
 		$this->load->model('ModelEspecie');
-		$nome = 'Aspidosperma pyrifolium Mart.';
+		$nome = $_GET['nome'];
 		
 		$id = $this->ModelEspecie->getID($nome);
 		
