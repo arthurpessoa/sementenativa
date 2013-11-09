@@ -1,0 +1,3 @@
+Possíveis melhorias:
+
+A busca cega por espécies, embora aceite tanto nome cientifico quanto nomes populares, só exibe nomes científicos nos resultados.
