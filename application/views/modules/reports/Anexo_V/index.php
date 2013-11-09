@@ -17,10 +17,15 @@
 </head>
 <body>
 	<?php
-		$nome = "Arthur Pessoa";
-		$RENASEM = "6666";
-		$anoProducao = "2013";
-
+		$nome = $this->session->userdata('nome');
+		$cpfcnpj = $this->session->userdata('cpfcnpj');
+		$endereco = $this->session->userdata('endereco');
+		$CEP = $this->session->userdata('CEP');
+		$municipio = $this->session->userdata('municipio');
+		$UF = $this->session->userdata('UF');
+		$email = $this->session->userdata('email');
+		$telefone= $this->session->userdata('telefone');
+		$numero =  $this->session->userdata('numero');
 	?>
 
 <style type="text/css">
@@ -58,23 +63,23 @@
 		<table>
 		    <tbody>
 		    <tr>
-		        <td style="width: 65%">Nome: </td>
-		        <td>CPF / CNPJ: </td>
+		        <td style="width: 65%">Nome: <?php echo $nome; ?> </td>
+		        <td>CPF / CNPJ: <?php echo $cpfcnpj; ?> </td>
 		    </tr>
 		    <tr>
-		         <td colspan="2">Endereço: </td>
+		         <td colspan="2">Endereço: <?php echo $endereco.', Número '. $numero; ?> </td>
 		    </tr>
 		    </tbody>
 		</table>
 
 		<table>
 			<tr>
-		        <td style="width: 55%">CEP:</td>
-		        <td>Município/UF:</td>
+		        <td style="width: 55%">CEP: <?php echo $CEP; ?></td>
+		        <td>Município/UF: <?php echo $municipio.'/'.$UF; ?></td>
 		    </tr>
 		    <tr>
-		        <td>Endereço Eletrônico: </td>
-		        <td>Telefone:</td>
+		        <td>Endereço Eletrônico: <?php echo $email ;?></td>
+		        <td>Telefone: <?php echo $telefone; ?></td>
 		    </tr>
 		 </table>
 		 <br><br><br>

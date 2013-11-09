@@ -3,6 +3,7 @@ CREATE TABLE `usuarios` (
 `email` varchar(40) NOT NULL default '',
 `nome` varchar(40) NOT NULL default '',
 `senha` varchar(12) NOT NULL default '',
+`telefone` varchar(20),
 `CEP` varchar(8) NOT NULL,
 `endereco` varchar(40) NOT NULL,
 `numero` varchar(8) NOT NULL,

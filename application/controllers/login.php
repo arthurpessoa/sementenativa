@@ -28,7 +28,13 @@ class Login extends CI_Controller {
 				'email' => $email,
                 'logged' => true,
                 'cpfcnpj' => $info ->cpfcnpj,
-                'renasem' => $info ->renasem
+                'renasem' => $info ->renasem,
+                'endereco' =>  $info ->endereco,
+                'CEP' => $info->CEP,
+                'municipio' => $info->cidade,
+                'UF' => $info->estado,
+                'telefone' => $info->telefone,
+                'numero' => $info->numero
             );
 
 

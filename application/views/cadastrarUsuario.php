@@ -61,6 +61,11 @@
 												<span hidden id="erroEmail" class="erroinsert">*e-mail inválido</span>
 											</p>
 											<p>
+												<label for="boxfone">Telefone*</label>
+												<input id="boxfone" type="text" name="telefone" size="40"/>
+												<span hidden id="erroTelefone" class="erroinsert">*Telefone inválido</span>
+											</p>
+											<p>
 												<label for="boxrenasem">Número RENASEM</label>
 												<input id="boxrenasem" type="text" name="renasem" size="40"/>
 												<span id="errorenasem" class="erroinsert"></span>

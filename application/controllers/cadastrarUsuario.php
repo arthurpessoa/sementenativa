@@ -9,7 +9,7 @@ class CadastrarUsuario extends CI_Controller {
 		 //recebo os dados do form
 		 $nome = $_POST['nome'];
 		 $email = $_POST['email'];
-		 //$sexo = $_POST['sexo'];
+		 $telefone = $_POST['telefone'];
 		 $renasem = $_POST['renasem'];
 		 $cpfcnpj = $_POST['cpfcnpj'];
 		 $CEP = $_POST['cep'];
@@ -37,7 +37,7 @@ class CadastrarUsuario extends CI_Controller {
 		 }
 		 else
 		 {
-		 	$this->ModelUsuario->cadastrar($nome,$email, $renasem, $cpfcnpj, $CEP, $endereco, $num, $bairro, $cidade, $estado, $senha,$produtor,$tecnico);
+		 	$this->ModelUsuario->cadastrar($nome,$email,$telefone, $renasem, $cpfcnpj, $CEP, $endereco, $num, $bairro, $cidade, $estado, $senha,$produtor,$tecnico);
 		 	$data['erro'] = '';
 		 	$data['ok'] = 'Usuário cadastrado com sucesso!';
 		 	$this->load->view('login',$data);
