@@ -126,7 +126,7 @@
 										</tr>
 										<tr class="tg-even">
 				  						<?php
-											for($i = 0; $i < $espGe-1; $i++)
+											for($i = 0; $i < $espCo; $i++)
 											{
 												echo "<tr>";
 												echo "<td>".$nrevista[$i]."</td>";
