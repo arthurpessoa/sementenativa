@@ -58,7 +58,7 @@
 				<div class="art-layout-cell art-content clearfix">
 					
 					<?php include 'modules/powerMenu.php'; ?>
-
+					
 					<article class="art-post art-article">
 						<h2 class="art-postheader">Painel de Controle</h2>
 						<div class="art-postcontent art-postcontent-0 clearfix">
