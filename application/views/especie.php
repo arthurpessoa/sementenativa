@@ -76,8 +76,8 @@
         <p style="font-size:15px;margin-left:15px;font-weight: bold;"><?php echo $familia[0]?></p>
     </div>
 	    <br>
-	    <a href="<?php echo base_url()."VisualizarDados?nome=".$cientifico[0] ?>"><h2>Visualizar todos os dados</h2></a>
-		<h2 class="art-postheader" style="color:#6DAF28;font-size:35px;padding-top:10px;padding-bottom:10px;">Análise de Germinação</h2>
+		
+		<p><a href="<?php echo base_url()."VisualizarDados?nome=".$cientifico[0] ?>"  onclick="" class="art-button" style="Margin-top:10px;">Visualize todos os dados aqui</a></p>							
 		
 		<style type="text/css">
 		.tg-table-green { border-collapse: collapse; border-spacing: 0; }
@@ -204,6 +204,9 @@
 		</table>
     </div>
     </div>
+   <p>
+   	<p><a href=<?php echo base_url()."especies";?>  onclick="" class="art-button" style="float:center;margin-top:10px;" >Voltar</a></p>
+  </p>
 </div>
 </div>
 </article></div>
