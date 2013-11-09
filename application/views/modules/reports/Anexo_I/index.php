@@ -17,8 +17,8 @@
 </head>
 <body>
 	<?php
-		$nome = "Arthur Pessoa";
-		$RENASEM = "6666";
+		$nome = $this->session->userdata('nome');
+		$RENASEM = $this->session->userdata('renasem');
 		$anoProducao = "2013";
 
 	?>
