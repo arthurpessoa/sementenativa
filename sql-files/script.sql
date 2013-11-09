@@ -9,7 +9,7 @@ CREATE TABLE `usuarios` (
 `bairro` varchar(40) NOT NULL,
 `cidade` varchar(40) NOT NULL,
 `estado` varchar(2) NOT NULL,
-`cpf-cnpj` varchar(10),
+`cpfcnpj` varchar(10),
 `renasem` varchar(10),
 `admin` varchar(1) default 0,
 `produtor` varchar(1) default 0,

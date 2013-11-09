@@ -20,14 +20,19 @@ class Login extends CI_Controller {
 		if($loginCheck)
 		 {
 		 	
+
+		 	$info = $this->ModelLogin->getAllinfo($email);
+
 		 	$session = array(
                 'nome' => $this->ModelLogin->getNome($email),
 				'email' => $email,
                 'logged' => true,
-                'admin' => true,
-                'pesquisador' => true,
-                'produtor' =>true
+                'cpfcnpj' => $info ->cpfcnpj,
+                'renasem' => $info ->renasem
             );
+
+
+
 		 	$this->session->set_userdata($session);
 
 
