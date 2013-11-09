@@ -112,6 +112,11 @@
 												<input id="boxconfirmasenha" name="confirmasenha" type="password" size="12" />
 												<span hidden id="erroConfirmaSenha" class="erroinsert">*Confirmação diferente da senha digitada</span>
 											</p>
+											<p>
+												<label for="Usr">Tipo de Usuário</label>
+												<input type="radio" name="tipoUsr" value="Tecnico"/ checked> Tecnico
+												<input type="radio" name="tipoUsr" value="Produtor"/> Produtor
+											</p>
 											<br><br>
 											<p>
 												<div style="position:relative;float:right;margin-right:7cm;">

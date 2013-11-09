@@ -9,11 +9,11 @@ CREATE TABLE `usuarios` (
 `bairro` varchar(40) NOT NULL,
 `cidade` varchar(40) NOT NULL,
 `estado` varchar(2) NOT NULL,
-`cpf-cnpj` int,
-`renasem` int,
-`admin` int default 0,
-`produtor` int default 0,
-`tecnico` int default 0,
+`cpf-cnpj` varchar(10),
+`renasem` varchar(10),
+`admin` varchar(1) default 0,
+`produtor` varchar(1) default 0,
+`tecnico` varchar(1) default 0,
 PRIMARY KEY (`email`)
 ) ENGINE=MyISAM;
 

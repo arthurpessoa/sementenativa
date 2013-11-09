@@ -19,6 +19,13 @@ class CadastrarUsuario extends CI_Controller {
 		 $cidade = $_POST['cidade'];
 		 $estado = $_POST['uf'];
 		 $senha = $_POST['senha'];
+		 $tipoUsr = $_POST['tipoUsr'];
+
+		 $tecnico = '0';
+		 $produtor = '0';
+
+		 if($tipoUsr=='Tecnico')$tecnico='1';
+		 if($tipoUsr=='Produtor')$produtor='1';
 
 		 $emailCheck = $this->ModelUsuario->checkEmail($email);
 		 
@@ -30,15 +37,13 @@ class CadastrarUsuario extends CI_Controller {
 		 }
 		 else
 		 {
-		 	$this->ModelUsuario->cadastrar($nome,$email, $renasem, $cpfcnpj, $CEP, $endereco, $num, $bairro, $cidade, $estado, $senha);
+		 	$this->ModelUsuario->cadastrar($nome,$email, $renasem, $cpfcnpj, $CEP, $endereco, $num, $bairro, $cidade, $estado, $senha,$produtor,$tecnico);
 		 	$data['erro'] = '';
 		 	$data['ok'] = 'Usuário cadastrado com sucesso!';
 		 	$this->load->view('login',$data);
 		 	//$redirect =  base_url()."login"; //redireciona
 			//header("location:$redirect");
 		 }
-
-
 	}
 	public function index()
 	{
