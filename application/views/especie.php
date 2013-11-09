@@ -76,7 +76,6 @@
         <p style="font-size:15px;margin-left:15px;font-weight: bold;"><?php echo $familia[0]?></p>
     
     </div>
-		<h2 class="art-postheader" style="color:#6DAF28;font-size:35px;padding-top:10px;padding-bottom:10px;">Análise de Germinação</h2>
 		
 		<style type="text/css">
 		.tg-table-green { border-collapse: collapse; border-spacing: 0; }
@@ -87,18 +86,27 @@
 		.tg-bf { font-weight: bold; } .tg-it { font-style: italic; }
 		.tg-left { text-align: left; } .tg-right { text-align: right; } .tg-center { text-align: center; }
 		</style>
-		<table class="tg-table-green ">
-		  <tr>
-			<th>Temperatura</th>
-			<th>Substrato</th>
-			<th>Sementes por repeteição</th>
-			<th>Número de repetições</th>
-			<th>Quebra de Dormência</th>
-			<th>Umidade do Substrato</th>
-			<th>Teste de Germinação</th>
-			<th>Fontes</th>
-			
-		  </tr>
+
+		<h2 class="art-postheader" style="color:#6DAF28;font-size:35px;padding-top:10px;padding-bottom:1px;">Análise de Germinação<hr/></h2>
+		<?php
+
+		if($espGe>0){
+		
+		echo "<table class='tg-table-green'>";
+		echo "<tr>";
+		echo "<th>Temperatura</th>";
+		echo "<th>Substrato</th>";
+		echo "<th>Sementes por repeteição</th>";
+		echo "<th>Número de repetições</th>";
+		echo "<th>Quebra de Dormência</th>";
+		echo "<th>Umidade do Substrato</th>";
+		echo "<th>Teste de Germinação</th>";
+		echo "<th>Fontes</th>";
+		echo "</tr>";
+		}else{
+			echo "<h2 class='art-postheader' style='color:red;font-size:25px;padding-bottom:10p';>Dados não Cadastrados</h2>" ;
+		}
+		  ?>
 		  <tr class="tg-even">
 		  <?php 
 		  	
@@ -118,19 +126,24 @@
 		  ?>
 		  </tr>
 		</table>
-			<h2 class="art-postheader" style="color:#6DAF28;font-size:35px;padding-top:10px;padding-bottom:10px;">Colheita e Manejo</h2>
-		<table class="tg-table-green">
-		  <tr>
-		
-			<th>Local de colheita</th>
-			<th>Floração</th>
-			<th>Condições de secagem</th>
-			<th>Método de extração das sementes</th>
-			<th>Testes Realizados</th>
-			<th>Substrato</th>
-			<th>Fotoperíodo</th>
-			<th>Fontes</th>
-		  </tr>
+			<h2 class="art-postheader" style="color:#6DAF28;font-size:35px;padding-top:10px;padding-bottom:10px;">Colheita e Manejo<hr/></h2>
+		<?php
+		if($espCo>0){		
+		echo "<table class='tg-table-green'>";
+		echo "<tr>";
+		echo "<th>Local de colheita</th>";
+		echo "<th>Floração</th>";
+		echo "<th>Condições de secagem</th>";
+		echo "<th>Método de extração das sementes</th>";
+		echo "<th>Testes Realizados</th>";
+		echo "<th>Substrato</th>";
+		echo "<th>Fotoperíodo</th>";
+		echo "<th>Fontes</th>";
+		echo "</tr>";
+		}else{
+			echo "<h2 class='art-postheader' style='color:red;font-size:25px;padding-bottom:10p';>Dados não Cadastrados</h2>" ;
+		}
+		  ?>
 		  <tr class="tg-even">
 		  <?php 
 			for($i = 0; $i < $espCo; $i++)
@@ -149,21 +162,27 @@
 		  ?>
 		  </tr>
 		</table>
-		<h2 class="art-postheader" style="color:#6DAF28;font-size:35px;padding-top:10px;padding-bottom:10px;">Caracterização</h2>
-		<table class="tg-table-green">
-		  <tr>
-			<th>Data de Colheita</th>
-			<th>Local de origem das sementes</th>
-			<th>Indicador de Maturação</th>
-			<th>Dispersão</th>
-			<th>Número de sementes por fruto</th>
-			<th>Número de sementes por kilo</th>
-			<th>Tipo de Fruto</th>
-			<th>Fontes</th>
-		  </tr>
+		<h2 class="art-postheader" style="color:#6DAF28;font-size:35px;padding-top:10px;padding-bottom:10px;">Caracterização<hr/></h2>
+		<?php
+		if($espCa>0){
+		echo "<table class='tg-table-green'>";
+		echo "<tr>";
+		echo "<th>Data de Colheita</th>";
+		echo "<th>Local de origem das sementes</th>";
+		echo "<th>Indicador de Maturação</th>";
+		echo "<th>Dispersão</th>";
+		echo "<th>Número de sementes por fruto</th>";
+		echo "<th>Número de sementes por kilo</th>";
+		echo "<th>Tipo de Fruto</th>";
+		echo "<th>Fontes</th>";
+		echo "</tr>";
+		}else{
+			echo "<h2 class='art-postheader' style='color:red;font-size:25px;padding-bottom:10p';>Dados não Cadastrados</h2>" ;
+
+		}
+		  ?>
 		  <tr class="tg-even">
 		  <?php 
-		  	
 			for($i = 0; $i < $espCa; $i++)
 			{
 				echo "<tr>";
