@@ -1,4 +1,4 @@
-<h3>Ferramentas de Pesquisadores</h3>
+<h3>Ferramentas para Técnicos</h3>
 <br>
 <div class="art-content-layout-row">
     <div class="art-layout-cell layout-item-3" style="width: 25%" >

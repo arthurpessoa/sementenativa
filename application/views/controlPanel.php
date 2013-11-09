@@ -66,11 +66,11 @@
 								<div class="art-content-layout-row">
 									<div class="art-layout-cell layout-item-0" style="width: 100%">
 									<?php
-									if($this->session->userdata('admin')){
+									if($admin=='1'){
 										include 'modules/CP/ferramentasAdmin.php';
-									}if($this->session->userdata('pesquisador')){
-										include 'modules/CP/ferramentasPesquisadores.php';
-									}if($this->session->userdata('produtor')){
+									}if($tecnico=='1'){
+										include 'modules/CP/ferramentasTecnico.php';
+									}if($produtor=='1'){
 										include 'modules/CP/ferramentasProdutores.php';
 									}
 									?>

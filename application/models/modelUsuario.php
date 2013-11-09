@@ -7,6 +7,46 @@ class ModelUsuario extends CI_Model {
         $this->load->database();
     }
 
+     function checkProdutor($email)
+    {
+        $query = $this->db->query('SELECT produtor FROM usuarios WHERE email = \''.$email.'\'');
+        $ans = array();
+        $a = $query->result();
+        $c = count($a);
+        for($i = 0; $i < $c; $i++)
+        {
+            $ans[$i] = $a[$i]->produtor;
+        }
+        return $ans[0];    
+
+    }
+
+    function checkTecnico($email)
+    {
+        $query = $this->db->query('SELECT tecnico FROM usuarios WHERE email = \''.$email.'\'');
+        $ans = array();
+        $a = $query->result();
+        $c = count($a);
+        for($i = 0; $i < $c; $i++)
+        {
+            $ans[$i] = $a[$i]->tecnico;
+        }
+        return $ans[0];    
+    }
+
+    function checkAdmin($email)
+    {
+        $query = $this->db->query('SELECT admin FROM usuarios WHERE email = \''.$email.'\'');
+        $ans = array();
+        $a = $query->result();
+        $c = count($a);
+        for($i = 0; $i < $c; $i++)
+        {
+            $ans[$i] = $a[$i]->admin;
+        }
+        return $ans[0];
+    }
+
     function checkEmail($email)
     {
     		$query = $this->db->query('SELECT COUNT( email ) AS total FROM usuarios WHERE email = \''.$email.'\'');
