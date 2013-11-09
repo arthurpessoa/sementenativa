@@ -257,15 +257,6 @@ $('.close').click(function(){
    $("body").css("overflow", "visible");
 });
 
-
-
-
-
-
-
-
-
-
 $(document).ready(function() {
 	nomPop = 1;
 	$('#addNp').click(function(){

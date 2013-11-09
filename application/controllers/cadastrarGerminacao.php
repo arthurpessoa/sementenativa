@@ -5,23 +5,33 @@ class CadastrarGerminacao extends CI_Controller {
 	{
 		$this->load->model('ModelGerminacao');
 		$this->load->model('ModelEspecie');
-		
+
 		$especie = $_POST['especie']; //nome da espécie, descobrir numero
-		$temp = $_POST['temp'];
-		$subs = $_POST['subs'];
-		$descs = $_POST['descs'];
-		$semkg = $_POST['semkg'];
-		$peso = $_POST['peso'];
-		$repet = $_POST['repet'];
-		$nrepet = $_POST['nrepet'];
-		$qd = $_POST['qd'];
-		$dataini = $_POST['dataini'];
-		$tempger = $_POST['tempger'];
-		$datafim = $_POST['datafim'];
-		$tipoluz = $_POST['tipoluz'];
-		$umisub = $_POST['umisub'];
-		$testegerm = $_POST['testegerm'];
-		$fontes = $_POST['fontes'];
+		$temp = $this->checar($_POST['temp']);
+		//$temp = $this->checar($);
+		$subs = $this->checar($_POST['subs']);
+		
+		$descs = $this->checar($_POST['descs']);
+		
+		$semkg = $this->checar($_POST['semkg']);
+		$peso = $this->checar($_POST['peso']);
+		$repet = $this->checar($_POST['repet']);
+		$nrepet = $this->checar($_POST['nrepet']);
+		$qd = $this->checar($_POST['qd']);
+		
+		$dataini = $this->checar($_POST['dataini']);
+		$tempger = $this->checar($_POST['tempger']);
+		
+		$datafim = $this->checar($_POST['datafim']);
+		
+		$tipoluz = $this->checar($_POST['tipoluz']);
+		
+		$umisub = $this->checar($_POST['umisub']);
+		
+		$testegerm = $this->checar($_POST['testegerm']);
+		
+		$fontes = $this->checar($_POST['fontes']);
+		
 
 		$id = $this->ModelEspecie->getID($especie);
 		
@@ -43,4 +53,13 @@ class CadastrarGerminacao extends CI_Controller {
 		$data['especies'] = $this->ModelEspecie->getAllSpecies();
 		$this->load->view('CadastrarGerminacao', $data);
 	}
+
+	public function checar($var){
+		if(empty(trim($var))){
+			$var = "Não Especificado";
+		}
+		return $var;
+	}
+
 }
+

@@ -6,36 +6,36 @@ class CadastrarColheita extends CI_Controller {
 		$especie = $_POST['especie'];
 		$nRev = $_POST['nRev'];
 		$email = $_POST['email'];
-		$titu = $_POST['titu'];
+		$titu = $this->checar($_POST['titu']);
 		$autores = '';
-		$revi = $_POST['revi'];
+		$revi = $this->checar($_POST['revi']);
 		$ano = $_POST['ano'];
 		$volu = $_POST['volu'];
 		$pagI = $_POST['pagI'];
 		$pagE = $_POST['pagE'];
-		$clas = $_POST['clas'];
-		$loca = $_POST['loca'];
-		$flor = $_POST['flor'];
-		$peri = $_POST['peri'];
-		$metoc = $_POST['metoc'];
-		$equi = $_POST['equi'];
-		$tempc = $_POST['tempc'];
-		$tempsf = $_POST['tempsf'];
-		$cond = $_POST['cond'];
-		$metoe = $_POST['metoe'];
-		$queb = $_POST['queb'];
-		$tempob = $_POST['tempob'];
-		$arma = $_POST['arma'];
-		$subs = $_POST['subs'];
-		$temper = $_POST['temper'];
-		$foto = $_POST['foto'];
-		$trat = $_POST['trat'];
+		$clas = $this->checar($_POST['clas']);
+		$loca = $this->checar($_POST['loca']);
+		$flor = $this->checar($_POST['flor']);
+		$peri = $this->checar($_POST['peri']);
+		$metoc = $this->checar($_POST['metoc']);
+		$equi = $this->checar($_POST['equi']);
+		$tempc = $this->checar($_POST['tempc']);
+		$tempsf = $this->checar($_POST['tempsf']);
+		$cond = $this->checar($_POST['cond']);
+		$metoe = $this->checar($_POST['metoe']);
+		$queb = $this->checar($_POST['queb']);
+		$tempob = $this->checar($_POST['tempob']);
+		$arma = $this->checar($_POST['arma']);
+		$subs = $this->checar($_POST['subs']);
+		$temper = $this->checar($_POST['temper']);
+		$foto = $this->checar($_POST['foto']);
+		$trat = $this->checar($_POST['trat']);
 		$melh = $_POST['melh'];
-		$test = $_POST['test'];
-		$metod = $_POST['metod'];
-		$reco = $_POST['reco'];
+		$test = $this->checar($_POST['test']);
+		$metod = $this->checar($_POST['metod']);
+		$reco = $this->checar($_POST['reco']);
 		$obse = $_POST['obse'];
-		$font = $_POST['font'];
+		$font = $this->checar($_POST['font']);
 		
 		if($nRev == '')
 		{
@@ -87,5 +87,11 @@ class CadastrarColheita extends CI_Controller {
 		$data['ok'] = '';
 		$data['especies'] = $this->ModelEspecie->getAllSpecies();
 		$this->load->view('CadastrarColheita', $data);
+	}
+	public function checar($var){
+		if(empty(trim($var))){
+			$var = "Não Especificado";
+		}
+		return $var;
 	}
 }

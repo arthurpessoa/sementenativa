@@ -28,22 +28,24 @@ class CadastrarCaracterizacao extends CI_Controller {
 		$this->load->model('ModelCaracterizacao');
 		
 		$especie = $_POST['tboxespecies']; //nome da espécie, descobrir numero
-		$data = $_POST['data'];
-		$localOrigem = $_POST['localOrigem'];
-		$matura = $_POST['matura'];
-		$dispersao = $_POST['dispersao'];
+		$data = $this->checar($_POST['data']);
+		
+		$localOrigem = $this->checar($_POST['localOrigem']);
+		
+		$matura = $this->checar($_POST['matura']);
+		$dispersao = $this->checar($_POST['dispersao']);
 		$fpk = $_POST['fpk'];
 		$pmf = $_POST['pmf'];
 		$spf = $_POST['spf'];
 		$spk = $_POST['spk'];
 		$pms = $_POST['pms'];
-		$fs = $_POST['fs'];
-		$tamsem = $_POST['tamsem'];
-		$tamfruto = $_POST['tamfruto'];
-		$tipofruto = $_POST['tipofruto'];
+		$fs = $this->checar($_POST['fs']);
+		$tamsem = $this->checar($_POST['tamsem']);
+		$tamfruto = $this->checar($_POST['tamfruto']);
+		$tipofruto = $this->checar($_POST['tipofruto']);
 		$pureza = $_POST['pureza'];
 		$obs = $_POST['obs'];
-		$fontes = $_POST['fontes'];
+		$fontes = $this->checar($_POST['fontes']);
 		
 		
 		$this->load->model('ModelEspecie');
@@ -67,5 +69,11 @@ class CadastrarCaracterizacao extends CI_Controller {
 		$data['ok'] = '';
 		$data['especies'] = $this->ModelEspecie->getAllSpecies();
 		$this->load->view('CadastrarCaracterizacao', $data);
+	}
+	public function checar($var){
+		if(empty(trim($var))){
+			$var = "Não Especificado";
+		}
+		return $var;
 	}
 }

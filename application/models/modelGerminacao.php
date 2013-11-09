@@ -12,7 +12,7 @@ class ModelGerminacao extends CI_Model {
 	}
 	function dadosgerminacao($id)
 	{
-		$query = $this->db->query('SELECT * FROM germinacao where germicanao.idEspecie = '.$id);
+		$query = $this->db->query('SELECT * FROM germinacao where germinacao.idEspecie = '.$id);
 		return $query->result();
 	}
 }
