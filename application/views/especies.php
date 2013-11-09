@@ -60,12 +60,12 @@
 										<br><br><br><br>
 										<?php
 										if($result){
-											echo "<h3>Resultados</h3>";
+											echo "<div style='background:white;border-style:solid;border-width:0 3px 3px 3px;width:500%;border-color:#6DAF28;'><div class='Efeito' ><p><span style='font-weight:bold; font-size: 15px;margin-left:5px;width:140%'>Resultado</span></p></div></div>";
 											$c = count($especies);
 											for($i = 0; $i < $c; $i++)
 											{
 												if($i==20)break;
-												echo '<p><a href="'.base_url().'visualizarEspecie?nome='.$especies[$i].'">'.$especies[$i]."</a></p>";
+												echo '<p style="font-weight:bold; font-size: 15px;margin-left:5px;width:140%"><a href="'.base_url().'visualizarEspecie?nome='.$especies[$i].'">'.$especies[$i]."</a></p>";
 											}
 										}
 										?>

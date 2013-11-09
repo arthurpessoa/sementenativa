@@ -23,20 +23,7 @@
 
 </style></head>
 
-<style>
-.Efeito{
-height:auto;
-padding-bottom:3px;
-color:#fff;
 
-padding-left:20px;
-font-size:25px;
-text-align:left;
-
-box-shadow: inset 0 2px 3px 0 rgba(255,255,255,.3), inset 0 -3px 6px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);
-background-image: linear-gradient(to bottom, #6DAF28, #3ab302 130%);}
-
-</style>
 <body>
 <div id="art-main">
 <nav class="art-nav clearfix">
@@ -89,14 +76,14 @@ background-image: linear-gradient(to bottom, #6DAF28, #3ab302 130%);}
         <p style="font-size:15px;margin-left:15px;font-weight: bold;"><?php echo $familia[0]?></p>
     
     </div>
-		<p><span class="art-postheader" style="color:#6DAF28;font-size:35px"><b>Análise de Germinação</b></span></p>
+		<h2 class="art-postheader" style="color:#6DAF28;font-size:35px;padding-top:10px;padding-bottom:10px;">Análise de Germinação</h2>
 		
 		<style type="text/css">
 		.tg-table-green { border-collapse: collapse; border-spacing: 0; }
-		.tg-table-green td, .tg-table-green th { background-color: #fff; border: 1px #bbb solid; color: #594F4F; font-family: sans-serif; font-size: 100%; padding: 10px; vertical-align: top; }
+		.tg-table-green td, .tg-table-green th { background-color: #fff; border: 1px #bbb solid; color: #594F4F; font-family: sans-serif; font-size: 110%; padding: 11px; vertical-align: top; }
 		.tg-table-green .tg-even td  { background-color: #EFFAB4; }
 		.tg-table-green th  { background-color: #6DAF28; color: #FFFFFF; font-size: 110%; font-weight: bold; }
-		.tg-table-green tr:hover td, .tg-table-green tr.even:hover td  { color: #333; background-color: #E5FCC2; }
+		/*.tg-table-green tr:hover td, .tg-table-green tr.even:hover td  { color: #333; background-color: #E5FCC2; }*/
 		.tg-bf { font-weight: bold; } .tg-it { font-style: italic; }
 		.tg-left { text-align: left; } .tg-right { text-align: right; } .tg-center { text-align: center; }
 		</style>
@@ -144,7 +131,7 @@ background-image: linear-gradient(to bottom, #6DAF28, #3ab302 130%);}
 		  ?>
 		  </tr>
 		</table>
-		<p><span style="font-weight: bold; font-size: 16px">Colheita e Manejo</span></p>
+			<h2 class="art-postheader" style="color:#6DAF28;font-size:35px;padding-top:10px;padding-bottom:10px;">Colheita e Manejo</h2>
 		<table class="tg-table-green">
 		  <tr>
 			<!--th>Número da revista</th-->
@@ -219,7 +206,7 @@ background-image: linear-gradient(to bottom, #6DAF28, #3ab302 130%);}
 		  ?>
 		  </tr>
 		</table>
-		<p><span style="font-weight: bold; font-size: 16px">Caracterização</span></p>
+		<h2 class="art-postheader" style="color:#6DAF28;font-size:35px;padding-top:10px;padding-bottom:10px;">Caracterização</h2>
 		<table class="tg-table-green">
 		  <tr>
 			<th>Data de Colheita</th>
