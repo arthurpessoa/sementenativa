@@ -91,9 +91,12 @@
 		  <tr>
 			<th>Temperatura</th>
 			<th>Substrato</th>
-			<th>Descrição da semente</th>
-			<th>Número de sementes por Repetição</th>
-			<th>Número de Repetições</th>
+			<th>Sementes por repeteição</th>
+			<th>Número de repetições</th>
+			<th>Quebra de Dormência</th>
+			<th>Umidade do Substrato</th>
+			<th>Teste de Germinação</th>
+			<th>Fontes</th>
 			
 		  </tr>
 		  <tr class="tg-even">
@@ -104,32 +107,12 @@
 				echo "<tr>";
 				echo "<td>".$gertemperatura[$i]."</td>";
 				echo "<td>".$gersubstrato[$i]."</td>";
-				echo "<td>".$descricaosem[$i]."</td>";
 				echo "<td>".$semporrep[$i]."</td>";
 				echo "<td>".$repet[$i]."</td>";
-				
-				echo "</tr>";
-			}
-		  ?>
-		  </tr>
-		  <tr>
-		  	<th>Quebra de Dormencia</th>
-			<th>Tipo de Luz</th>
-			<th>Umidade do Substrato</th>
-			<th>Teste de Germinação</th>
-			<th>Fontes</th>
-		  </tr>
-		  <tr class="tg-even">
-		  <?php 
-		  	
-			for($i = 0; $i < $espGe; $i++)
-			{
-				echo "<tr>";
-				echo "<td>".$gerquebradorm[$i]."</td>";
-				echo "<td>".$tipoluz[$i]."</td>";
+				echo "<td>".$gerquebradorm[$i]."</td>";	
 				echo "<td>".$umidadesubs[$i]."</td>";
 				echo "<td>".$testeger[$i]."</td>";
-				echo "<td>".$gerfontes[$i]."</td>";
+				echo "<td>".$gerfontes[$i]."</td>";				
 				echo "</tr>";
 			}
 		  ?>
@@ -141,9 +124,12 @@
 		
 			<th>Local de colheita</th>
 			<th>Floração</th>
-			<th>Método de colheita</th>
 			<th>Condições de secagem</th>
 			<th>Método de extração das sementes</th>
+			<th>Testes Realizados</th>
+			<th>Substrato</th>
+			<th>Fotoperíodo</th>
+			<th>Fontes</th>
 		  </tr>
 		  <tr class="tg-even">
 		  <?php 
@@ -152,29 +138,11 @@
 				echo "<tr>";
 				echo "<td>".$localcolheita[$i]."</td>";
 				echo "<td>".$floracao[$i]."</td>";
-				echo "<td>".$metodocolheita[$i]."</td>";
 				echo "<td>".$condsecagem[$i]."</td>";
 				echo "<td>".$metodoextracaosementes[$i]."</td>";
-				echo "</tr>";
-			}
-		  ?>
-		  </tr>
-		   <tr>
-			<th>Tratamento para quebra de dormência</th>
-			<th>Tratamentos realizados</th>
-			<th>Testes Realizados</th>
-			<th>Metodologia</th>
-			<th>Fontes</th>
-		  </tr>
-		  <tr class="tg-even">
-		  <?php 
-			for($i = 0; $i < $espCo; $i++)
-			{
-				echo "<tr>";
-				echo "<td>".$colquebradorm[$i]."</td>";
-				echo "<td>".$tratamentos[$i]."</td>";
 				echo "<td>".$testesrealiz[$i]."</td>";
-				echo "<td>".$metodologia[$i]."</td>";
+				echo "<td>".$colsubstrato[$i]."</td>";
+				echo "<td>".$fotoperiodo[$i]."</td>";
 				echo "<td>".$colfontes[$i]."</td>";
 				echo "</tr>";
 			}
@@ -189,6 +157,9 @@
 			<th>Indicador de Maturação</th>
 			<th>Dispersão</th>
 			<th>Número de sementes por fruto</th>
+			<th>Número de sementes por kilo</th>
+			<th>Tipo de Fruto</th>
+			<th>Fontes</th>
 		  </tr>
 		  <tr class="tg-even">
 		  <?php 
@@ -201,29 +172,10 @@
 				echo "<td>".$indicmatur[$i]."</td>";
 				echo "<td>".$dispers[$i]."</td>";
 				echo "<td>".$semsfruto[$i]."</td>";
-				echo "</tr>";
-			}
-		  ?>
-		  </tr>
-		  <tr>
-			<th>Número de sementes por kilo</th>
-			<th>Tamanho da semente</th>
-			<th>Tamanho do fruto</th>
-			<th>Observações</th>
-			<th>Fontes</th>
-			
-		  </tr>
-		  <tr class="tg-even">
-		  <?php 
-		  	
-			for($i = 0; $i < $espCa; $i++)
-			{
-				echo "<tr>";
 				echo "<td>".$semskilo[$i]."</td>";
-				echo "<td>".$tamsemente[$i]."</td>";
-				echo "<td>".$tamfruto[$i]."</td>";
 				echo "<td>".$tipofruto[$i]."</td>";
 				echo "<td>".$carfontes[$i]."</td>";
+
 				echo "</tr>";
 			}
 		  ?>

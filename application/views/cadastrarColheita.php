@@ -69,6 +69,7 @@
 														}
 													?>
 												</select>
+												
 												<span id="erroEspecie" class="erroinsert"></span>
 											</p>
 											<input type="hidden" name="email" value=<?php echo $this->session->userdata('email');?>>
