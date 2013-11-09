@@ -186,7 +186,7 @@
 				  					</tr>
 								  <tr class="tg-even">
 								  <?php 
-									for($i = 0; $i < $espGe; $i++)
+									for($i = 0; $i < $espCa; $i++)
 									{
 										echo "<tr>";
 										echo "<td>".$datacol[$i]."</td>";
