@@ -150,11 +150,11 @@
 			for($i = 0; $i < $espCo; $i++)
 			{
 				echo "<tr>";
-				echo "<td>".$localcolheita."</td>";
-				echo "<td>".$floracao."</td>";
-				echo "<td>".$metodocolheita."</td>";
-				echo "<td>".$condsecagem."</td>";
-				echo "<td>".$metodoextracaosementes."</td>";
+				echo "<td>".$localcolheita[$i]."</td>";
+				echo "<td>".$floracao[$i]."</td>";
+				echo "<td>".$metodocolheita[$i]."</td>";
+				echo "<td>".$condsecagem[$i]."</td>";
+				echo "<td>".$metodoextracaosementes[$i]."</td>";
 				echo "</tr>";
 			}
 		  ?>
@@ -171,11 +171,11 @@
 			for($i = 0; $i < $espCo; $i++)
 			{
 				echo "<tr>";
-				echo "<td>".$colquebradorm."</td>";
-				echo "<td>".$tratamentos."</td>";
-				echo "<td>".$testesrealiz."</td>";
-				echo "<td>".$metodologia."</td>";
-				echo "<td>".$colfontes."</td>";
+				echo "<td>".$colquebradorm[$i]."</td>";
+				echo "<td>".$tratamentos[$i]."</td>";
+				echo "<td>".$testesrealiz[$i]."</td>";
+				echo "<td>".$metodologia[$i]."</td>";
+				echo "<td>".$colfontes[$i]."</td>";
 				echo "</tr>";
 			}
 		  ?>
@@ -196,11 +196,11 @@
 			for($i = 0; $i < $espCa; $i++)
 			{
 				echo "<tr>";
-				echo "<td>".$datacol."</td>";
-				echo "<td>".$locorigem."</td>";
-				echo "<td>".$indicmatur."</td>";
-				echo "<td>".$dispers."</td>";
-				echo "<td>".$semsfruto."</td>";
+				echo "<td>".$datacol[$i]."</td>";
+				echo "<td>".$locorigem[$i]."</td>";
+				echo "<td>".$indicmatur[$i]."</td>";
+				echo "<td>".$dispers[$i]."</td>";
+				echo "<td>".$semsfruto[$i]."</td>";
 				echo "</tr>";
 			}
 		  ?>
@@ -219,11 +219,11 @@
 			for($i = 0; $i < $espCa; $i++)
 			{
 				echo "<tr>";
-				echo "<td>".$semskilo."</td>";
-				echo "<td>".$tamsemente."</td>";
-				echo "<td>".$tamfruto."</td>";
-				echo "<td>".$tipofruto."</td>";
-				echo "<td>".$carfontes."</td>";
+				echo "<td>".$semskilo[$i]."</td>";
+				echo "<td>".$tamsemente[$i]."</td>";
+				echo "<td>".$tamfruto[$i]."</td>";
+				echo "<td>".$tipofruto[$i]."</td>";
+				echo "<td>".$carfontes[$i]."</td>";
 				echo "</tr>";
 			}
 		  ?>
