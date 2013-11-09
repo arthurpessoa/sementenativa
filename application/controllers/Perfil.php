@@ -18,7 +18,7 @@ class Perfil extends CI_Controller {
 		$data['bairro'] = $profile->bairro;
 		$data['cidade'] = $profile->cidade;
 		$data['estado'] = $profile->estado;
-		$data['telefone'] = "(19)98243 0900";
+		$data['telefone'] = $profile->telefone;
 		$this->load->view('perfil', $data);
 	}
 }
