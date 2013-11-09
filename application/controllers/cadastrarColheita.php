@@ -65,6 +65,7 @@ class CadastrarColheita extends CI_Controller {
 		while(isset($_POST['auto'.$i]))
 		{
 			$autores = $autores.$_POST['auto'.$i].", ";
+			$i++;
 		}
 		
 		$autores = substr($autores, 0, -2);

@@ -261,7 +261,7 @@
 
 											<br><br>
 											<p>
-												<p><button type="submit" id="EnviarCadastro" href="#" style="float: right;" onclick="" class="art-button" >Cadastrar</button></p>
+												<p><button type="submit" id="EnviarCadastro" href="#" style="float: right;" class="art-button" >Cadastrar</button></p>
 												<p><a href=<?php echo base_url()."controlPanel";?> style="float: right;" onclick="" class="art-button" >Voltar</a></p>
 											</p>
 										</form>
