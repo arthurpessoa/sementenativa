@@ -76,7 +76,7 @@ class ModelEspecie extends CI_Model {
 	}
 	function BuscaEspecies($especie)
 	{
-		$query = $this->db->query('SELECT cientifico FROM especie WHERE cientifico LIKE \'%'.$especie.'% \' OR popular LIKE \'%'.$especie.'%\'');
+		$query = $this->db->query('SELECT cientifico FROM especie WHERE cientifico LIKE \'%'.$especie.'%\' OR popular LIKE \'%'.$especie.'%\'');
 		$ans = array();
 		$a = $query->result();
 		$c = count($a);
