@@ -114,7 +114,13 @@
 											</p>
 											<br><br>
 											<p>
-												<p><a id="EnviarCadastro" href="#" style="float: letf;" onclick="" class="art-button" >Cadastrar</a></p>
+												<div style="position:relative;float:right;margin-right:7cm;">
+												<a id="EnviarCadastro" href="#" onclick=""  class="art-button" >Cadastrar</a>
+												</div>
+												<div style="position:relative;float:right;margin-right:0.5cm;">
+												<a id="Voltar" href=<?php echo base_url()."login";?> onclick="" class="art-button" >Voltar</a>
+											    </div>
+												
 											</p>
 										</form>		
 									</div>
