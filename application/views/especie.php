@@ -180,25 +180,6 @@
 			}
 		  ?>
 		  </tr>
-		  <tr>
-			
-			
-		  </tr>
-		  <tr class="tg-even">
-		  <?php 
-		  	
-			for($i = 0; $i < $espCa; $i++)
-			{
-				echo "<tr>";
-				echo "<td>".$semskilo[$i]."</td>";
-				echo "<td>".$tamsemente[$i]."</td>";
-				echo "<td>".$tamfruto[$i]."</td>";
-				echo "<td>".$tipofruto[$i]."</td>";
-				echo "<td>".$carfontes[$i]."</td>";
-				echo "</tr>";
-			}
-		  ?>
-		  </tr>
 		</table>
     </div>
     </div>
