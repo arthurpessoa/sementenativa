@@ -12,10 +12,12 @@ class CadastrarCaracterizacao extends CI_Controller {
 			$c = count($especies);
 			for($i = 0; $i < $c; $i++)
 			{
-				if($i==20)break;
+				if($i==7)break;
 				
 				  	echo "<input type='hidden' name='hidenInput".$i."' id='hidenInput".$i."' value='".$especies[$i]."'>";
        				echo "<a id=\"link".$i."\" href=\"#\" onclick=\"BuscaParaTextbox(document.getElementById('hidenInput".$i."').value);\">".$especies[$i]."</a>";
+			
+       				echo "<br>";
 			}
 		}
 
