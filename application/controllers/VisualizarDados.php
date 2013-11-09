@@ -4,7 +4,7 @@ class VisualizarDados extends CI_Controller {
 	public function index()
 	{
 		$this->load->model('ModelEspecie');
-		$nome = 'Inga uruguensis Hook. et Arn.';
+		$nome = 'Aspidosperma pyrifolium Mart.';
 		
 		$id = $this->ModelEspecie->getID($nome);
 		
@@ -20,6 +20,39 @@ class VisualizarDados extends CI_Controller {
 		$espCo = count($dadosCol);
 		
 		$data['espCo'] = $espCo;
+		
+		$data['nrevista'] = array();
+		$data['tituloArtigo'] = array();
+		$data['autores'] = array();
+		$data['revista'] = array();
+		$data['ano'] = array();
+		$data['volume'] = array();
+		$data['pagini'] = array();
+		$data['pagend'] = array();
+		$data['classificador'] = array();
+		$data['localcolheita'] = array();
+		$data['floracao'] = array();
+		$data['periodocolheita'] = array();
+		$data['metodocolheita'] = array();
+		$data['equipusados'] = array();
+		$data['tempocolheita'] = array();
+		$data['tsecagemfrutos'] = array();
+		$data['condsecagem'] = array();
+		$data['metodoextracaosementes'] = array();
+		$data['colquebradorm'] = array();
+		$data['tempobenef'] = array();
+		$data['armazenamento'] = array();
+		$data['colsubstrato'] = array();
+		$data['coltemperatura'] = array();
+		$data['fotoperiodo'] = array();
+		$data['tratamentos'] = array();
+		$data['melhorgerm'] = array();
+		$data['testesrealiz'] = array();
+		$data['metodologia'] = array();
+		$data['recomendacoes'] = array();
+		$data['observacoes'] = array();
+		$data['colfontes'] = array();
+		
 		for($i=0; $i < $espCo; $i++)
 		{
 			$data['nrevista'][$i] = $dadosCol[$i]->nRevista;
@@ -50,9 +83,9 @@ class VisualizarDados extends CI_Controller {
 			$data['melhorgerm'][$i] = $dadosCol[$i]->melhorGerminacao;
 			$data['testesrealiz'][$i] = $dadosCol[$i]->testesRealizados;
 			$data['metodologia'][$i] = $dadosCol[$i]->testesRealizados;
-			$data['recomendacoes'] = $dadosCol[$i]->recomendacoes;
-			$data['observacoes'] = $dadosCol[$i]->observacoes;
-			$data['colfontes'] = $dadosCol[$i]->fontes;
+			$data['recomendacoes'][$i] = $dadosCol[$i]->recomendacoes;
+			$data['observacoes'][$i] = $dadosCol[$i]->observacoes;
+			$data['colfontes'][$i] = $dadosCol[$i]->fontes;
 		}
 		
 		$espGe = count($dadosGer);
@@ -101,8 +134,6 @@ class VisualizarDados extends CI_Controller {
 			$data['obs'][$i] = $dadosCar[$i]->observacoes;
 			$data['carfontes'][$i] = $dadosCar[$i]->fontes;
 		}
-		
-		
 		$this->load->view('visualizar_dados', $data);
 	}
 }

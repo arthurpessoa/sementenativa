@@ -46,7 +46,6 @@ class ModelEspecie extends CI_Model {
 	function dadosgerminacao($id)
 	{
 		$query = $this->db->query('SELECT * FROM germinacao where germinacao.idEspecie = '.$id);
-		echo $query==null;
 		if($query==null)
 		{
 			return array();
