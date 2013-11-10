@@ -2,7 +2,7 @@
 <?php session_start(); ?>
 <html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.0.0.58833 -->
     <meta charset="utf-8">
-    <title>Semente Nativa - Ajuda</title>
+    <title>Semente Nativa - Gerar documentos</title>
     <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
 
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->

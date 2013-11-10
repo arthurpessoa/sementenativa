@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <?php session_start(); ?>
+
+<?php
+    require_once 'Modules/Mobile_Detect.php';
+    $detect = new Mobile_Detect;
+    if ($detect->isMobile() ) {
+        redirect(base_url()."especies",'refresh');
+    }
+?>
+
+
+
 <html dir="ltr" lang="en-US"><head>
     <meta charset="utf-8">
     <title>Sementes e Viveiros - Home</title>
