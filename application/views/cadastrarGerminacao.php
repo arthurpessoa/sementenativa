@@ -108,6 +108,7 @@
 						</p>
 						<p>
 							<span id="erroPagina" class="erroinsert"><?php echo $erro ?></span>
+							<span hidden id="erroEspecie" class="erroinsert">*Campo espécie não pode ser vazio</span>
 						</p>
 						<div class="art-postcontent art-postcontent-0 clearfix">
 							<div class="art-content-layout">
@@ -119,11 +120,9 @@
 											<p>
 												<input type='hidden' name='especieid' id='especieid' value=''>
 												<label for="especie">Especie* </label>
-												
-
 												<p class="open"><input id="especie" type="text" name="especie"/>
 												<a id="selecionarEsp" href="#" style="" onclick="" class="art-button" >Procurar...</a></p>
-												<span id="erroEspecie" class="erroinsert"></span>
+												
 											</p>
 
 											<p>
@@ -189,7 +188,8 @@
 											<br><br>
 											<p>
 
-												<p><button type="submit" id="EnviarCadastro" href="#" style="float: right;" onclick="" class="art-button" >Cadastrar</button></p>
+												<!--p><button type="" id="EnviarCadastro" href="#" style="float: right;" onclick="" class="art-button" >Cadastrar</button></p-->
+												<p><a id="EnviarCadastro" href="#" onclick=""  class="art-button" >Cadastrar</a></p>
 												<p><a href=<?php echo base_url()."controlPanel";?> style="float: right;" onclick="" class="art-button" >Voltar</a></p>
 									
 											</p>
@@ -271,15 +271,23 @@ $(document).ready(function() {
 			nomPop--;
 		}
 	});
-	$('#selespecie').focusout(function(){
-		if($(this).val() == ''){
-			$('#erroEspecie').html('Cadastrar espécie?');
-		}else{
-			$('#erroEspecie').fadeOut(1000, function() {
-				$(this).html('');
-            });
-		}
-	});
+	
+	$('#EnviarCadastro').click(function(){
+           		var erro = 0;
+           		if( $('#especie').val() == ''){
+           			erro=1;
+           			$('#erroEspecie').show();
+           		}else{
+           			$('#erroEspecie').hide();
+           		}
+
+           		if(erro==0){
+        			$(this).closest('form').submit();
+        		}else{
+        			erro=0;
+        		}
+
+           	});
 });
 </script>
 </body>
