@@ -34,18 +34,18 @@
 							<div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout">
 								<div class="art-content-layout-row">
 									<div class="art-layout-cell layout-item-0" style="width: 100%" >
-										<p><span style="font-weight: bold; font-size: 25px"><?php echo $cientifico[0]?></span></p>
-										<p><span style="font-weight: bold; font-size: 25px"><?php echo $familia[0]?></span></p>
+										<p><h2 class="art-postheader" style="color:#6DAF28;font-size:35px;padding-top:10px;padding-bottom:1px;"><?php echo $cientifico[0]?></h2></p>
+										<p><h2 class="art-postheader" style="color:#6DAF28;font-size:35px;padding-top:10px;padding-bottom:1px;"><?php echo $familia[0]?></h2></p>
 										<br>
-										<p><span style="font-weight: bold; font-size: 16px">Análise de Germinação</span></p>
+										<h2 class="art-postheader" style="color:#6DAF28;font-size:35px;padding-top:10px;padding-bottom:1px;">Análise de Germinação<hr/></h2>
 										<style type="text/css">
 											.tg-table-green { border-collapse: collapse; border-spacing: 0; }
-											.tg-table-green td, .tg-table-green th { background-color: #fff; border: 1px #bbb solid; color: #594F4F; font-family: sans-serif; font-size: 100%; padding: 10px; vertical-align: top; }
-											.tg-table-green .tg-even td  { background-color: #EFFAB4; }
-											.tg-table-green th  { background-color: #9DE0AD; color: #594F4F; font-size: 110%; font-weight: bold; }
-											.tg-table-green tr:hover td, .tg-table-green tr.even:hover td  { color: #333; background-color: #E5FCC2; }
-											.tg-bf { font-weight: bold; } .tg-it { font-style: italic; }
-											.tg-left { text-align: left; } .tg-right { text-align: right; } .tg-center { text-align: center; }
+		.tg-table-green td, .tg-table-green th { background-color: #fff; border: 1px #bbb solid; color: #594F4F; font-family: sans-serif; font-size: 110%; padding: 11px; vertical-align: top; }
+		.tg-table-green .tg-even td  { background-color: #EFFAB4; }
+		.tg-table-green th  { background-color: #6DAF28; color: #FFFFFF; font-size: 120%; font-weight: bold; }
+		.tg-table-green tr:hover td, .tg-table-green tr.even:hover td  { color: #333; background-color: #E5FCC2; }
+		.tg-bf { font-weight: bold; } .tg-it { font-style: italic; }
+		.tg-left { text-align: left; } .tg-right { text-align: right; } .tg-center { text-align: center; }
 										</style>
 									<table class="tg-table-green">
 										<tr>
@@ -90,7 +90,7 @@
 				  						?>
 				  						</tr>
 									</table>
-									<p><span style="font-weight: bold; font-size: 16px">Colheita e Manejo</span></p>
+									<h2 class="art-postheader" style="color:#6DAF28;font-size:35px;padding-top:10px;padding-bottom:10px;">Colheita e Manejo<hr/></h2>
 									<table class="tg-table-green">
 									  <tr>
 											<th>Número da revista</th>
@@ -165,7 +165,7 @@
 				  						?>
 									  </tr>
 									</table>
-									<p><span style="font-weight: bold; font-size: 16px">Caracterização</span></p>
+									<h2 class="art-postheader" style="color:#6DAF28;font-size:35px;padding-top:10px;padding-bottom:10px;">Caracterização<hr/></h2>
 									<table class="tg-table-green">
 				  					<tr>
 										<th>Data de Colheita</th>
@@ -214,7 +214,7 @@
 						</div>
 					</div>
 				</div>
-				<p><a href=<?php echo base_url()."especies";?>  onclick="" class="art-button">Voltar</a></p>
+				<p><a  onclick="window.history.back()" class="art-button">Voltar</a></p>
 			</div>
 
 		</article>

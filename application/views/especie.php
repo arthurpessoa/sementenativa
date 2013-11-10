@@ -84,7 +84,7 @@
 		.tg-table-green td, .tg-table-green th { background-color: #fff; border: 1px #bbb solid; color: #594F4F; font-family: sans-serif; font-size: 110%; padding: 11px; vertical-align: top; }
 		.tg-table-green .tg-even td  { background-color: #EFFAB4; }
 		.tg-table-green th  { background-color: #6DAF28; color: #FFFFFF; font-size: 120%; font-weight: bold; }
-		/*.tg-table-green tr:hover td, .tg-table-green tr.even:hover td  { color: #333; background-color: #E5FCC2; }*/
+		.tg-table-green tr:hover td, .tg-table-green tr.even:hover td  { color: #333; background-color: #E5FCC2; }
 		.tg-bf { font-weight: bold; } .tg-it { font-style: italic; }
 		.tg-left { text-align: left; } .tg-right { text-align: right; } .tg-center { text-align: center; }
 		</style>
