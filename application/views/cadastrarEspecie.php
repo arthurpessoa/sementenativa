@@ -61,12 +61,14 @@
 											<p>
 												<label for="boxcient"> Nome Científico* </label>
 												<input id="boxcient" type="text" name="cientifico"/>
-												<span id="erroCient" class="erroinsert"></span>
+												<span hidden id="erroCient" class="erroinsert">*Iinsira um nome científico</span>
+												<span hidden id="erroIgual" class="erroinsert">*Nome e família iguais</span>
 											</p>
 											<p>
 												<label for="boxfamilia">Família* </label>
 												<input id="boxfamilia" type="text" name="familia"/>
-												<span id="erroFami" class="erroinsert"></span>
+												<span hidden id="erroFami" class="erroinsert">*Insira uma família</span>
+												
 											</p>
 											<p id="nompop">
 												<label for="boxpopul">Nome popular 1</label>
@@ -79,8 +81,16 @@
 											<br><br>
 
 											<p>
-												<p><button disabled id="EnviarCadastro" type="submit" style="float: right;" onclick="" class="art-button" >Cadastrar</button></p>
-												<p><a href=<?php echo base_url()."controlPanel";?> style="float: right;" onclick="" class="art-button" >Voltar</a></p>
+												<!--p><button id="EnviarCadastro" type="submit" style="float: right;" onclick="" class="art-button" >Cadastrar</button></p-->
+											
+
+												<div style="position:relative;float:right;">
+												<a id="EnviarCadastro" href="#" onclick=""  class="art-button" >Cadastrar</a>
+												</div>
+												<div style="position:relative;float:right;margin-right:0.5cm;">
+												<a href=<?php echo base_url()."controlPanel";?>  onclick="" class="art-button">Voltar</a>
+											    </div>
+												
 											</p>
 										</form>
 									</div>
@@ -111,31 +121,50 @@ $(document).ready(function() {
 			nomPop--;
 		}
 	});
-	$('#boxcient').focusout(function(){
-		if($(this).val() == ''){
-			$('#erroCient').html('Insira um nome científico!');
-		}else{
-			$('#erroCient').fadeOut(1000, function() {
-				$(this).html('');
-				erro--;
-				if($erro ==0){
-					$('#EnviarCadastro').prop('disabled', false);
-				}
-            });
-		}
-	});
-	$('#boxfamilia').focusout(function(){
-		if($(this).val() == ''){
-			$('#erroFami').html('Insira o nome da família!');
-		}else{
-			$('#erroFami').fadeOut(1000, function() {
-				$(this).html('');
-				erro--;
-				$('#EnviarCadastro').prop('disabled', false);
-            });
-		}
-	});
+	
 });
 </script>
+<script src="js\jquery-1.6.2.min.js"></script>
+    <script type="text/javascript">
+           $(document).ready(function(){
+           $('#EnviarCadastro').click(function(){
+           
+           	var family = $("#boxfamilia").val();
+           	var nome = $("#boxcient").val();
+           	var erro = 0;
+           if(nome.length <= 0)
+            {
+           		erro=1;
+           		$('#erroCient').show()
+           	}else{	
+           		if(nome == family){
+           			$('#erroCient').hide()
+           			$('#erroFami').hide()
+           			erro=1;
+           			$("#erroIgual").show()
+           		}else{
+           			$("#erroIgual").hide()
+           		}
+           		//$('#erroCient').fadeOut(1000, function() {
+            }
+           	
+           	if(family.length <=0)
+           	{
+           		erro=1;
+           		$('#erroFami').show()
+           	}else{
+           		//$('#erroFami').fadeOut(1000, function() {
+				$('#erroFami').hide()
+           	}
+           	
+           		
+           if(erro==0){
+        		$(this).closest('form').submit();
+        	}else{
+        		erro=0;
+        	}
+        	});
+           });
+	</script>
 </body>
 </html>
