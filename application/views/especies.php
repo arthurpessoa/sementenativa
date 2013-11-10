@@ -50,8 +50,8 @@
 									   Digite o nome da espécie (vulgar ou científico) ou parte dele, e clique em "Buscar", após isso clique na espécie desejada
 
 										<p><input id="especie" type="text" name="especie" style="width: 70%;"/></p>
-										<p><button type="submit" id="buscar" href="#" style="float: left;" onclick="" class="art-button" >Buscar</button></p>
-										
+										<p><button type="submit" id="buscar" href="#" style="float: left;" onclick="" class="art-button" >Buscar</button>
+										<a  onclick="window.history.back()" class="art-button">Voltar</a></p>
 										</form>
 										
 									</div>
