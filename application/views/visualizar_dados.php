@@ -24,7 +24,13 @@
 </style></head>
 <body>
 <div id="art-main">
-
+<nav class="art-nav clearfix">
+	<ul class="art-hmenu">
+		   <li><a href=<?php echo base_url()."home";?>>Home</a></li>
+        <li><a href=<?php echo base_url()."sobre"?>               >Sobre</a></li>
+        <li><a href=<?php echo base_url()."contato"?>               >Contato</a></li>
+	</ul>
+</nav>
 <div class="clearfix" style="overflow:scroll">
 	<div class="art-layout-wrapper clearfix">
 		<div class="art-content-layout">
@@ -34,8 +40,8 @@
 							<div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout">
 								<div class="art-content-layout-row">
 									<div class="art-layout-cell layout-item-0" style="width: 100%" >
-										<p><h2 class="art-postheader" style="color:#6DAF28;font-size:35px;padding-top:10px;padding-bottom:1px;"><?php echo $cientifico[0]?></h2></p>
-										<p><h2 class="art-postheader" style="color:#6DAF28;font-size:35px;padding-top:10px;padding-bottom:1px;"><?php echo $familia[0]?></h2></p>
+										<p><h2 class="art-postheader" style="color:#6DAF28;font-size:35px;padding-top:10px;padding-bottom:1px;">Nome científico: <?php echo $cientifico[0]?></h2></p>
+										<p><h2 class="art-postheader" style="color:#6DAF28;font-size:35px;padding-top:10px;padding-bottom:1px;">Família: <?php echo $familia[0]?></h2></p>
 										<br>
 										<h2 class="art-postheader" style="color:#6DAF28;font-size:35px;padding-top:10px;padding-bottom:1px;">Análise de Germinação<hr/></h2>
 										<style type="text/css">
