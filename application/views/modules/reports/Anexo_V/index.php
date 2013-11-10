@@ -58,7 +58,7 @@
 			<br>Nacional de Sementes e Mudas – RENASEM como COLETOR DE SEMENTES DE ESPÉCIES 
 			<br>FLORESTAIS. 
 			<br><br>
-			E, para tanto, apresenta os seguintes dados, informações e documentação anexa: <br><br>
+			E, para tanto, apresenta os seguintes s, informações e documentação anexa: <br><br>
 		</div>
 		<table>
 		    <tbody>

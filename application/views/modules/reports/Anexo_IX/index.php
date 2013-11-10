@@ -106,20 +106,20 @@
 		        <td>DATA </td>
 		    </tr>
 		    <tr>
-		        <td>dado</td>
-		        <td>dado</td>
-		        <td>dado</td>
-		        <td>dado</td>
-		        <td>dado</td>
-		        <td>dado</td>
-		        <td>dado</td>
-		        <td>dado</td>
-		        <td>dado</td>
-		        <td>dado</td>
-		        <td>dado</td>
-		        <td>dado</td>
-		        <td>dado</td>
-		        <td>dado</td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
 		    </tr>
 		    </tbody>
 		</table>

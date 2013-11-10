@@ -96,13 +96,13 @@
 		        <td>Quantidade de Mudas(unidades) </td>
 		    </tr>
 		    <tr>
-		        <td>dado</td>
-		        <td>dado</td>
-		        <td>dado</td>
-		        <td>dado</td>
-		        <td>dado</td>
-		        <td>dado</td>
-		        <td>dado</td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
+		        <td></td>
 		    </tr>
 		    </tbody>
 		</table>
