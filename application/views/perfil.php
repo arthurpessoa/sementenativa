@@ -26,7 +26,7 @@
 <div id="art-main">
 <nav class="art-nav clearfix">
 	<ul class="art-hmenu">
-		   <li><a href=<?php echo base_url()."home";?>>Home</a></li>
+		   <li><a href=<?php echo base_url()."home";?>>Página Inicial</a></li>
         <li><a href=<?php echo base_url()."sobre"?>               >Sobre</a></li>
         <li><a href=<?php echo base_url()."contato"?>               >Contato</a></li>
 	</ul>
@@ -49,21 +49,21 @@
 				<div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout">
 	<div class="art-content-layout-row">
 	<div class="art-layout-cell layout-item-0" style="width: 100%" >
-		<p><span style="font-weight: bold; font-size: 16px">Nome</span></p>
-		<p><?php echo $nome?></p>
-		<p><span style="font-weight: bold; font-size: 16px">Tipo de Usuário</span></p>
-	    <p>Produtor</p>
+		<p><span style="font-weight: bold; font-size: 25px;color:#6DAF28;">Nome</span></p>
+		<p style="font-size:16px;"><?php echo $nome?></p>
+		<p><span style="font-weight: bold; font-size: 25px;color:#6DAF28;">Tipo de Usuário</span></p>
+	    <p style="font-size:16px;">Produtor</p>
 		<!--p><span style="font-weight: bold; font-size: 16px">Senha</span></p>
 		<p>Batatinha</p-->
-        <p><span style="font-weight: bold; font-size: 16px">E-mail para contato</span></p>
-        <p><?php echo $email ?></p>
-        <p><span style="font-weight: bold; font-size: 16px">Telefone</span></p>
-        <p><?php echo $telefone ?></p>
-		<p><span style="font-weight: bold; font-size: 16px">Endereço</span></p>
-        <p><?php echo $endereco.", ".$numero ?></p>
-        <p><?php echo $bairro ?></p>
-        <p><?php echo $cidade." - ".$estado ?></p>
-        <p>CEP: <?php echo $cep ?></p>
+        <p><span style="font-weight: bold; font-size: 25px;color:#6DAF28;">E-mail para contato</span></p>
+        <p style="font-size:16px;"><?php echo $email ?></p>
+        <!--p><span style="font-weight: bold; font-size: 16px">Telefone</span></p>
+        <p><?php echo $telefone ?></p></p-->
+		<p><span style="font-weight: bold; font-size: 25px;color:#6DAF28;">Endereço</span></p>
+        <p style="font-size:16px;"><?php echo $endereco.", ".$numero ?></p>
+        <p style="font-size:16px;"><?php echo $bairro ?></p>
+        <p style="font-size:16px;"><?php echo $cidade." - ".$estado ?></p>
+        <p style="font-size:16px;">CEP: <?php echo $cep ?></p>
         <p><br /></p>
     </div>
     </div>

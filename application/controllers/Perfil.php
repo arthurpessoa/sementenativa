@@ -11,14 +11,14 @@ class Perfil extends CI_Controller {
 		$data['email'] = $profile->email;
 		//$data['sexo'] = $profile->sexo;
 		$data['renasem'] = $profile->renasem;
-		$data['cpfcnpj'] = $profile->cpfcnpj;
+		$data['cpf-cnpj'] = $profile->cpfcnpj;
 		$data['cep'] = $profile->CEP;
 		$data['endereco'] = $profile->endereco;
 		$data['numero'] = $profile->numero;
 		$data['bairro'] = $profile->bairro;
 		$data['cidade'] = $profile->cidade;
 		$data['estado'] = $profile->estado;
-		$data['telefone'] = $profile->telefone;
+		//$data['telefone'] = $profile->telefone;
 		$this->load->view('perfil', $data);
 	}
 }

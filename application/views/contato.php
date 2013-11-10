@@ -25,7 +25,7 @@
 <div id="art-main">
 <nav class="art-nav clearfix">
     <ul class="art-hmenu">
-        <li><a href=<?php echo base_url()."home";?>                 >Home</a></li>
+        <li><a href=<?php echo base_url()."home";?>                 >Página Inicial</a></li>
         <li><a href=<?php echo base_url()."sobre"?>               >Sobre</a></li>
         <li><a href=<?php echo base_url()."contato"?> class="active">Contato</a></li>
 </nav>
