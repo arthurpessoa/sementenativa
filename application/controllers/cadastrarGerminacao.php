@@ -38,7 +38,7 @@ class CadastrarGerminacao extends CI_Controller {
 		$this->ModelGerminacao->addGerminacao($id, $temp, $subs, $descs, $semkg, $peso, $repet, $nrepet, $qd, $tempger, $dataini, $datafim, $tipoluz, $umisub, $testegerm, $fontes);
 		
 		$data['erro'] = '';
-		$data['ok'] = 'Germinação cadastrada com uscesso!';
+		$data['ok'] = 'Germinação cadastrada com sucesso!';
 		$data['especies'] = $this->ModelEspecie->getAllSpecies();
 		$this->load->view('CadastrarGerminacao', $data);
 		
