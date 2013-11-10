@@ -132,6 +132,7 @@
 												echo "<td>".$nrevista[$i]."</td>";
 												echo "<td>".$tituloArtigo[$i]."</td>";
 												echo "<td>".$autores[$i]."</td>";
+												
 												echo "<td>".$revista[$i]."</td>";
 												echo "<td>".$ano[$i]."</td>";
 												echo "<td>".$volume[$i]."</td>";
@@ -213,8 +214,11 @@
 						</div>
 					</div>
 				</div>
+				<p><a href=<?php echo base_url()."especies";?>  onclick="" class="art-button">Voltar</a></p>
 			</div>
+
 		</article>
+
 	</div>
 	</div>
 	</div>

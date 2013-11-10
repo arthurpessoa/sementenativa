@@ -27,7 +27,7 @@ CREATE TABLE ESPECIE(
 	familia varchar(30),
 	PRIMARY KEY(id)
 );
-
+DROP TABLE IF EXISTS 'COLHEITA';
 CREATE TABLE COLHEITA(
 	id INT AUTO_INCREMENT,
 	email varchar(40) NOT NULL default '',
