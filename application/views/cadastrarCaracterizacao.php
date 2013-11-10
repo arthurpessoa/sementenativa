@@ -113,6 +113,7 @@
 						</p>
 						<p>
 							<span id="erroPagina" class="erroinsert"><?php echo $erro ?></span>
+							<span hidden id="erroEspecie" class="erroinsert">*Espécie não pode ser vazia</span>
 						</p>
 						
 						<div class="art-postcontent art-postcontent-0 clearfix">
@@ -198,8 +199,13 @@
 											</p>
 											<br><br>
 											<p>
-												<p><button type="submit" id="EnviarCadastro" href="#" style="float: right;" onclick="" class="art-button" >Cadastrar</button></p>
-												<p><a href=<?php echo base_url()."controlPanel";?> style="float: right;" onclick="" class="art-button" >Voltar</a></p>
+												
+												<div style="position:relative;float:right;">
+												<a id="EnviarCadastro" href="#" onclick=""  class="art-button" >Cadastrar</a>
+												</div>
+												<div style="position:relative;float:right;margin-right:0.5cm;">
+												<a href=<?php echo base_url()."controlPanel";?> style="float: right;" onclick="" class="art-button" >Voltar</a>
+											    </div>
 											</p>
 										</form>
 									</div>
@@ -288,6 +294,22 @@ $(document).ready(function() {
             });
 		}
 	});
+	$('#EnviarCadastro').click(function(){
+           		var erro = 0;
+           		if( $('#tboxespecies').val() == ''){
+           			erro=1;
+           			$('#erroEspecie').show();
+           		}else{
+           			$('#erroEspecie').hide();
+           		}
+
+           		if(erro==0){
+        			$(this).closest('form').submit();
+        		}else{
+        			erro=0;
+        		}
+
+           	});
 });
 </script>
 </body>

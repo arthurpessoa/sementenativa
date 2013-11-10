@@ -189,9 +189,13 @@
 											<p>
 
 												<!--p><button type="" id="EnviarCadastro" href="#" style="float: right;" onclick="" class="art-button" >Cadastrar</button></p-->
-												<p><a id="EnviarCadastro" href="#" onclick=""  class="art-button" >Cadastrar</a></p>
-												<p><a href=<?php echo base_url()."controlPanel";?> style="float: right;" onclick="" class="art-button" >Voltar</a></p>
-									
+												
+												<div style="position:relative;float:right;">
+												<a id="EnviarCadastro" href="#" onclick=""  class="art-button" >Cadastrar</a>
+												</div>
+												<div style="position:relative;float:right;margin-right:0.5cm;">
+												<a href=<?php echo base_url()."controlPanel";?> style="float: right;" onclick="" class="art-button" >Voltar</a>
+											    </div>
 											</p>
 										</form>
 									</div>
