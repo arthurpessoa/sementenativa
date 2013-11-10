@@ -45,7 +45,7 @@
 </nav>
 <nav class="art-nav clearfix" style="   background: #6DAF28;">
 	<ul class="art-hmenu" style="height: 29px;">
-		<li><a href=<?php echo base_url()."controlPanel";?> class="active" >Painel de Controle</a></li>
+		<li><a href=<?php echo base_url()."controlPanel";?> class="active" >Ferramentas</a></li>
 		<li><a href=<?php echo base_url()."ajuda";?> >Ajuda</a></li>
 	</ul>
 </nav>
@@ -60,7 +60,7 @@
 					<?php include 'modules/powerMenu.php'; ?>
 					
 					<article class="art-post art-article">
-						<h2 class="art-postheader">Painel de Controle</h2>
+						<h2 class="art-postheader">Ferramentas</h2>
 						<div class="art-postcontent art-postcontent-0 clearfix">
 							<div class="art-content-layout">
 								<div class="art-content-layout-row">
