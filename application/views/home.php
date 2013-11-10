@@ -4,9 +4,6 @@
 <?php
     require_once 'Modules/Mobile_Detect.php';
     $detect = new Mobile_Detect;
-    if ($detect->isMobile() ) {
-        redirect(base_url()."especies",'refresh');
-    }
 ?>
 
 
@@ -69,15 +66,26 @@
                 <div class="art-postcontent art-postcontent-0 clearfix"><div class="art-content-layout-wrapper layout-item-0">
 <div class="art-content-layout layout-item-1">
     <div class="art-content-layout-row">
+    <?php
+    if (!$detect->isMobile() ) {
+    ?>
     <div class="art-layout-cell layout-item-2" style="width: 25%" >
         <p style="text-align: center;"><a href=<?php echo base_url()."login";?>><img width="187" height="187" alt="" src=<?php echo base_url()."assets/images/produtores.jpg"?> style="margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;" class=""></a></p>
         <h4>Produtores</h4>
         <h4>e Pesquisadores<h4>    
     </div>
+    <?php
+    }
+
+    ?>
     <div class="art-layout-cell layout-item-3" style="width: 25%" >
           <p style="text-align: center;"><a href=<?php echo base_url()."especies";?>><img width="187" height="187" alt="" src=<?php echo base_url()."assets/images/especies.jpg"?> style="margin-top: 5px; margin-right: 0px; margin-bottom: 5px; margin-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;" class=""></a></p>
         <h4>Banco de espécies</h4>
     </div>
+
+     <?php
+    if (!$detect->isMobile() ) {
+    ?>
     <div class="art-layout-cell layout-item-4" style="width: 25%" >
         <p style="text-align: center;"><img width="187" height="187" alt="" src=<?php echo base_url()."assets/images/wiki.jpg" ?> style="margin-top: 5px; margin-bottom: 5px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px;" class=""></p>
         <h4>WIKI</h4>
@@ -87,6 +95,7 @@
         <h4>Fórum</h4>
     </div>
     </div>
+
 </div>
 </div>
 <div class="art-content-layout layout-item-1">
@@ -95,10 +104,18 @@
         <p style="text-align: left;">Área dedicada a ferramentas que
                                     facilitam o trabalho de produtores e pesquisadores.</p>
         <p><a href=<?php echo base_url()."login"?> class="art-button">Acessar</a></p>
-    </div><div class="art-layout-cell layout-item-6" style="width: 25%" >
+    </div>
+      <?php
+    }
+    ?>
+    <div class="art-layout-cell layout-item-6" style="width: 25%" >
         <p>Aqui você obtém os mais diveros dados sobre o cultivo e manejo de espécies florestais.</p>
         <p><a href=<?php echo base_url()."especies"?> class="art-button">Acessar</a></p>
-    </div><div class="art-layout-cell layout-item-6" style="width: 25%" >
+    </div>
+     <?php
+    if (!$detect->isMobile() ) {
+    ?>
+    <div class="art-layout-cell layout-item-6" style="width: 25%" >
         <p>WIKIWIKIWIKIWIKI WIKIWIKIWIKI WIKIWIKI</p>
         <p><a href=<?php echo base_url()."wiki";?> class="art-button">Acessar</a></p>
     </div><div class="art-layout-cell layout-item-7" style="width: 25%" >
@@ -113,6 +130,9 @@
         </ol>
     </div>
     </div>
+     <?php
+    }
+    ?>
 </div>
 <div class="art-content-layout-wrapper layout-item-8">
 <div class="art-content-layout layout-item-9">
