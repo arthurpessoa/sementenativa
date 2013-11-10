@@ -38,25 +38,25 @@ class CadastrarColheita extends CI_Controller {
 		$obse = $_POST['obse'];
 		$font = $this->checar($_POST['font']);
 		
-		if($nRev == '')
+		if(!is_numeric($nRev))
 		{
-			$nRev = null;
+			$nRev = 'null';
 		}
-		if($ano == '')
+		if(!is_numeric($ano))
 		{
-			$ano = null;
+			$ano = 'null';
 		}
-		if($volu == '')
+		if(!is_numeric($volu))
 		{
-			$volu = null;
+			$volu = 'null';
 		}
-		if($pagI == '')
+		if(!is_numeric($pagI))
 		{
-			$pagI = null;
+			$pagI = 'null';
 		}
-		if($pagE == '')
+		if(!is_numeric($pagE))
 		{
-			$pagE = null;
+			$pagE = 'null';
 		}
 		
 		

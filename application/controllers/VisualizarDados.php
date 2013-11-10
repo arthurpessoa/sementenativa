@@ -57,7 +57,7 @@ class VisualizarDados extends CI_Controller {
 		{
 			$data['nrevista'][$i] = $dadosCol[$i]->nRevista;
 			$data['tituloArtigo'][$i] = $dadosCol[$i]->tituloArtigo;
-			$data['autores'][$i] = explode("#", $dadosCol[$i]->autores);
+			$data['autores'][$i] = $dadosCol[$i]->autores;
 			$data['revista'][$i] = $dadosCol[$i]->revista;
 			$data['ano'][$i] = $dadosCol[$i]->ano;
 			$data['volume'][$i] = $dadosCol[$i]->volume;
